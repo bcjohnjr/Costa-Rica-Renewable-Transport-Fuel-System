@@ -1,0 +1,28 @@
+MAJOR SCIENTIFIC AND PACKAGE REVISION — 20 OCTOBER 2026
+
+1. Replaced estimated aggregate petrol with the 2025 Ministry of Finance taxed-fuel values:
+   gasoline 581 million L regular + 844 super = 1425 million L; all diesel 1332 million L.
+   Diesel split into 1132 million L assumed road and 200 million L assumed offroad WITHIN 1332.
+2. Retained aviation 369.8 million L as provisional and marine 45 million L as uncertain assumptions;
+   no claims these are audited national final-sales volumes.
+3. Reoptimized with dedicated CST process heat in drop-in and maximum-electrification cases,
+   separated refinery heat from optional solar-electric CSP capacity.
+4. Added high-temperature molten-salt tower concept and heat exchanger qualification caveats.
+5. Added CST thermal energy capacity and DNI-based land area screen and unvalidated offshore option.
+6. Added aviation-suitable HTL chemistry & 100%-SAF certification roadmap, with explicit distinction
+   between hypothetical possibility and current ASTM regulatory approval; did not assume cost-only barrier.
+7. Added frozen output scenario for rising heavy and offroad electrification at 2035–2050,
+   calculating physical unused diesel-grade hydrocarbons and added electrical demand.
+8. Added assumed Panama and Nicaragua export allocations, offtake caps, variable costs,
+   logistics, low/central/high price cases and hypothetical certified jet scenario.
+9. Recomputed full 1000-draw Monte Carlo summary and re-solved headliners; updated many
+   supplementary empirical tables, figures and source data to avoid stale case outputs.
+10. Retained baseline marine GIS map unchanged because scenario seaweed farm area remains 2474 km2;
+    marine land layers must be fetched to regenerate and validate the geography.
+11. Delivered updated manuscript, anonymous version, new figures 8/9/S4, supplementary
+    Notes 14-17, Tables 17-20, cover letter draft and full public code/data.
+
+SCIENTIFIC LIMITATIONS STILL UNRESOLVED: fuel certification, hourly dispatch, observed
+site-specific DNI and legal land availability, marine ecological approvals, proven long-term
+wet-biomass offshore yields, Panama/Nicaragua purchaser demand, project-scale cashflow and
+entire transport fuel demand auditing. No conditional result is marketed as proven reality.

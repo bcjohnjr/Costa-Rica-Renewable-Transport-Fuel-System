@@ -1,0 +1,5 @@
+year,HDV_battery_share,offroad_electric_share,fixed_hydrocarbons_twh,domestic_jet_twh,domestic_diesel_twh,domestic_ED95_fossil_equivalent_twh,physically_freed_hydrocarbons_twh,additional_vehicle_electricity_twh,fuel_imports_twh,full_substitution_conditional_on_certification,note
+2035,0.5,0.0,8.840543649206351,3.5456424000000006,5.294901249206349,0.09523809523809523,1.7763568394002505e-15,0.0,0.0,True,Physical potential from a frozen 2035 supply envelope; no new refineries assumed
+2040,0.65,0.2,8.840543649206351,3.5456424000000006,3.906213652222222,0.06666666666666665,1.3886875969841288,0.7191820391000002,0.0,True,Physical potential from a frozen 2035 supply envelope; no new refineries assumed
+2045,0.8,0.3,8.840543649206351,3.5456424000000006,2.717308833015873,0.038095238095238085,2.577592416190478,1.3484618282000005,0.0,True,Physical potential from a frozen 2035 supply envelope; no new refineries assumed
+2050,0.9,0.4,8.840543649206351,3.5456424000000006,1.858111360952381,0.019047619047619042,3.43678988825397,1.7979491042666669,0.0,True,Physical potential from a frozen 2035 supply envelope; no new refineries assumed

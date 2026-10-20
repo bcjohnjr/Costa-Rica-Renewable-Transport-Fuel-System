@@ -1,0 +1,212 @@
+{
+ "pac_shelf": {
+  "species": "Sargassum liebmannii (native, Pacific)",
+  "nutrient_usd_per_t": {
+   "wave_pump": 1218.861358874723,
+   "wave_pump_xl": 1275.8393252499272,
+   "solar_pipe": 58.97864312323863,
+   "salt_fountain": null,
+   "depth_cycling": 200.63102879126373
+  },
+  "units_per_km2": {
+   "wave_pump": 58.89936715902175,
+   "wave_pump_xl": 14.814083255147894,
+   "solar_pipe": 0.6720450180556096,
+   "salt_fountain": 0,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 2.1,
+  "deep_water_m3_per_t_dw": 15789.473684210525,
+  "biomass_cost_nearest_band_usd_per_t": {
+   "natural": 536.0000000000001,
+   "depth_cycling": 676.6310287912637,
+   "solar_pipe": 534.9786431232386,
+   "wave_pump": 1694.861358874723,
+   "wave_pump_xl": 1751.8393252499272,
+   "salt_fountain": null
+  },
+  "effective_yield_t_ha": {
+   "natural": 7.6499999999999995,
+   "depth_cycling": 9.0,
+   "solar_pipe": 9.0,
+   "wave_pump": 9.0,
+   "wave_pump_xl": 9.0,
+   "salt_fountain": 9.0
+  }
+ },
+ "pac_slope": {
+  "species": "Sargassum liebmannii (native, Pacific)",
+  "nutrient_usd_per_t": {
+   "wave_pump": 3250.296956999261,
+   "wave_pump_xl": 3402.238200666472,
+   "solar_pipe": 157.27638166196968,
+   "salt_fountain": null,
+   "depth_cycling": 200.63102879126373
+  },
+  "units_per_km2": {
+   "wave_pump": 157.06497909072465,
+   "wave_pump_xl": 39.50422201372771,
+   "solar_pipe": 1.792120048148292,
+   "salt_fountain": 0,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 5.6,
+  "deep_water_m3_per_t_dw": 42105.26315789473,
+  "biomass_cost_nearest_band_usd_per_t": {
+   "natural": 843.2,
+   "depth_cycling": 771.8310287912636,
+   "solar_pipe": 728.4763816619696,
+   "wave_pump": 3821.496956999261,
+   "wave_pump_xl": 3973.438200666472,
+   "salt_fountain": null
+  },
+  "effective_yield_t_ha": {
+   "natural": 5.3999999999999995,
+   "depth_cycling": 9.0,
+   "solar_pipe": 9.0,
+   "wave_pump": 9.0,
+   "wave_pump_xl": 9.0,
+   "salt_fountain": 9.0
+  }
+ },
+ "pac_deep": {
+  "species": "Sargassum liebmannii (native, Pacific)",
+  "nutrient_usd_per_t": {
+   "wave_pump": 5688.019674748706,
+   "wave_pump_xl": 5953.916851166326,
+   "solar_pipe": 275.233667908447,
+   "salt_fountain": null,
+   "depth_cycling": 200.63102879126373
+  },
+  "units_per_km2": {
+   "wave_pump": 274.86371340876815,
+   "wave_pump_xl": 69.1323885240235,
+   "solar_pipe": 3.136210084259511,
+   "salt_fountain": 0,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 9.8,
+  "deep_water_m3_per_t_dw": 73684.21052631579,
+  "biomass_cost_nearest_band_usd_per_t": {
+   "natural": 1650.1333333333334,
+   "depth_cycling": 819.4310287912637,
+   "solar_pipe": 894.0336679084469,
+   "wave_pump": 6306.819674748706,
+   "wave_pump_xl": 6572.716851166326,
+   "salt_fountain": null
+  },
+  "effective_yield_t_ha": {
+   "natural": 2.6999999999999997,
+   "depth_cycling": 9.0,
+   "solar_pipe": 9.0,
+   "wave_pump": 9.0,
+   "wave_pump_xl": 9.0,
+   "salt_fountain": 9.0
+  }
+ },
+ "car_shelf": {
+  "species": "Sargassum platycarpum (native, Caribbean)",
+  "nutrient_usd_per_t": {
+   "wave_pump": 5688.019674748708,
+   "wave_pump_xl": 5953.916851166327,
+   "solar_pipe": 224.11884386830675,
+   "salt_fountain": 24994.965035713183,
+   "depth_cycling": 200.63102879126373
+  },
+  "units_per_km2": {
+   "wave_pump": 274.8637134087682,
+   "wave_pump_xl": 69.13238852402353,
+   "solar_pipe": 2.553771068611316,
+   "salt_fountain": 203.69364475828354,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 4.2,
+  "deep_water_m3_per_t_dw": 59999.99999999999,
+  "biomass_cost_nearest_band_usd_per_t": {
+   "natural": 621.7142857142858,
+   "depth_cycling": 772.0365044603104,
+   "solar_pipe": 700.1188438683067,
+   "wave_pump": 6164.019674748708,
+   "wave_pump_xl": 6429.916851166327,
+   "salt_fountain": 25470.965035713183
+  },
+  "effective_yield_t_ha": {
+   "natural": 6.3,
+   "depth_cycling": 7.6499999999999995,
+   "solar_pipe": 9.0,
+   "wave_pump": 9.0,
+   "wave_pump_xl": 9.0,
+   "salt_fountain": 9.0
+  }
+ },
+ "car_slope": {
+  "species": "Sargassum platycarpum (native, Caribbean)",
+  "nutrient_usd_per_t": {
+   "wave_pump": 11376.039349497412,
+   "wave_pump_xl": 11907.833702332653,
+   "solar_pipe": 448.23768773661345,
+   "salt_fountain": 49989.930071426366,
+   "depth_cycling": 200.63102879126373
+  },
+  "units_per_km2": {
+   "wave_pump": 549.7274268175363,
+   "wave_pump_xl": 138.26477704804702,
+   "solar_pipe": 5.107542137222631,
+   "salt_fountain": 407.387289516567,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 8.4,
+  "deep_water_m3_per_t_dw": 119999.99999999999,
+  "biomass_cost_nearest_band_usd_per_t": {
+   "natural": 1183.2,
+   "depth_cycling": 1032.672898273234,
+   "solar_pipe": 1019.4376877366134,
+   "wave_pump": 11947.239349497413,
+   "wave_pump_xl": 12479.033702332654,
+   "salt_fountain": 50561.13007142636
+  },
+  "effective_yield_t_ha": {
+   "natural": 3.6,
+   "depth_cycling": 6.3,
+   "solar_pipe": 9.0,
+   "wave_pump": 9.0,
+   "wave_pump_xl": 9.0,
+   "salt_fountain": 9.0
+  }
+ },
+ "car_deep": {
+  "species": "Sargassum platycarpum (native, Caribbean)",
+  "nutrient_usd_per_t": {
+   "wave_pump": 17064.059024246122,
+   "wave_pump_xl": 17861.750553498987,
+   "solar_pipe": 672.3565316049204,
+   "salt_fountain": 74984.89510713956,
+   "depth_cycling": 225.70990739017168
+  },
+  "units_per_km2": {
+   "wave_pump": 732.9699024233819,
+   "wave_pump_xl": 184.35303606406274,
+   "solar_pipe": 6.81005618296351,
+   "salt_fountain": 543.1830526887561,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 12.600000000000001,
+  "deep_water_m3_per_t_dw": 180000.0,
+  "biomass_cost_nearest_band_usd_per_t": {
+   "natural": 5149.3,
+   "depth_cycling": 1491.272558891221,
+   "solar_pipe": 1346.4065316049205,
+   "wave_pump": 17738.10902424612,
+   "wave_pump_xl": 18535.800553498986,
+   "salt_fountain": 75658.94510713956
+  },
+  "effective_yield_t_ha": {
+   "natural": 0.8,
+   "depth_cycling": 4.4,
+   "solar_pipe": 8.0,
+   "wave_pump": 8.0,
+   "wave_pump_xl": 8.0,
+   "salt_fountain": 8.0
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "a_b_c": {
+  "columns": [
+   "case",
+   "cost US$bn/yr",
+   "new electricity TWh/yr",
+   "seaweed km2"
+  ],
+  "rows": [
+   [
+    "Grid Harvester (ratio 2.68)",
+    3.423331393389977,
+    14.126215954902738,
+    2473.9059896569865
+   ],
+   [
+    "Sargassum, no size reduction (4.99)",
+    3.4215945584891703,
+    14.823360904926815,
+    2319.8672237030205
+   ],
+   [
+    "Sargassum, coarse chopping (1.84)",
+    3.4257832704119893,
+    13.84815581115,
+    2535.3452088655235
+   ],
+   [
+    "Conventional harvesting (1.0)",
+    3.4332429601744296,
+    13.84815581115,
+    2535.3452088655235
+   ],
+   [
+    "No seaweed",
+    3.7615845507878443,
+    26.210063455571433,
+    0
+   ]
+  ],
+  "note": "Drop-in-rule case; the conventional/grid harvesting-energy ratio scales the fleet harvesting-fuel term."
+ }
+}

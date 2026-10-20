@@ -1,0 +1,447 @@
+[
+ {
+  "draw": 3,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.807715596237447
+ },
+ {
+  "draw": 39,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.021160708210111
+ },
+ {
+  "draw": 42,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.88705775240392
+ },
+ {
+  "draw": 58,
+  "seaweed_allowed": false,
+  "yield_t_ha": 6.419635710192708
+ },
+ {
+  "draw": 69,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.144956927260868
+ },
+ {
+  "draw": 72,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.596872312029465
+ },
+ {
+  "draw": 91,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.598925704242513
+ },
+ {
+  "draw": 131,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.723744192467473
+ },
+ {
+  "draw": 134,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.08543398165597
+ },
+ {
+  "draw": 137,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.412471166660765
+ },
+ {
+  "draw": 141,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.93351388632825
+ },
+ {
+  "draw": 150,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.469448881876399
+ },
+ {
+  "draw": 162,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.864300539520254
+ },
+ {
+  "draw": 169,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.13287906383685
+ },
+ {
+  "draw": 173,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.851069558543198
+ },
+ {
+  "draw": 215,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.26245657566336
+ },
+ {
+  "draw": 218,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.995075618070876
+ },
+ {
+  "draw": 236,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.131836080355642
+ },
+ {
+  "draw": 239,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.157795402471084
+ },
+ {
+  "draw": 248,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.971315029128094
+ },
+ {
+  "draw": 255,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.742661107167004
+ },
+ {
+  "draw": 257,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.172745390843149
+ },
+ {
+  "draw": 291,
+  "seaweed_allowed": false,
+  "yield_t_ha": 4.81026825987796
+ },
+ {
+  "draw": 292,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.70570516732344
+ },
+ {
+  "draw": 308,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.482247151107192
+ },
+ {
+  "draw": 309,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.383329320399865
+ },
+ {
+  "draw": 327,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.831503096403356
+ },
+ {
+  "draw": 333,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.568481512282707
+ },
+ {
+  "draw": 335,
+  "seaweed_allowed": false,
+  "yield_t_ha": 12.528290925174572
+ },
+ {
+  "draw": 351,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.327509879604733
+ },
+ {
+  "draw": 357,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.747812146568196
+ },
+ {
+  "draw": 362,
+  "seaweed_allowed": false,
+  "yield_t_ha": 6.734169066938517
+ },
+ {
+  "draw": 376,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.55378145044795
+ },
+ {
+  "draw": 398,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.588293283765138
+ },
+ {
+  "draw": 421,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.208007062262343
+ },
+ {
+  "draw": 441,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.219928460776192
+ },
+ {
+  "draw": 462,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.949490792740033
+ },
+ {
+  "draw": 468,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.560440171169134
+ },
+ {
+  "draw": 471,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.170093804805248
+ },
+ {
+  "draw": 481,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.615339537587282
+ },
+ {
+  "draw": 501,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.71757981711167
+ },
+ {
+  "draw": 516,
+  "seaweed_allowed": false,
+  "yield_t_ha": 12.7989140511852
+ },
+ {
+  "draw": 558,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.226950583147976
+ },
+ {
+  "draw": 559,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.8472347882760705
+ },
+ {
+  "draw": 582,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.446854683938692
+ },
+ {
+  "draw": 584,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.317545516720067
+ },
+ {
+  "draw": 586,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.636631623254917
+ },
+ {
+  "draw": 598,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.220418294641817
+ },
+ {
+  "draw": 599,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.588985552459231
+ },
+ {
+  "draw": 603,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.561809565906046
+ },
+ {
+  "draw": 606,
+  "seaweed_allowed": false,
+  "yield_t_ha": 12.073659003106629
+ },
+ {
+  "draw": 641,
+  "seaweed_allowed": false,
+  "yield_t_ha": 12.209908518261976
+ },
+ {
+  "draw": 646,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.248785338022229
+ },
+ {
+  "draw": 647,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.091476076909139
+ },
+ {
+  "draw": 670,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.1392031458657
+ },
+ {
+  "draw": 677,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.483354772568656
+ },
+ {
+  "draw": 692,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.121825585709534
+ },
+ {
+  "draw": 706,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.186158437727128
+ },
+ {
+  "draw": 709,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.9145347178613195
+ },
+ {
+  "draw": 711,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.386869985191627
+ },
+ {
+  "draw": 734,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.45422045610193
+ },
+ {
+  "draw": 758,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.490401850713448
+ },
+ {
+  "draw": 760,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.4638528411875065
+ },
+ {
+  "draw": 771,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.533097516133838
+ },
+ {
+  "draw": 773,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.989483830371976
+ },
+ {
+  "draw": 806,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.21990741463097
+ },
+ {
+  "draw": 810,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.628190709843597
+ },
+ {
+  "draw": 813,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.520631657021219
+ },
+ {
+  "draw": 831,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.0306173495797
+ },
+ {
+  "draw": 850,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.053035574168323
+ },
+ {
+  "draw": 873,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.507842587861809
+ },
+ {
+  "draw": 880,
+  "seaweed_allowed": false,
+  "yield_t_ha": 6.845251052834412
+ },
+ {
+  "draw": 884,
+  "seaweed_allowed": false,
+  "yield_t_ha": 6.062046036265503
+ },
+ {
+  "draw": 885,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.797586154884101
+ },
+ {
+  "draw": 892,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.999758022917383
+ },
+ {
+  "draw": 898,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.656898513512461
+ },
+ {
+  "draw": 906,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.275989252058897
+ },
+ {
+  "draw": 907,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.09717964699529
+ },
+ {
+  "draw": 917,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.949281427581088
+ },
+ {
+  "draw": 928,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.220629192732961
+ },
+ {
+  "draw": 932,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.880356524162925
+ },
+ {
+  "draw": 941,
+  "seaweed_allowed": false,
+  "yield_t_ha": 7.877418715790764
+ },
+ {
+  "draw": 946,
+  "seaweed_allowed": false,
+  "yield_t_ha": 6.103672396514932
+ },
+ {
+  "draw": 967,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.194269493522476
+ },
+ {
+  "draw": 977,
+  "seaweed_allowed": false,
+  "yield_t_ha": 8.832644261860814
+ },
+ {
+  "draw": 979,
+  "seaweed_allowed": false,
+  "yield_t_ha": 11.929289824144144
+ },
+ {
+  "draw": 988,
+  "seaweed_allowed": false,
+  "yield_t_ha": 10.775708653910833
+ },
+ {
+  "draw": 997,
+  "seaweed_allowed": false,
+  "yield_t_ha": 5.932823182779977
+ },
+ {
+  "draw": 998,
+  "seaweed_allowed": false,
+  "yield_t_ha": 9.097130229998022
+ }
+]

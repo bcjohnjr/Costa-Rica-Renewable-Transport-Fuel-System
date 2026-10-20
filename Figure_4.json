@@ -1,0 +1,289 @@
+{
+ "a_electricity": {
+  "columns": [
+   "side",
+   "item",
+   "TWh/yr"
+  ],
+  "rows": [
+   [
+    "supply",
+    "PV",
+    3.614215954902738
+   ],
+   [
+    "supply",
+    "Onshore wind",
+    10.512
+   ],
+   [
+    "supply",
+    "Geothermal",
+    0.0
+   ],
+   [
+    "supply",
+    "CSP",
+    0.0
+   ],
+   [
+    "use",
+    "Vehicles",
+    7.4136795803333335
+   ],
+   [
+    "use",
+    "Biorefineries",
+    1.340365576129871
+   ],
+   [
+    "use",
+    "Thermal storage (refinery heat)",
+    -0.0
+   ],
+   [
+    "use",
+    "Electrofuels",
+    5.372170798439535
+   ],
+   [
+    "use",
+    "Direct air capture",
+    0.0
+   ]
+  ],
+  "note": ""
+ },
+ "b_fuels": {
+  "columns": [
+   "fuel",
+   "TWh/yr"
+  ],
+  "rows": [
+   [
+    "Seaweed HTL diesel/jet",
+    4.952139149856545
+   ],
+   [
+    "Seaweed biomethane",
+    0.65555175
+   ],
+   [
+    "Residue Fischer\u2013Tropsch",
+    1.5
+   ],
+   [
+    "Waste-lipid HVO",
+    0.15
+   ],
+   [
+    "Molasses ethanol",
+    0.1
+   ],
+   [
+    "e-Fischer\u2013Tropsch",
+    2.238404499349806
+   ],
+   [
+    "Waste biomethane",
+    0.0
+   ]
+  ],
+  "note": ""
+ },
+ "c_segments": {
+  "columns": [
+   "segment",
+   "carrier",
+   "TWh fossil replaced"
+  ],
+  "rows": [
+   [
+    "Petrol cars",
+    "Battery-electric",
+    12.643866666666666
+   ],
+   [
+    "Petrol cars",
+    "Drop-in diesel",
+    0
+   ],
+   [
+    "Petrol cars",
+    "Jet",
+    0
+   ],
+   [
+    "Petrol cars",
+    "Ethanol (ED95)",
+    0
+   ],
+   [
+    "Petrol cars",
+    "E85",
+    0
+   ],
+   [
+    "Petrol cars",
+    "Methanol",
+    0
+   ],
+   [
+    "Diesel light vehicles",
+    "Battery-electric",
+    4.52308208888889
+   ],
+   [
+    "Diesel light vehicles",
+    "Drop-in diesel",
+    0
+   ],
+   [
+    "Diesel light vehicles",
+    "Jet",
+    0
+   ],
+   [
+    "Diesel light vehicles",
+    "Ethanol (ED95)",
+    0
+   ],
+   [
+    "Diesel light vehicles",
+    "E85",
+    0
+   ],
+   [
+    "Diesel light vehicles",
+    "Methanol",
+    0
+   ],
+   [
+    "Trucks and buses",
+    "Battery-electric",
+    3.3923115666666668
+   ],
+   [
+    "Trucks and buses",
+    "Drop-in diesel",
+    3.2970734714285714
+   ],
+   [
+    "Trucks and buses",
+    "Jet",
+    0
+   ],
+   [
+    "Trucks and buses",
+    "Ethanol (ED95)",
+    0.09523809523809523
+   ],
+   [
+    "Trucks and buses",
+    "E85",
+    0
+   ],
+   [
+    "Trucks and buses",
+    "Methanol",
+    0
+   ],
+   [
+    "Off-road machinery",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Off-road machinery",
+    "Drop-in diesel",
+    1.997827777777778
+   ],
+   [
+    "Off-road machinery",
+    "Jet",
+    0
+   ],
+   [
+    "Off-road machinery",
+    "Ethanol (ED95)",
+    0
+   ],
+   [
+    "Off-road machinery",
+    "E85",
+    0
+   ],
+   [
+    "Off-road machinery",
+    "Methanol",
+    0
+   ],
+   [
+    "Aviation",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Aviation",
+    "Drop-in diesel",
+    0
+   ],
+   [
+    "Aviation",
+    "Jet",
+    3.5456424000000006
+   ],
+   [
+    "Aviation",
+    "Ethanol (ED95)",
+    0
+   ],
+   [
+    "Aviation",
+    "E85",
+    0
+   ],
+   [
+    "Aviation",
+    "Methanol",
+    0
+   ],
+   [
+    "Shipping",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Shipping",
+    "Drop-in diesel",
+    0
+   ],
+   [
+    "Shipping",
+    "Jet",
+    0
+   ],
+   [
+    "Shipping",
+    "Ethanol (ED95)",
+    0
+   ],
+   [
+    "Shipping",
+    "E85",
+    0
+   ],
+   [
+    "Shipping",
+    "Methanol",
+    0.4370345
+   ],
+   [
+    "Shipping",
+    "wind assistance (saved)",
+    0.038003
+   ]
+  ],
+  "note": ""
+ }
+}

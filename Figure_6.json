@@ -1,0 +1,106 @@
+{
+ "a_emissions": {
+  "columns": [
+   "case",
+   "component",
+   "MtCO2e/yr"
+  ],
+  "rows": [
+   [
+    "Fossil comparator",
+    "fossil",
+    9.890020590059999
+   ],
+   [
+    "Drop-in rule",
+    "Direct electric transport",
+    0.12717905094663973
+   ],
+   [
+    "Drop-in rule",
+    "Seaweed fuels",
+    0.44412911926863835
+   ],
+   [
+    "Drop-in rule",
+    "Residue and waste biofuels",
+    0.15750000000000003
+   ],
+   [
+    "Drop-in rule",
+    "Electrofuels",
+    0.09669907437191162
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    "Direct electric transport",
+    0.10894744323993241
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    "Seaweed fuels",
+    0.7103785666620667
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    "Residue and waste biofuels",
+    0.17476303865994672
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    "Electrofuels",
+    0.2261787376004002
+   ],
+   [
+    "Maximum electri- fication",
+    "Direct electric transport",
+    0.184271567985852
+   ],
+   [
+    "Maximum electri- fication",
+    "Seaweed fuels",
+    0.2591914856239725
+   ],
+   [
+    "Maximum electri- fication",
+    "Residue and waste biofuels",
+    0.18186822620793644
+   ],
+   [
+    "Maximum electri- fication",
+    "Electrofuels",
+    0.034116646945192584
+   ]
+  ],
+  "note": "Error bars: low and high lifecycle-factor sets."
+ },
+ "b_reduction": {
+  "columns": [
+   "case",
+   "reduction %",
+   "low-factor %",
+   "high-factor %"
+  ],
+  "rows": [
+   [
+    "Drop-in rule",
+    91.65312916115798,
+    94.56980040529368,
+    87.76280977959743
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    87.6616254228148,
+    92.00174186817105,
+    81.51881061386435
+   ],
+   [
+    "Maximum electri- fication",
+    93.33218853532283,
+    95.70410517230555,
+    90.3201897207091
+   ]
+  ],
+  "note": ""
+ }
+}

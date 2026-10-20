@@ -1,0 +1,886 @@
+{
+ "today": {
+  "total_cost_busd": 4.757933814845049,
+  "energy_cost_busd": 4.4486349953491295,
+  "vehicle_premium_busd": 0.3092988194959192,
+  "fossil_cost_busd": {
+   "oct2026": 3.7518863558333337,
+   "avg2025": 2.4083341621
+  },
+  "electricity_delivered_twh": 25.956728980571434,
+  "generation_twh": {
+   "PV": 15.444728980571433,
+   "Onshore wind": 10.512,
+   "Geothermal": 0.0,
+   "CSP": 0.0
+  },
+  "capacity_gw": {
+   "PV": 9.794982864390812,
+   "Onshore wind": 3.0,
+   "Geothermal": 0.0,
+   "CSP": 0.0
+  },
+  "pv_for_heat_twh": 0.0,
+  "seaweed_total_km2": 0,
+  "seaweed_dry_mt": 0.0,
+  "seaweed_wet_mt": 0.0,
+  "seaweed_share_pct": 0.0,
+  "seaweed_hc_twh": 0.0,
+  "seaweed_jet_twh": 0.0,
+  "seaweed_cost_busd": 0.0,
+  "fuels_twh": {
+   "eFT_liquids": 7.190543649206351,
+   "e_methanol": 0.0,
+   "e_ammonia": 0.0,
+   "e_methane": 0.0,
+   "ATJ_jet_from_ethanol": 0.0,
+   "waste_biomethane": 1.5,
+   "HEFA_waste_lipids": 0.15,
+   "residue_FT": 1.5,
+   "crop_ethanol_existing": 0.1,
+   "seaweed HTL diesel/jet": 0.0,
+   "seaweed ethanol": 0.0,
+   "seaweed biomethane (net of fleet)": 0.0
+  },
+  "fertiliser_mt": {
+   "N": 0.0,
+   "P": 0.0,
+   "K": 0.0
+  },
+  "fertiliser_value_busd": 0.0,
+  "fertiliser_energy_avoided_pj": 0.0,
+  "co2_mt": {
+   "DAC": 0.8571630947619051,
+   "other biogenic": 1.0,
+   "seaweed": -0.0
+  },
+  "build": {
+   "PV (GW)": 9.794982864390812,
+   "Onshore wind (GW)": 3.0,
+   "Geothermal (GW)": 0.0,
+   "CSP (GW)": 0.0,
+   "Electrolysers (GW)": 3.4027479286406135,
+   "DAC (Mt CO2/yr)": 0.8571630947619051,
+   "Seaweed farms (km2)": 0,
+   "Seaweed (Mt dry/yr)": 0.0,
+   "Seaweed (Mt wet/yr)": 0.0,
+   "Biorefineries (0.5 Mt dry/yr each)": 0.0,
+   "Harvest/transport vessels (1 Mt wet/yr each)": 0.0,
+   "PV land (km2)": 195.89965728781627,
+   "capex_busd": {
+    "PV": 6.856488005073568,
+    "Onshore wind": 4.5,
+    "Geothermal": 0.0,
+    "CSP": 0.0,
+    "Electrolysers": 3.845105159363893,
+    "E-fuel synthesis": 1.5222819680760642,
+    "DAC": 1.4571772610952387,
+    "Seaweed farms": 0.0,
+    "Biorefineries": 0.0,
+    "Vessels": 0.0,
+    "ATJ plants": 0.0,
+    "Solar heat (thermal storage, CSP heat)": 0.0,
+    "Charging and grid": 2.9654718321333338
+   },
+   "capex_total_busd": 21.1465242257421,
+   "capex_per_year_2027_2050_busd": 0.8811051760725874
+  },
+  "end_use_twh": {
+   "ldv_gasoline|bev": 12.643866666666666,
+   "ldv_diesel|bev": 4.52308208888889,
+   "hdv|bet": 3.3923115666666668,
+   "hdv|liq": 3.2970734714285714,
+   "hdv|ed95": 0.09523809523809523,
+   "offroad|liq": 1.997827777777778,
+   "aviation|jet": 3.5456424000000006,
+   "shipping|meoh": 0.4750375
+  },
+  "heat_twh_th": {
+   "PV-charged thermal storage": -0.0,
+   "CSP steam": 0.0,
+   "heat pumps": 0.0,
+   "electric boilers": 0.0
+  },
+  "seaweed_by_zone_km2": {},
+  "seaweed_by_zone_band_km2": {},
+  "seaweed_by_route_km2": {},
+  "seaweed_by_nutrient_method_km2": {},
+  "seaweed_by_preprocess_km2": {},
+  "seaweed_by_band_km2": {},
+  "fossil_co2_mt": 7.742765520300001,
+  "demand_twh": {
+   "ldv_gasoline": 12.643866666666666,
+   "ldv_diesel": 4.52308208888889,
+   "hdv": 6.7846231333333336,
+   "offroad": 1.997827777777778,
+   "aviation": 3.5456424000000006,
+   "shipping": 0.4750375,
+   "rail_el": 0.0
+  },
+  "demand_total_twh": 29.97007956666667,
+  "electrolyser_gw": 3.4027479286406135,
+  "electricity_vehicles_rail_twh": 7.4136795803333335,
+  "electricity_for_efuels_twh": 17.25730475809524,
+  "electricity_for_dac_twh": 1.2857446421428578,
+  "electricity_refineries_twh": 0.0,
+  "lifecycle": {
+   "fossil_wtw_mtco2e": 9.890020590059999,
+   "lowcarbon_wtw_mtco2e": 0.8075048508841923,
+   "lowcarbon_factor_sensitivity_mtco2e": [
+    0.526929990277975,
+    1.3780615010052983
+   ],
+   "avoided_wtw_mtco2e": 9.082515739175806,
+   "reduction_pct": 91.83515500770768,
+   "reduction_factor_sensitivity_pct": [
+    86.06614123341338,
+    94.6721042137408
+   ],
+   "parts_mtco2e": {
+    "Direct electric transport": 0.20437336523847796,
+    "Seaweed fuels": 0.0,
+    "Residue and waste biofuels": 0.29250000000000004,
+    "Electrofuels": 0.31063148564571436
+   },
+   "electricity_ci_gco2e_kwh": 27.567062080836372
+  },
+  "marginal_usd_mwh": {
+   "dropin": 476.79999999999995,
+   "jet": 0.0,
+   "ethanol": 439.92603598904657,
+   "methane": 0.0,
+   "methanol": 28.0,
+   "ammonia": 23.380952380952376,
+   "heat": 21.03540837055209,
+   "el_flex": 88.0,
+   "el_direct": 99.0
+  },
+  "abatement_usd_t": {
+   "oct2026": 110.76748864549823,
+   "avg2025": 258.69480661734184
+  },
+  "seaweed_fleet_fuel_twh": 0.0,
+  "kite_saved_twh": 0.0,
+  "wind_assist_twh_saved": 0.0,
+  "bio_methanol_from_CH4_twh": 0.4750375,
+  "seaweed_refinery_heat_twh": 0.0,
+  "upwelling_pipes": 0,
+  "vehicle_electricity_twh": 7.4136795803333335,
+  "harvesters": {
+   "throughput_t_wet_h": 100.008,
+   "hours_per_year": 4000,
+   "units": 0.0
+  },
+  "fossil_comparison": {
+   "vs_oct2026_pct": 26.814443818308597,
+   "vs_2025_pct": 97.56119768264482,
+   "breakeven_multiplier_vs_2025": 1.9756119768264482,
+   "energy_only_breakeven_vs_2025": 1.8471834454526213
+  },
+  "vehicle_premium_range_total_busd": [
+   4.4486349953491295,
+   5.277252326756177
+  ],
+  "vehicle_premium_range_busd": [
+   0.0,
+   0.828617331407047
+  ]
+ },
+ "dropin": {
+  "total_cost_busd": 3.423331393389977,
+  "energy_cost_busd": 3.169961283107602,
+  "vehicle_premium_busd": 0.2533701102823749,
+  "fossil_cost_busd": {
+   "oct2026": 3.7518863558333337,
+   "avg2025": 2.4083341621
+  },
+  "electricity_delivered_twh": 14.126215954902738,
+  "generation_twh": {
+   "PV": 3.614215954902738,
+   "Onshore wind": 10.512,
+   "Geothermal": 0.0,
+   "CSP": 0.0
+  },
+  "capacity_gw": {
+   "PV": 2.292120722287378,
+   "Onshore wind": 3.0,
+   "Geothermal": 0.0,
+   "CSP": 0.0
+  },
+  "pv_for_heat_twh": -0.0,
+  "seaweed_total_km2": 2473.9059896569865,
+  "seaweed_dry_mt": 2.7959231875883837,
+  "seaweed_wet_mt": 27.959231875883834,
+  "seaweed_share_pct": 18.710964338224624,
+  "seaweed_hc_twh": 4.952139149856545,
+  "seaweed_jet_twh": 1.980855659942618,
+  "seaweed_cost_busd": 1.1878737246324014,
+  "fuels_twh": {
+   "eFT_liquids": 2.238404499349806,
+   "e_methanol": 0.0,
+   "e_ammonia": 0.0,
+   "e_methane": 0.0,
+   "ATJ_jet_from_ethanol": 0.0,
+   "waste_biomethane": 0.0,
+   "HEFA_waste_lipids": 0.15,
+   "residue_FT": 1.5,
+   "crop_ethanol_existing": 0.1,
+   "seaweed HTL diesel/jet": 4.952139149856545,
+   "seaweed ethanol": 0.0,
+   "seaweed biomethane (net of fleet)": 0.65555175
+  },
+  "fertiliser_mt": {
+   "N": 0.023485754775742423,
+   "P": 0.004920824810155556,
+   "K": 0.1028899733032525
+  },
+  "fertiliser_value_busd": 0.1115770927690233,
+  "fertiliser_energy_avoided_pj": 1.8363623496080501,
+  "co2_mt": {
+   "DAC": 0.0,
+   "other biogenic": 0.6715213498049418,
+   "seaweed": -0.0
+  },
+  "build": {
+   "PV (GW)": 2.292120722287378,
+   "Onshore wind (GW)": 3.0,
+   "Geothermal (GW)": 0.0,
+   "CSP (GW)": 0.0,
+   "Electrolysers (GW)": 1.0592698751593104,
+   "DAC (Mt CO2/yr)": 0.0,
+   "Seaweed farms (km2)": 2473.9059896569865,
+   "Seaweed (Mt dry/yr)": 2.7959231875883837,
+   "Seaweed (Mt wet/yr)": 27.959231875883834,
+   "Biorefineries (0.5 Mt dry/yr each)": 5.591846375176767,
+   "Harvest/transport vessels (1 Mt wet/yr each)": 27.959231875883834,
+   "PV land (km2)": 45.842414445747565,
+   "capex_busd": {
+    "PV": 1.6044845056011647,
+    "Onshore wind": 4.5,
+    "Geothermal": 0.0,
+    "CSP": 0.0,
+    "Electrolysers": 1.1969749589300207,
+    "E-fuel synthesis": 0.47388389151863886,
+    "DAC": 0.0,
+    "Seaweed farms": 7.056554557593645,
+    "Biorefineries": 5.200417128914394,
+    "Vessels": 1.9012277675601008,
+    "ATJ plants": 0.0,
+    "Solar heat (thermal storage, CSP heat)": 1.1473350392587691,
+    "Charging and grid": 2.9654718321333338
+   },
+   "capex_total_busd": 26.046349681510065,
+   "capex_per_year_2027_2050_busd": 1.0852645700629193
+  },
+  "end_use_twh": {
+   "ldv_gasoline|bev": 12.643866666666666,
+   "ldv_diesel|bev": 4.52308208888889,
+   "hdv|bet": 3.3923115666666668,
+   "hdv|liq": 3.2970734714285714,
+   "hdv|ed95": 0.09523809523809523,
+   "offroad|liq": 1.997827777777778,
+   "aviation|jet": 3.5456424000000006,
+   "shipping|meoh": 0.4370345
+  },
+  "heat_twh_th": {
+   "PV-charged thermal storage": 0.0,
+   "CSP steam": 1.2748167102875212,
+   "heat pumps": 0.0,
+   "electric boilers": 0.0
+  },
+  "seaweed_by_zone_km2": {
+   "pac_shelf": 790.2,
+   "pac_slope": 839.7,
+   "pac_deep": 759.2059896569864,
+   "car_shelf": 84.80000000000001
+  },
+  "seaweed_by_zone_band_km2": {
+   "pac_shelf|0-50": 718.4000000000001,
+   "pac_shelf|50-100": 71.8,
+   "pac_slope|0-50": 663.2,
+   "pac_slope|50-100": 176.5,
+   "pac_deep|0-50": 759.2059896569864,
+   "car_shelf|0-50": 84.80000000000001
+  },
+  "seaweed_by_route_km2": {
+   "H": 2473.9059896569865
+  },
+  "seaweed_by_nutrient_method_km2": {
+   "natural": 875.0,
+   "depth_cycling": 1598.9059896569865
+  },
+  "seaweed_by_preprocess_km2": {
+   "wet": 2473.9059896569865
+  },
+  "seaweed_by_band_km2": {
+   "0-50": 2225.605989656987,
+   "50-100": 248.3
+  },
+  "fossil_co2_mt": 7.742765520300001,
+  "demand_twh": {
+   "ldv_gasoline": 12.643866666666666,
+   "ldv_diesel": 4.52308208888889,
+   "hdv": 6.7846231333333336,
+   "offroad": 1.997827777777778,
+   "aviation": 3.5456424000000006,
+   "shipping": 0.4750375,
+   "rail_el": 0.0
+  },
+  "demand_total_twh": 29.97007956666667,
+  "electrolyser_gw": 1.0592698751593104,
+  "electricity_vehicles_rail_twh": 7.4136795803333335,
+  "electricity_for_efuels_twh": 5.372170798439535,
+  "electricity_for_dac_twh": 0.0,
+  "electricity_refineries_twh": 1.340365576129871,
+  "lifecycle": {
+   "fossil_wtw_mtco2e": 9.890020590059999,
+   "lowcarbon_wtw_mtco2e": 0.8255072445871897,
+   "lowcarbon_factor_sensitivity_mtco2e": [
+    0.5370478579978114,
+    1.2102606324426226
+   ],
+   "avoided_wtw_mtco2e": 9.06451334547281,
+   "reduction_pct": 91.65312916115798,
+   "reduction_factor_sensitivity_pct": [
+    87.76280977959743,
+    94.56980040529368
+   ],
+   "parts_mtco2e": {
+    "Direct electric transport": 0.12717905094663973,
+    "Seaweed fuels": 0.44412911926863835,
+    "Residue and waste biofuels": 0.15750000000000003,
+    "Electrofuels": 0.09669907437191162
+   },
+   "electricity_ci_gco2e_kwh": 17.154646295210064
+  },
+  "marginal_usd_mwh": {
+   "dropin": 273.9183802780702,
+   "jet": 0.0,
+   "ethanol": 248.03625366124032,
+   "methane": 39.60926006964397,
+   "methanol": 87.41389010446596,
+   "ammonia": 79.9656096233009,
+   "heat": 75.6936236878775,
+   "el_flex": 69.77325657375278,
+   "el_direct": 82.34825043079435
+  },
+  "abatement_usd_t": {
+   "oct2026": -36.2462881261519,
+   "avg2025": 111.97481790866452
+  },
+  "seaweed_fleet_fuel_twh": 0.15945015111539004,
+  "kite_saved_twh": 0.006446954375176766,
+  "wind_assist_twh_saved": 0.038003,
+  "bio_methanol_from_CH4_twh": 0.4370345,
+  "seaweed_refinery_heat_twh": 1.2748167102875214,
+  "upwelling_pipes": 0.0,
+  "vehicle_electricity_twh": 7.4136795803333335,
+  "harvesters": {
+   "throughput_t_wet_h": 100.008,
+   "hours_per_year": 4000,
+   "units": 69.89248829064633
+  },
+  "fossil_comparison": {
+   "vs_oct2026_pct": -8.757060616522349,
+   "vs_2025_pct": 42.145199252786746,
+   "breakeven_multiplier_vs_2025": 1.4214519925278675,
+   "energy_only_breakeven_vs_2025": 1.3162464466075108
+  },
+  "vehicle_premium_range_total_busd": [
+   3.1687552352603996,
+   3.848744554840267
+  ],
+  "vehicle_premium_range_busd": [
+   0.0,
+   0.6787832717326638
+  ]
+ },
+ "bridge": {
+  "total_cost_busd": 4.988101698222229,
+  "energy_cost_busd": 4.806275808648634,
+  "vehicle_premium_busd": 0.18182588957359538,
+  "fossil_cost_busd": {
+   "oct2026": 3.7518863558333337,
+   "avg2025": 2.4083341621
+  },
+  "electricity_delivered_twh": 19.104265190158085,
+  "generation_twh": {
+   "PV": 7.063268615444454,
+   "Onshore wind": 10.512,
+   "Geothermal": 0.0,
+   "CSP": 1.5289965747136307
+  },
+  "capacity_gw": {
+   "PV": 4.479495570423931,
+   "Onshore wind": 3.0,
+   "Geothermal": 0.0,
+   "CSP": 0.43635746995252017
+  },
+  "pv_for_heat_twh": -0.0,
+  "seaweed_total_km2": 3874.636162890509,
+  "seaweed_dry_mt": 4.4767993954686105,
+  "seaweed_wet_mt": 44.767993954686105,
+  "seaweed_share_pct": 29.92793638332294,
+  "seaweed_hc_twh": 4.362704760507552,
+  "seaweed_jet_twh": 1.7450819042030203,
+  "seaweed_cost_busd": 2.0544056008779035,
+  "fuels_twh": {
+   "eFT_liquids": 5.2356189259351895,
+   "e_methanol": 0.0,
+   "e_ammonia": 0.0,
+   "e_methane": 0.0,
+   "ATJ_jet_from_ethanol": 0.0,
+   "waste_biomethane": 0.19181154066607436,
+   "HEFA_waste_lipids": 0.15,
+   "residue_FT": 1.5,
+   "crop_ethanol_existing": 0.1,
+   "seaweed HTL diesel/jet": 4.362704760507552,
+   "seaweed ethanol": 4.142981376901789,
+   "seaweed biomethane (net of fleet)": 0.4637402093339257
+  },
+  "fertiliser_mt": {
+   "N": 0.03760511492193633,
+   "P": 0.007879166936024756,
+   "K": 0.16474621775324486
+  },
+  "fertiliser_value_busd": 0.16812311310308042,
+  "fertiliser_energy_avoided_pj": 2.940361842943783,
+  "co2_mt": {
+   "DAC": 0.0,
+   "other biogenic": 1.0,
+   "seaweed": 0.5323233696473421
+  },
+  "build": {
+   "PV (GW)": 4.479495570423931,
+   "Onshore wind (GW)": 3.0,
+   "Geothermal (GW)": 0.0,
+   "CSP (GW)": 0.43635746995252017,
+   "Electrolysers (GW)": 2.477627885249529,
+   "DAC (Mt CO2/yr)": 0.0,
+   "Seaweed farms (km2)": 3874.636162890509,
+   "Seaweed (Mt dry/yr)": 4.4767993954686105,
+   "Seaweed (Mt wet/yr)": 44.767993954686105,
+   "Biorefineries (0.5 Mt dry/yr each)": 8.953598790937221,
+   "Harvest/transport vessels (1 Mt wet/yr each)": 44.767993954686105,
+   "PV land (km2)": 89.58991140847861,
+   "capex_busd": {
+    "PV": 3.135646899296752,
+    "Onshore wind": 4.5,
+    "Geothermal": 0.0,
+    "CSP": 2.836323554691381,
+    "Electrolysers": 2.799719510331968,
+    "E-fuel synthesis": 1.1084124749800524,
+    "DAC": 0.0,
+    "Seaweed farms": 12.799548267851087,
+    "Biorefineries": 8.326846875571615,
+    "Vessels": 3.044223588918655,
+    "ATJ plants": 0.0,
+    "Solar heat (thermal storage, CSP heat)": 2.1520112221295036,
+    "Charging and grid": 2.00391327728
+   },
+   "capex_total_busd": 42.706645671051014,
+   "capex_per_year_2027_2050_busd": 1.7794435696271256
+  },
+  "end_use_twh": {
+   "ldv_gasoline|bev": 8.850706666666667,
+   "ldv_gasoline|e85": 3.7931599999999994,
+   "ldv_diesel|bev": 3.1661574622222224,
+   "ldv_diesel|liq": 1.3569246266666672,
+   "hdv|bet": 2.03538694,
+   "hdv|liq": 3.778954881998296,
+   "hdv|ed95": 0.9702813113350367,
+   "offroad|liq": 1.997827777777778,
+   "aviation|jet": 3.5456424000000006,
+   "shipping|meoh": 0.4370345
+  },
+  "heat_twh_th": {
+   "PV-charged thermal storage": 0.0,
+   "CSP steam": 2.391123580143893,
+   "heat pumps": 0.0,
+   "electric boilers": 0.0
+  },
+  "seaweed_by_zone_km2": {
+   "pac_shelf": 790.2,
+   "pac_slope": 839.7,
+   "pac_deep": 2159.9361628905085,
+   "car_shelf": 84.80000000000001
+  },
+  "seaweed_by_zone_band_km2": {
+   "pac_shelf|0-50": 718.4000000000001,
+   "pac_shelf|50-100": 71.8,
+   "pac_slope|0-50": 663.2,
+   "pac_slope|50-100": 176.5,
+   "pac_deep|0-50": 2159.9361628905085,
+   "car_shelf|0-50": 84.80000000000001
+  },
+  "seaweed_by_route_km2": {
+   "EH": 3874.636162890509
+  },
+  "seaweed_by_nutrient_method_km2": {
+   "natural": 875.0,
+   "depth_cycling": 2999.636162890509
+  },
+  "seaweed_by_preprocess_km2": {
+   "wet": 3874.636162890509
+  },
+  "seaweed_by_band_km2": {
+   "0-50": 3626.3361628905086,
+   "50-100": 248.3
+  },
+  "fossil_co2_mt": 7.742765520300001,
+  "demand_twh": {
+   "ldv_gasoline": 12.643866666666666,
+   "ldv_diesel": 4.52308208888889,
+   "hdv": 6.7846231333333336,
+   "offroad": 1.997827777777778,
+   "aviation": 3.5456424000000006,
+   "shipping": 0.4750375,
+   "rail_el": 0.0
+  },
+  "demand_total_twh": 29.97007956666667,
+  "electrolyser_gw": 2.477627885249529,
+  "electricity_vehicles_rail_twh": 5.0097831932000005,
+  "electricity_for_efuels_twh": 12.565485422244455,
+  "electricity_for_dac_twh": 0.0,
+  "electricity_refineries_twh": 1.528996574713631,
+  "lifecycle": {
+   "fossil_wtw_mtco2e": 9.890020590059999,
+   "lowcarbon_wtw_mtco2e": 1.2202677861623459,
+   "lowcarbon_factor_sensitivity_mtco2e": [
+    0.7910293760840317,
+    1.8277934355767997
+   ],
+   "avoided_wtw_mtco2e": 8.669752803897653,
+   "reduction_pct": 87.6616254228148,
+   "reduction_factor_sensitivity_pct": [
+    81.51881061386435,
+    92.00174186817105
+   ],
+   "parts_mtco2e": {
+    "Direct electric transport": 0.10894744323993241,
+    "Seaweed fuels": 0.7103785666620667,
+    "Residue and waste biofuels": 0.17476303865994672,
+    "Electrofuels": 0.2261787376004002
+   },
+   "electricity_ci_gco2e_kwh": 21.746937749284555
+  },
+  "marginal_usd_mwh": {
+   "dropin": 285.3472303704324,
+   "jet": 0.0,
+   "ethanol": 258.9208727968234,
+   "methane": 50.949359578177244,
+   "methanol": 104.42403936726586,
+   "ammonia": 96.16575177834844,
+   "heat": 75.6936236878775,
+   "el_flex": 69.77325657375278,
+   "csp_refinery_power": 72.01359381823418,
+   "el_direct": 82.34825043079435
+  },
+  "abatement_usd_t": {
+   "oct2026": 142.58945674127307,
+   "avg2025": 297.55952614501825
+  },
+  "seaweed_fleet_fuel_twh": 0.2506829826373004,
+  "kite_saved_twh": 0.00980870679093722,
+  "wind_assist_twh_saved": 0.038003,
+  "bio_methanol_from_CH4_twh": 0.4370345,
+  "seaweed_refinery_heat_twh": 2.3911235801438924,
+  "upwelling_pipes": 0.0,
+  "vehicle_electricity_twh": 5.0097831932000005,
+  "harvesters": {
+   "throughput_t_wet_h": 100.008,
+   "hours_per_year": 4000,
+   "units": 111.91103200415493
+  },
+  "fossil_comparison": {
+   "vs_oct2026_pct": 32.94916810224968,
+   "vs_2025_pct": 107.11833834025524,
+   "breakeven_multiplier_vs_2025": 2.0711833834025524,
+   "energy_only_breakeven_vs_2025": 1.9956847701141671
+  },
+  "vehicle_premium_range_total_busd": [
+   4.806275808648634,
+   5.326176591402844
+  ],
+  "vehicle_premium_range_busd": [
+   0.0,
+   0.5199007827542114
+  ]
+ },
+ "maxel": {
+  "total_cost_busd": 2.7056952045315894,
+  "energy_cost_busd": 2.3683138575044094,
+  "vehicle_premium_busd": 0.3373813470271798,
+  "fossil_cost_busd": {
+   "oct2026": 3.7518863558333337,
+   "avg2025": 2.4083341621
+  },
+  "electricity_delivered_twh": 11.888628394115528,
+  "generation_twh": {
+   "PV": 4.1452329080700006,
+   "Onshore wind": 7.743395486045529,
+   "Geothermal": 0.0,
+   "CSP": 0.0
+  },
+  "capacity_gw": {
+   "PV": 2.6288894647831054,
+   "Onshore wind": 2.2098731409947283,
+   "Geothermal": 0.0,
+   "CSP": 0.0
+  },
+  "pv_for_heat_twh": -0.0,
+  "seaweed_total_km2": 1502.665652173913,
+  "seaweed_dry_mt": 1.6304347826086958,
+  "seaweed_wet_mt": 16.304347826086957,
+  "seaweed_share_pct": 10.91962322188602,
+  "seaweed_hc_twh": 2.887826086956522,
+  "seaweed_jet_twh": 1.1551304347826088,
+  "seaweed_cost_busd": 0.6595818205742372,
+  "fuels_twh": {
+   "eFT_liquids": 0.7897371978053839,
+   "e_methanol": 0.0,
+   "e_ammonia": 0.0,
+   "e_methane": 0.0,
+   "ATJ_jet_from_ethanol": 0.0,
+   "waste_biomethane": 0.27075806897707133,
+   "HEFA_waste_lipids": 0.15,
+   "residue_FT": 1.5,
+   "crop_ethanol_existing": 0.1,
+   "seaweed HTL diesel/jet": 2.887826086956522,
+   "seaweed ethanol": 0.0,
+   "seaweed biomethane (net of fleet)": 0.38479368102292877
+  },
+  "fertiliser_mt": {
+   "N": 0.013695652173913043,
+   "P": 0.0028695652173913043,
+   "K": 0.06
+  },
+  "fertiliser_value_busd": 0.0723691304347826,
+  "fertiliser_energy_avoided_pj": 1.0708695652173912,
+  "co2_mt": {
+   "DAC": 0.0,
+   "other biogenic": 0.18276954554620087,
+   "seaweed": -0.0
+  },
+  "build": {
+   "PV (GW)": 2.6288894647831054,
+   "Onshore wind (GW)": 2.2098731409947283,
+   "Geothermal (GW)": 0.0,
+   "CSP (GW)": 0.0,
+   "Electrolysers (GW)": 0.3737237050635689,
+   "DAC (Mt CO2/yr)": 0.0,
+   "Seaweed farms (km2)": 1502.665652173913,
+   "Seaweed (Mt dry/yr)": 1.6304347826086958,
+   "Seaweed (Mt wet/yr)": 16.304347826086957,
+   "Biorefineries (0.5 Mt dry/yr each)": 3.2608695652173916,
+   "Harvest/transport vessels (1 Mt wet/yr each)": 16.304347826086957,
+   "PV land (km2)": 52.57778929566211,
+   "capex_busd": {
+    "PV": 1.8402226253481737,
+    "Onshore wind": 3.3148097114920922,
+    "Geothermal": 0.0,
+    "CSP": 0.0,
+    "Electrolysers": 0.42230778672183283,
+    "E-fuel synthesis": 0.1671921838442282,
+    "DAC": 0.0,
+    "Seaweed farms": 3.456131,
+    "Biorefineries": 3.032608695652174,
+    "Vessels": 1.108695652173913,
+    "ATJ plants": 0.0,
+    "Solar heat (thermal storage, CSP heat)": 0.6690652173913044,
+    "Charging and grid": 3.6846514738400007
+   },
+   "capex_total_busd": 17.695684346463718,
+   "capex_per_year_2027_2050_busd": 0.737320181102655
+  },
+  "end_use_twh": {
+   "ldv_gasoline|bev": 12.643866666666666,
+   "ldv_diesel|bev": 4.52308208888889,
+   "hdv|bet": 6.10616082,
+   "hdv|liq": 0.583224218095238,
+   "hdv|ed95": 0.09523809523809523,
+   "offroad|el": 0.7991311111111112,
+   "offroad|liq": 1.1986966666666667,
+   "aviation|jet": 3.5456424000000006,
+   "shipping|meoh": 0.4370345
+  },
+  "heat_twh_th": {
+   "PV-charged thermal storage": 0.0,
+   "CSP steam": 0.7434057971014493,
+   "heat pumps": 0.0,
+   "electric boilers": 0.0
+  },
+  "seaweed_by_zone_km2": {
+   "pac_shelf": 790.2,
+   "pac_slope": 627.665652173913,
+   "car_shelf": 84.80000000000001
+  },
+  "seaweed_by_zone_band_km2": {
+   "pac_shelf|0-50": 718.4000000000001,
+   "pac_shelf|50-100": 71.8,
+   "pac_slope|0-50": 627.665652173913,
+   "car_shelf|0-50": 84.80000000000001
+  },
+  "seaweed_by_route_km2": {
+   "H": 1502.665652173913
+  },
+  "seaweed_by_nutrient_method_km2": {
+   "natural": 875.0,
+   "depth_cycling": 627.665652173913
+  },
+  "seaweed_by_preprocess_km2": {
+   "wet": 1502.665652173913
+  },
+  "seaweed_by_band_km2": {
+   "0-50": 1430.865652173913,
+   "50-100": 71.8
+  },
+  "fossil_co2_mt": 7.742765520300001,
+  "demand_twh": {
+   "ldv_gasoline": 12.643866666666666,
+   "ldv_diesel": 4.52308208888889,
+   "hdv": 6.7846231333333336,
+   "offroad": 1.997827777777778,
+   "aviation": 3.5456424000000006,
+   "shipping": 0.4750375,
+   "rail_el": 0.0
+  },
+  "demand_total_twh": 29.97007956666667,
+  "electrolyser_gw": 0.3737237050635689,
+  "electricity_vehicles_rail_twh": 9.2116286846,
+  "electricity_for_efuels_twh": 1.8953692747329212,
+  "electricity_for_dac_twh": 0.0,
+  "electricity_refineries_twh": 0.7816304347826087,
+  "lifecycle": {
+   "fossil_wtw_mtco2e": 9.890020590059999,
+   "lowcarbon_wtw_mtco2e": 0.6594479267629536,
+   "lowcarbon_factor_sensitivity_mtco2e": [
+    0.4248648829863047,
+    0.9573352297006138
+   ],
+   "avoided_wtw_mtco2e": 9.230572663297046,
+   "reduction_pct": 93.33218853532283,
+   "reduction_factor_sensitivity_pct": [
+    90.3201897207091,
+    95.70410517230555
+   ],
+   "parts_mtco2e": {
+    "Direct electric transport": 0.184271567985852,
+    "Seaweed fuels": 0.2591914856239725,
+    "Residue and waste biofuels": 0.18186822620793644,
+    "Electrofuels": 0.034116646945192584
+   },
+   "electricity_ci_gco2e_kwh": 20.004233159540743
+  },
+  "marginal_usd_mwh": {
+   "dropin": 263.4894844610706,
+   "jet": 0.0,
+   "ethanol": 238.10397193076454,
+   "methane": 58.56859297308537,
+   "methanol": 115.85288945962806,
+   "ammonia": 107.05037091393147,
+   "heat": 75.6936236878775,
+   "el_flex": 65.42788331666962,
+   "el_direct": 78.0028771737112
+  },
+  "abatement_usd_t": {
+   "oct2026": -113.33978827355419,
+   "avg2025": 32.21479893809488
+  },
+  "seaweed_fleet_fuel_twh": 0.09047239687562188,
+  "kite_saved_twh": 0.0034805775652173906,
+  "wind_assist_twh_saved": 0.038003,
+  "bio_methanol_from_CH4_twh": 0.4370345,
+  "seaweed_refinery_heat_twh": 0.7434057971014494,
+  "upwelling_pipes": 0.0,
+  "vehicle_electricity_twh": 9.2116286846,
+  "harvesters": {
+   "throughput_t_wet_h": 100.008,
+   "hours_per_year": 4000,
+   "units": 40.757608956500874
+  },
+  "fossil_comparison": {
+   "vs_oct2026_pct": -27.884404059178237,
+   "vs_2025_pct": 12.347167063074792,
+   "breakeven_multiplier_vs_2025": 1.123471670630748,
+   "energy_only_breakeven_vs_2025": 0.983382578204723
+  },
+  "vehicle_premium_range_total_busd": [
+   2.3683138575044094,
+   3.2151196027266824
+  ],
+  "vehicle_premium_range_busd": [
+   0.0,
+   0.8468057452222736
+  ]
+ },
+ "exposure": {
+  "fossil_swing_busd": 1.3435521937333337,
+  "fossil_swing_pct": 55.787615143979586,
+  "lowcarbon_commodity_linked_busd": 0.03522531616670132,
+  "lowcarbon_swing_busd": 0.025657946343646636,
+  "lowcarbon_swing_pct": 0.7495022653427275,
+  "shock": {
+   "ldv_gasoline": 0.367816091954023,
+   "ldv_diesel": 0.728395061728395,
+   "hdv": 0.728395061728395,
+   "offroad": 0.728395061728395,
+   "aviation": 0.6949152542372881,
+   "shipping": 0.3999999999999999
+  }
+ },
+ "import_share_pct": 0.0,
+ "oct2026_vs_2025_ratio": 1.5578761514397959,
+ "bridge_steps": [
+  {
+   "step": "Drop-in rule",
+   "cost_busd": 3.423331393389977,
+   "seaweed_km2": 2473.9059896569865,
+   "vehicle_electricity_twh": 7.4136795803333335,
+   "new_electricity_twh": 14.126215954902738
+  },
+  {
+   "step": "+ fleet-compatibility rules",
+   "cost_busd": 4.872275244718283,
+   "seaweed_km2": 4136.162421179488,
+   "vehicle_electricity_twh": 5.0097831932000005,
+   "new_electricity_twh": 18.224130737121147
+  },
+  {
+   "step": "+ ethanol route at every refinery",
+   "cost_busd": 4.877993159941331,
+   "seaweed_km2": 3874.636162890509,
+   "vehicle_electricity_twh": 5.0097831932000005,
+   "new_electricity_twh": 19.104265190158085
+  },
+  {
+   "step": "+ CSP heat and refinery power (solar bridge)",
+   "cost_busd": 4.988101698222229,
+   "seaweed_km2": 3874.636162890509,
+   "vehicle_electricity_twh": 5.0097831932000005,
+   "new_electricity_twh": 19.104265190158085
+  }
+ ],
+ "fleet_rules_single": [
+  {
+   "rule": "Light-duty BEVs at most 70%",
+   "cost_busd": 4.581951365299335,
+   "delta_busd": 1.1586199719093577
+  },
+  {
+   "rule": "Heavy-duty battery vehicles at most 30%",
+   "cost_busd": 3.7042634035699247,
+   "delta_busd": 0.2809320101799475
+  },
+  {
+   "rule": "Off-road machinery on liquids only",
+   "cost_busd": 3.423331393389977,
+   "delta_busd": 0.0
+  },
+  {
+   "rule": "At least 30% of gasoline-vehicle demand on E85",
+   "cost_busd": 4.273747653348932,
+   "delta_busd": 0.8504162599589544
+  }
+ ]
+}

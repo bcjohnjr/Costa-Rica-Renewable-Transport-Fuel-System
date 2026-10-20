@@ -1,0 +1,27 @@
+REVISTA DE CIENCIAS AMBIENTALES — SUBMISSION / RESEARCH CHECKLIST
+
+COMPLETED WITHIN THIS PACKAGE
+[X] Revised English/Spanish title, abstract and main scientific narrative.
+[X] Corrected 2025 taxable road fuels and transparent assumptions for transport allocation.
+[X] Required CST process heat included in three learning cases, separate from CST electricity.
+[X] CST field area sensitivity, site feasibility caveat and conceptual offshore alternative.
+[X] ASTM-based 100% seaweed aviation fuel qualification workplan and noncertification declaration.
+[X] Time-staged 2035–2050 liquid-fuel-surplus and hypothetical Panama/Nicaragua trade model.
+[X] Capital recovery separated from incremental export margin.
+[X] Recomputed 1000-draw uncertainty outcomes and updated charts / supplementary table values.
+[X] Named and anonymous manuscripts, editable DOCX and PDF, figures, model and XLSX/CSV data.
+
+MUST BE CONFIRMED BY AUTHORS BEFORE SUBMISSION
+[ ] All three author affiliations, author contributions, ethical declarations, final author approval.
+[ ] Coauthors' ORCID IDs and journal-required preprint permanent URL.
+[ ] Journal reference-count rule and formatting / abstract word-limit verification.
+[ ] Journalist/agency references and relevant ASTM aviation fuel descriptions independently checked.
+[ ] Latest Costa Rican 2025 actual jet/marine fuel and road-vs-offroad transport allocations.
+[ ] Genuine Jan-Dec 2025 fossil price comparator, if annual average claimed.
+[ ] Costa Rica site-specific DNI, parcel ownership, environmental constraints, permitted industrial sites.
+[ ] High-temperature CST plant engineering and hour-by-hour integrated electricity/heat simulation.
+[ ] Complete fuel properties and ASTM D4054 pathway studies; do not claim current 100% SAF certification.
+[ ] Panama/Nicaragua end-user/importer demand and verified buyers, specifications, import rules and bids.
+[ ] Tourism/aviation fuel bunker attribution, domestic fuel-tax replacement and complete capital finance.
+[ ] Farm ecological/environmental impact studies and verified large offshore Sargassum productivity.
+[ ] Sign off cover letter: draft letter does not falsely assert revised coauthor approvals.

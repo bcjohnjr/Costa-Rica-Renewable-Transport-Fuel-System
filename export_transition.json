@@ -1,0 +1,2609 @@
+{
+  "method": "Frozen-output counterfactual; not hourly investment optimization",
+  "sources": {
+    "hacienda_2025_road_fuel": "https://www.hacienda.go.cr/docs/MH-DGPN-DG-INF-0005-2026_YER.pdf",
+    "aresep_2025_totals": "https://aresep.go.cr/noticias/aresep-realizo-663-inspecciones-para-garantizar-calidad-de-combustibles/",
+    "astm": "https://store.astm.org/d7566-25a.html",
+    "easa_100percent": "https://www.easa.europa.eu/en/domains/environment/eaer/sustainable-aviation-fuels/what-are-sustainable-aviation-fuels",
+    "caafi": "https://www.caafi.org/fuel-qualifications",
+    "solar_gis": "https://datacatalog.worldbank.org/search/dataset/0042068/costa-rica-solar-irradiation-and-pv-power-potential-map",
+    "land_protected": "https://data.worldbank.org/indicator/ER.LND.PTLD.ZS?locations=CR",
+    "nrel_tower": "https://research-hub.nlr.gov/en/publications/re-designing-the-csp-thermal-energy-storage-system-to-enable-high/"
+  },
+  "assumptions": {
+    "site_country_land_km2": 51100.0,
+    "protected_fraction_2025": 0.266,
+    "DNI_kwh_m2_y": [
+      1000,
+      1200,
+      1400,
+      1700,
+      2000
+    ],
+    "annual_net_field_to_process_efficiency": 0.42,
+    "optical_aperture_packing_per_land": 0.42,
+    "assumed_unprotected_land_screen_km2": 10.0,
+    "CST_storage_hours_at_avg_process_heat_load": 12.0,
+    "offshore_heat_cost_premium_usd_mwh": [
+      40,
+      80,
+      130
+    ],
+    "offshore_footprint_factor": 1.5,
+    "market_max_twh_y": {
+      "Panama": 2.1,
+      "Nicaragua": 1.8
+    },
+    "market_shares": {
+      "Panama": 0.6,
+      "Nicaragua": 0.4
+    },
+    "export_logistics_usd_mwh": {
+      "Panama": 14.0,
+      "Nicaragua": 18.0
+    },
+    "jet_upgrade_cost_usd_mwh": 20.0,
+    "jet_upgrading_yield": 0.9,
+    "incremental_supply_cost_usd_mwh": [
+      30,
+      70,
+      115
+    ],
+    "diesel_price_usd_mwh": [
+      75,
+      100,
+      130
+    ],
+    "jet_price_usd_mwh": [
+      90,
+      120,
+      155
+    ],
+    "certified_jet_reallocation_max_of_seaweed_hc": 0.2,
+    "jet_export_certified_flag": false,
+    "fleet_service_demand_growth": 0.0,
+    "years": {
+      "2035": {
+        "HDV_battery_fossil_equivalent_share": 0.5,
+        "offroad_electric_share": 0.0
+      },
+      "2040": {
+        "HDV_battery_fossil_equivalent_share": 0.65,
+        "offroad_electric_share": 0.2
+      },
+      "2045": {
+        "HDV_battery_fossil_equivalent_share": 0.8,
+        "offroad_electric_share": 0.3
+      },
+      "2050": {
+        "HDV_battery_fossil_equivalent_share": 0.9,
+        "offroad_electric_share": 0.4
+      }
+    }
+  },
+  "demand_actual_2025_Ml": {
+    "gasoline": 1425.0,
+    "road_diesel": 1132.0,
+    "offroad_diesel": 200.0,
+    "jet": 369.8,
+    "marine": 45.0
+  },
+  "demand_twh": {
+    "ldv_gasoline": 12.643866666666666,
+    "ldv_diesel": 4.52308208888889,
+    "hdv": 6.7846231333333336,
+    "offroad": 1.997827777777778,
+    "aviation": 3.5456424000000006,
+    "shipping": 0.4750375,
+    "rail_el": 0.0
+  },
+  "anchor": {
+    "total_cost_busd": 3.423331393389977,
+    "electricity_delivered_twh": 14.126215954902738,
+    "seaweed_total_km2": 2473.9059896569865,
+    "seaweed_dry_mt": 2.7959231875883837,
+    "seaweed_wet_mt": 27.959231875883834,
+    "seaweed_hc_twh": 4.952139149856545,
+    "seaweed_jet_twh": 1.980855659942618,
+    "seaweed_ethanol_twh": 0.0,
+    "electricity_vehicles_rail_twh": 7.4136795803333335,
+    "heat_twh_th": {
+      "PV-charged thermal storage": 0.0,
+      "CSP steam": 1.2748167102875212,
+      "heat pumps": 0.0,
+      "electric boilers": 0.0
+    },
+    "capacity_gw": {
+      "PV": 2.292120722287378,
+      "Onshore wind": 3.0,
+      "Geothermal": 0.0,
+      "CSP": 0.0
+    },
+    "fossil_cost_busd": {
+      "oct2026": 3.7518863558333337,
+      "avg2025": 2.4083341621
+    },
+    "lifecycle": {
+      "fossil_wtw_mtco2e": 9.890020590059999,
+      "lowcarbon_wtw_mtco2e": 0.8255072445871897,
+      "lowcarbon_factor_sensitivity_mtco2e": [
+        0.5370478579978114,
+        1.2102606324426226
+      ],
+      "avoided_wtw_mtco2e": 9.06451334547281,
+      "reduction_pct": 91.65312916115798,
+      "reduction_factor_sensitivity_pct": [
+        87.76280977959743,
+        94.56980040529368
+      ],
+      "parts_mtco2e": {
+        "Direct electric transport": 0.12717905094663973,
+        "Seaweed fuels": 0.44412911926863835,
+        "Residue and waste biofuels": 0.15750000000000003,
+        "Electrofuels": 0.09669907437191162
+      },
+      "electricity_ci_gco2e_kwh": 17.154646295210064
+    }
+  },
+  "max_electrification": {
+    "total_cost_busd": 2.7056952045315894,
+    "electricity_delivered_twh": 11.888628394115528,
+    "seaweed_total_km2": 1502.665652173913,
+    "seaweed_jet_twh": 1.1551304347826088,
+    "heat_twh_th": {
+      "PV-charged thermal storage": 0.0,
+      "CSP steam": 0.7434057971014493,
+      "heat pumps": 0.0,
+      "electric boilers": 0.0
+    },
+    "electricity_vehicles_rail_twh": 9.2116286846,
+    "lifecycle": {
+      "fossil_wtw_mtco2e": 9.890020590059999,
+      "lowcarbon_wtw_mtco2e": 0.6594479267629536,
+      "lowcarbon_factor_sensitivity_mtco2e": [
+        0.4248648829863047,
+        0.9573352297006138
+      ],
+      "avoided_wtw_mtco2e": 9.230572663297046,
+      "reduction_pct": 93.33218853532283,
+      "reduction_factor_sensitivity_pct": [
+        90.3201897207091,
+        95.70410517230555
+      ],
+      "parts_mtco2e": {
+        "Direct electric transport": 0.184271567985852,
+        "Seaweed fuels": 0.2591914856239725,
+        "Residue and waste biofuels": 0.18186822620793644,
+        "Electrofuels": 0.034116646945192584
+      },
+      "electricity_ci_gco2e_kwh": 20.004233159540743
+    }
+  },
+  "jet_baseline_twh": 3.5456424000000006,
+  "hydrocarbons_fixed_twh": 8.840543649206351,
+  "heavy_and_offroad_initial_hc_twh": 5.294901249206349,
+  "initial_supply_reconciliation_twh": 1.7763568394002505e-15,
+  "cst_thermal_storage_mwh": 1746.3242606678373,
+  "field_screen": [
+    {
+      "DNI_kwh_m2_y": 1000,
+      "net_heat_TWh_km2_y": 0.1764,
+      "field_land_km2": 7.226852099135607,
+      "share_total_land_pct": 0.014142567708680248,
+      "share_unprotected_land_pct": 0.019267803417820504,
+      "below_assumed_screen_10km2": 1.0,
+      "illustrative_offshore_footprint_km2": 10.840278148703412
+    },
+    {
+      "DNI_kwh_m2_y": 1200,
+      "net_heat_TWh_km2_y": 0.21167999999999998,
+      "field_land_km2": 6.022376749279673,
+      "share_total_land_pct": 0.011785473090566875,
+      "share_unprotected_land_pct": 0.016056502848183753,
+      "below_assumed_screen_10km2": 1.0,
+      "illustrative_offshore_footprint_km2": 9.03356512391951
+    },
+    {
+      "DNI_kwh_m2_y": 1400,
+      "net_heat_TWh_km2_y": 0.24695999999999999,
+      "field_land_km2": 5.162037213668292,
+      "share_total_land_pct": 0.010101834077628751,
+      "share_unprotected_land_pct": 0.013762716727014646,
+      "below_assumed_screen_10km2": 1.0,
+      "illustrative_offshore_footprint_km2": 7.743055820502438
+    },
+    {
+      "DNI_kwh_m2_y": 1700,
+      "net_heat_TWh_km2_y": 0.29988,
+      "field_land_km2": 4.251089470079769,
+      "share_total_land_pct": 0.008319157475694266,
+      "share_unprotected_land_pct": 0.011334002010482649,
+      "below_assumed_screen_10km2": 1.0,
+      "illustrative_offshore_footprint_km2": 6.376634205119654
+    },
+    {
+      "DNI_kwh_m2_y": 2000,
+      "net_heat_TWh_km2_y": 0.3528,
+      "field_land_km2": 3.6134260495678037,
+      "share_total_land_pct": 0.007071283854340124,
+      "share_unprotected_land_pct": 0.009633901708910252,
+      "below_assumed_screen_10km2": 1.0,
+      "illustrative_offshore_footprint_km2": 5.420139074351706
+    }
+  ],
+  "stages": [
+    {
+      "year": 2035,
+      "HDV_battery_share": 0.5,
+      "offroad_electric_share": 0.0,
+      "fixed_hydrocarbons_twh": 8.840543649206351,
+      "domestic_jet_twh": 3.5456424000000006,
+      "domestic_diesel_twh": 5.294901249206349,
+      "domestic_ED95_fossil_equivalent_twh": 0.09523809523809523,
+      "physically_freed_hydrocarbons_twh": 1.7763568394002505e-15,
+      "additional_vehicle_electricity_twh": 0.0,
+      "fuel_imports_twh": 0.0,
+      "full_substitution_conditional_on_certification": true,
+      "note": "Physical potential from a frozen 2035 supply envelope; no new refineries assumed"
+    },
+    {
+      "year": 2040,
+      "HDV_battery_share": 0.65,
+      "offroad_electric_share": 0.2,
+      "fixed_hydrocarbons_twh": 8.840543649206351,
+      "domestic_jet_twh": 3.5456424000000006,
+      "domestic_diesel_twh": 3.906213652222222,
+      "domestic_ED95_fossil_equivalent_twh": 0.06666666666666665,
+      "physically_freed_hydrocarbons_twh": 1.3886875969841288,
+      "additional_vehicle_electricity_twh": 0.7191820391000002,
+      "fuel_imports_twh": 0.0,
+      "full_substitution_conditional_on_certification": true,
+      "note": "Physical potential from a frozen 2035 supply envelope; no new refineries assumed"
+    },
+    {
+      "year": 2045,
+      "HDV_battery_share": 0.8,
+      "offroad_electric_share": 0.3,
+      "fixed_hydrocarbons_twh": 8.840543649206351,
+      "domestic_jet_twh": 3.5456424000000006,
+      "domestic_diesel_twh": 2.717308833015873,
+      "domestic_ED95_fossil_equivalent_twh": 0.038095238095238085,
+      "physically_freed_hydrocarbons_twh": 2.577592416190478,
+      "additional_vehicle_electricity_twh": 1.3484618282000005,
+      "fuel_imports_twh": 0.0,
+      "full_substitution_conditional_on_certification": true,
+      "note": "Physical potential from a frozen 2035 supply envelope; no new refineries assumed"
+    },
+    {
+      "year": 2050,
+      "HDV_battery_share": 0.9,
+      "offroad_electric_share": 0.4,
+      "fixed_hydrocarbons_twh": 8.840543649206351,
+      "domestic_jet_twh": 3.5456424000000006,
+      "domestic_diesel_twh": 1.858111360952381,
+      "domestic_ED95_fossil_equivalent_twh": 0.019047619047619042,
+      "physically_freed_hydrocarbons_twh": 3.43678988825397,
+      "additional_vehicle_electricity_twh": 1.7979491042666669,
+      "fuel_imports_twh": 0.0,
+      "full_substitution_conditional_on_certification": true,
+      "note": "Physical potential from a frozen 2035 supply envelope; no new refineries assumed"
+    }
+  ],
+  "trade": [
+    {
+      "year": 2035,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 7.993605777301127e-17,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 3.1974423109204506e-17,
+          "contribution_busd": 3.304023721284465e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 7.105427357601002e-16,
+          "jet_twh": 0,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 5.329070518200751e-17,
+          "logistics_and_upgrade_busd": 1.2789769243681803e-17,
+          "imputed_variable_cost_busd": 2.1316282072803006e-17,
+          "contribution_busd": 1.9184653865522706e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 1.3322676295501878e-16,
+      "total_contribution_busd": 5.2224891078367356e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.7763568394002505e-15
+    },
+    {
+      "year": 2035,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.7763568394002505e-15
+    },
+    {
+      "year": 2035,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0.0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.0658141036401502e-16,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 3.1974423109204506e-17,
+          "contribution_busd": 5.96855898038484e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 7.105427357601002e-16,
+          "jet_twh": 0.0,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 7.105427357601002e-17,
+          "logistics_and_upgrade_busd": 1.2789769243681803e-17,
+          "imputed_variable_cost_busd": 2.1316282072803006e-17,
+          "contribution_busd": 3.6948222259525214e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 1.7763568394002506e-16,
+      "total_contribution_busd": 9.663381206337361e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0.0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.0658141036401502e-16,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 7.460698725481052e-17,
+          "contribution_busd": 1.7053025658242388e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 7.105427357601002e-16,
+          "jet_twh": 0.0,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 7.105427357601002e-17,
+          "logistics_and_upgrade_busd": 1.2789769243681803e-17,
+          "imputed_variable_cost_busd": 4.9737991503207014e-17,
+          "contribution_busd": 8.526512829121206e-18
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 1.7763568394002506e-16,
+      "total_contribution_busd": 2.5579538487363594e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.7763568394002505e-15
+    },
+    {
+      "year": 2035,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0.0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.3855583347321954e-16,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 3.1974423109204506e-17,
+          "contribution_busd": 9.166001291305291e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 7.105427357601002e-16,
+          "jet_twh": 0.0,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 9.237055564881302e-17,
+          "logistics_and_upgrade_busd": 1.2789769243681803e-17,
+          "imputed_variable_cost_busd": 2.1316282072803006e-17,
+          "contribution_busd": 5.826450433232821e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 2.3092638912203257e-16,
+      "total_contribution_busd": 1.4992451724538112e-16,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0.0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.3855583347321954e-16,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 7.460698725481052e-17,
+          "contribution_busd": 4.90274487674469e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 7.105427357601002e-16,
+          "jet_twh": 0.0,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 9.237055564881302e-17,
+          "logistics_and_upgrade_busd": 1.2789769243681803e-17,
+          "imputed_variable_cost_busd": 4.9737991503207014e-17,
+          "contribution_busd": 2.9842794901924206e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 2.3092638912203257e-16,
+      "total_contribution_busd": 7.887024366937111e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0.0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.3855583347321954e-16,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 1.225686219186173e-16,
+          "contribution_busd": 1.0658141036401315e-18
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.0,
+          "export_twh": 0.0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 1.0658141036401502e-15,
+      "total_revenue_busd": 1.3855583347321954e-16,
+      "total_contribution_busd": 1.0658141036401315e-18,
+      "unexported_twh": 7.105427357601002e-16
+    },
+    {
+      "year": 2035,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.0658141036401502e-15,
+          "jet_twh": 0,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 7.993605777301127e-17,
+          "logistics_and_upgrade_busd": 1.4921397450962106e-17,
+          "imputed_variable_cost_busd": 3.1974423109204506e-17,
+          "contribution_busd": 3.304023721284465e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 7.105427357601002e-16,
+          "jet_twh": 0,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 5.329070518200751e-17,
+          "logistics_and_upgrade_busd": 1.2789769243681803e-17,
+          "imputed_variable_cost_busd": 2.1316282072803006e-17,
+          "contribution_busd": 1.9184653865522706e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 1.3322676295501878e-16,
+      "total_contribution_busd": 5.2224891078367356e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.7763568394002505e-15
+    },
+    {
+      "year": 2035,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.7763568394002505e-15
+    },
+    {
+      "year": 2035,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 6.927791673660977e-16,
+          "jet_twh": 3.730349362740526e-16,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.140421090894961e-16,
+          "logistics_and_upgrade_busd": 2.238209617644316e-17,
+          "imputed_variable_cost_busd": 3.1974423109204506e-17,
+          "contribution_busd": 5.968558980384842e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 4.618527782440651e-16,
+          "jet_twh": 2.4868995751603504e-16,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 7.602807272633072e-17,
+          "logistics_and_upgrade_busd": 1.7763568394002505e-17,
+          "imputed_variable_cost_busd": 2.1316282072803006e-17,
+          "contribution_busd": 3.69482222595252e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 1.9007018181582682e-16,
+      "total_contribution_busd": 9.663381206337363e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 6.927791673660977e-16,
+          "jet_twh": 3.730349362740526e-16,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.140421090894961e-16,
+          "logistics_and_upgrade_busd": 2.238209617644316e-17,
+          "imputed_variable_cost_busd": 7.460698725481052e-17,
+          "contribution_busd": 1.7053025658242412e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 4.618527782440651e-16,
+          "jet_twh": 2.4868995751603504e-16,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 7.602807272633072e-17,
+          "logistics_and_upgrade_busd": 1.7763568394002505e-17,
+          "imputed_variable_cost_busd": 4.9737991503207014e-17,
+          "contribution_busd": 8.526512829121194e-18
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 1.9007018181582682e-16,
+      "total_contribution_busd": 2.5579538487363606e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.7763568394002505e-15
+    },
+    {
+      "year": 2035,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 6.927791673660977e-16,
+          "jet_twh": 3.730349362740526e-16,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.4788170688007086e-16,
+          "logistics_and_upgrade_busd": 2.238209617644316e-17,
+          "imputed_variable_cost_busd": 3.1974423109204506e-17,
+          "contribution_busd": 9.352518759442319e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 4.618527782440651e-16,
+          "jet_twh": 2.4868995751603504e-16,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 9.85878045867139e-17,
+          "logistics_and_upgrade_busd": 1.7763568394002505e-17,
+          "imputed_variable_cost_busd": 2.1316282072803006e-17,
+          "contribution_busd": 5.95079541199084e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 2.4646951146678477e-16,
+      "total_contribution_busd": 1.5303314171433159e-16,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 6.927791673660977e-16,
+          "jet_twh": 3.730349362740526e-16,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.4788170688007086e-16,
+          "logistics_and_upgrade_busd": 2.238209617644316e-17,
+          "imputed_variable_cost_busd": 7.460698725481052e-17,
+          "contribution_busd": 5.089262344881718e-17
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 4.618527782440651e-16,
+          "jet_twh": 2.4868995751603504e-16,
+          "export_twh": 7.105427357601002e-16,
+          "revenue_busd": 9.85878045867139e-17,
+          "logistics_and_upgrade_busd": 1.7763568394002505e-17,
+          "imputed_variable_cost_busd": 4.9737991503207014e-17,
+          "contribution_busd": 3.108624468950438e-17
+        }
+      ],
+      "total_export_twh": 1.7763568394002505e-15,
+      "total_revenue_busd": 2.4646951146678477e-16,
+      "total_contribution_busd": 8.197886813832155e-17,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2035,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 6.927791673660977e-16,
+          "jet_twh": 3.730349362740526e-16,
+          "export_twh": 1.0658141036401502e-15,
+          "revenue_busd": 1.4788170688007086e-16,
+          "logistics_and_upgrade_busd": 2.238209617644316e-17,
+          "imputed_variable_cost_busd": 1.225686219186173e-16,
+          "contribution_busd": 2.930988785010411e-18
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 2.4868995751603504e-16,
+          "export_twh": 2.4868995751603504e-16,
+          "revenue_busd": 3.8546943414985436e-17,
+          "logistics_and_upgrade_busd": 9.450218385609331e-18,
+          "imputed_variable_cost_busd": 2.8599345114344026e-17,
+          "contribution_busd": 4.973799150320807e-19
+        }
+      ],
+      "total_export_twh": 1.3145040611561853e-15,
+      "total_revenue_busd": 1.864286502950563e-16,
+      "total_contribution_busd": 3.4283687000424916e-18,
+      "unexported_twh": 4.618527782440651e-16
+    },
+    {
+      "year": 2040,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.0624909418642858,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.024996376745714317,
+          "contribution_busd": 0.025829589303904797
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.5554750387936516,
+          "jet_twh": 0,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.041660627909523865,
+          "logistics_and_upgrade_busd": 0.009998550698285728,
+          "imputed_variable_cost_busd": 0.016664251163809547,
+          "contribution_busd": 0.014997826047428588
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.10415156977380965,
+      "total_contribution_busd": 0.040827415351333385,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.3886875969841288
+    },
+    {
+      "year": 2040,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.3886875969841288
+    },
+    {
+      "year": 2040,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0.0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.08332125581904772,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.024996376745714317,
+          "contribution_busd": 0.04665990325866672
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.5554750387936516,
+          "jet_twh": 0.0,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.05554750387936516,
+          "logistics_and_upgrade_busd": 0.009998550698285728,
+          "imputed_variable_cost_busd": 0.016664251163809547,
+          "contribution_busd": 0.028884702017269885
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.1388687596984129,
+      "total_contribution_busd": 0.07554460527593661,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0.0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.08332125581904772,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.058324879073333405,
+          "contribution_busd": 0.013331400931047635
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.5554750387936516,
+          "jet_twh": 0.0,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.05554750387936516,
+          "logistics_and_upgrade_busd": 0.009998550698285728,
+          "imputed_variable_cost_busd": 0.03888325271555561,
+          "contribution_busd": 0.0066657004655238244
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.1388687596984129,
+      "total_contribution_busd": 0.01999710139657146,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.3886875969841288
+    },
+    {
+      "year": 2040,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0.0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.10831763256476204,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.024996376745714317,
+          "contribution_busd": 0.07165628000438104
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.5554750387936516,
+          "jet_twh": 0.0,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.0722117550431747,
+          "logistics_and_upgrade_busd": 0.009998550698285728,
+          "imputed_variable_cost_busd": 0.016664251163809547,
+          "contribution_busd": 0.045548953181079425
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.18052938760793674,
+      "total_contribution_busd": 0.11720523318546047,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0.0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.10831763256476204,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.058324879073333405,
+          "contribution_busd": 0.03832777767676196
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.5554750387936516,
+          "jet_twh": 0.0,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.0722117550431747,
+          "logistics_and_upgrade_busd": 0.009998550698285728,
+          "imputed_variable_cost_busd": 0.03888325271555561,
+          "contribution_busd": 0.023329951629333365
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.18052938760793674,
+      "total_contribution_busd": 0.061657729306095324,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0.0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.10831763256476204,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.09581944419190488,
+          "contribution_busd": 0.0008332125581904798
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.0,
+          "export_twh": 0.0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0.8332125581904772,
+      "total_revenue_busd": 0.10831763256476204,
+      "total_contribution_busd": 0.0008332125581904798,
+      "unexported_twh": 0.5554750387936516
+    },
+    {
+      "year": 2040,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.8332125581904772,
+          "jet_twh": 0,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.0624909418642858,
+          "logistics_and_upgrade_busd": 0.01166497581466668,
+          "imputed_variable_cost_busd": 0.024996376745714317,
+          "contribution_busd": 0.025829589303904797
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.5554750387936516,
+          "jet_twh": 0,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.041660627909523865,
+          "logistics_and_upgrade_busd": 0.009998550698285728,
+          "imputed_variable_cost_busd": 0.016664251163809547,
+          "contribution_busd": 0.014997826047428588
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.10415156977380965,
+      "total_contribution_busd": 0.040827415351333385,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.3886875969841288
+    },
+    {
+      "year": 2040,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.3886875969841288
+    },
+    {
+      "year": 2040,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.5415881628238102,
+          "jet_twh": 0.291624395366667,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.08915374372638106,
+          "logistics_and_upgrade_busd": 0.01749746372200002,
+          "imputed_variable_cost_busd": 0.024996376745714317,
+          "contribution_busd": 0.04665990325866672
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.36105877521587354,
+          "jet_twh": 0.19441626357777803,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.05943582915092071,
+          "logistics_and_upgrade_busd": 0.013886875969841289,
+          "imputed_variable_cost_busd": 0.016664251163809547,
+          "contribution_busd": 0.02888470201726987
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.14858957287730176,
+      "total_contribution_busd": 0.0755446052759366,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.5415881628238102,
+          "jet_twh": 0.291624395366667,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.08915374372638106,
+          "logistics_and_upgrade_busd": 0.01749746372200002,
+          "imputed_variable_cost_busd": 0.058324879073333405,
+          "contribution_busd": 0.013331400931047635
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.36105877521587354,
+          "jet_twh": 0.19441626357777803,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.05943582915092071,
+          "logistics_and_upgrade_busd": 0.013886875969841289,
+          "imputed_variable_cost_busd": 0.03888325271555561,
+          "contribution_busd": 0.006665700465523811
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.14858957287730176,
+      "total_contribution_busd": 0.019997101396571446,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 1.3886875969841288
+    },
+    {
+      "year": 2040,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.5415881628238102,
+          "jet_twh": 0.291624395366667,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.1156082424489287,
+          "logistics_and_upgrade_busd": 0.01749746372200002,
+          "imputed_variable_cost_busd": 0.024996376745714317,
+          "contribution_busd": 0.07311440198121436
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.36105877521587354,
+          "jet_twh": 0.19441626357777803,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.07707216163261915,
+          "logistics_and_upgrade_busd": 0.013886875969841289,
+          "imputed_variable_cost_busd": 0.016664251163809547,
+          "contribution_busd": 0.04652103449896832
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.19268040408154785,
+      "total_contribution_busd": 0.11963543648018268,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.5415881628238102,
+          "jet_twh": 0.291624395366667,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.1156082424489287,
+          "logistics_and_upgrade_busd": 0.01749746372200002,
+          "imputed_variable_cost_busd": 0.058324879073333405,
+          "contribution_busd": 0.039785899653595275
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.36105877521587354,
+          "jet_twh": 0.19441626357777803,
+          "export_twh": 0.5554750387936516,
+          "revenue_busd": 0.07707216163261915,
+          "logistics_and_upgrade_busd": 0.013886875969841289,
+          "imputed_variable_cost_busd": 0.03888325271555561,
+          "contribution_busd": 0.02430203294722226
+        }
+      ],
+      "total_export_twh": 1.3886875969841288,
+      "total_revenue_busd": 0.19268040408154785,
+      "total_contribution_busd": 0.06408793260081753,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2040,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0.5415881628238102,
+          "jet_twh": 0.291624395366667,
+          "export_twh": 0.8332125581904772,
+          "revenue_busd": 0.1156082424489287,
+          "logistics_and_upgrade_busd": 0.01749746372200002,
+          "imputed_variable_cost_busd": 0.09581944419190488,
+          "contribution_busd": 0.002291334535023795
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.19441626357777803,
+          "export_twh": 0.19441626357777803,
+          "revenue_busd": 0.030134520854555594,
+          "logistics_and_upgrade_busd": 0.007387818015955565,
+          "imputed_variable_cost_busd": 0.022357870311444473,
+          "contribution_busd": 0.00038883252715555747
+        }
+      ],
+      "total_export_twh": 1.0276288217682552,
+      "total_revenue_busd": 0.1457427633034843,
+      "total_contribution_busd": 0.0026801670621793526,
+      "unexported_twh": 0.3610587752158736
+    },
+    {
+      "year": 2045,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.1159916587285715,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.046396663491428604,
+          "contribution_busd": 0.04794321894114289
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.0310369664761914,
+          "jet_twh": 0,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.07732777248571435,
+          "logistics_and_upgrade_busd": 0.018558665396571444,
+          "imputed_variable_cost_busd": 0.03093110899428574,
+          "contribution_busd": 0.027837998094857163
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.19331943121428585,
+      "total_contribution_busd": 0.07578121703600005,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 2.577592416190478
+    },
+    {
+      "year": 2045,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 2.577592416190478
+    },
+    {
+      "year": 2045,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0.0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.1546555449714287,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.046396663491428604,
+          "contribution_busd": 0.08660710518400008
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.0310369664761914,
+          "jet_twh": 0.0,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.10310369664761913,
+          "logistics_and_upgrade_busd": 0.018558665396571444,
+          "imputed_variable_cost_busd": 0.03093110899428574,
+          "contribution_busd": 0.05361392225676195
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.25775924161904784,
+      "total_contribution_busd": 0.14022102744076204,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0.0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.1546555449714287,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.10825888148000007,
+          "contribution_busd": 0.02474488719542861
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.0310369664761914,
+          "jet_twh": 0.0,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.10310369664761913,
+          "logistics_and_upgrade_busd": 0.018558665396571444,
+          "imputed_variable_cost_busd": 0.0721725876533334,
+          "contribution_busd": 0.012372443597714292
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.25775924161904784,
+      "total_contribution_busd": 0.0371173307931429,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 2.577592416190478
+    },
+    {
+      "year": 2045,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0.0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.2010522084628573,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.046396663491428604,
+          "contribution_busd": 0.13300376867542868
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.0310369664761914,
+          "jet_twh": 0.0,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.13403480564190487,
+          "logistics_and_upgrade_busd": 0.018558665396571444,
+          "imputed_variable_cost_busd": 0.03093110899428574,
+          "contribution_busd": 0.08454503125104769
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.33508701410476216,
+      "total_contribution_busd": 0.21754879992647636,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0.0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.2010522084628573,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.10825888148000007,
+          "contribution_busd": 0.07114155068685721
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.0310369664761914,
+          "jet_twh": 0.0,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.13403480564190487,
+          "logistics_and_upgrade_busd": 0.018558665396571444,
+          "imputed_variable_cost_busd": 0.0721725876533334,
+          "contribution_busd": 0.04330355259200003
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.33508701410476216,
+      "total_contribution_busd": 0.11444510327885724,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0.0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.2010522084628573,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.17785387671714298,
+          "contribution_busd": 0.0015465554497142986
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.0,
+          "export_twh": 0.0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 1.5465554497142868,
+      "total_revenue_busd": 0.2010522084628573,
+      "total_contribution_busd": 0.0015465554497142986,
+      "unexported_twh": 1.0310369664761914
+    },
+    {
+      "year": 2045,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.5465554497142868,
+          "jet_twh": 0,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.1159916587285715,
+          "logistics_and_upgrade_busd": 0.021651776296000017,
+          "imputed_variable_cost_busd": 0.046396663491428604,
+          "contribution_busd": 0.04794321894114289
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.0310369664761914,
+          "jet_twh": 0,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.07732777248571435,
+          "logistics_and_upgrade_busd": 0.018558665396571444,
+          "imputed_variable_cost_busd": 0.03093110899428574,
+          "contribution_busd": 0.027837998094857163
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.19331943121428585,
+      "total_contribution_busd": 0.07578121703600005,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 2.577592416190478
+    },
+    {
+      "year": 2045,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 2.577592416190478
+    },
+    {
+      "year": 2045,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.01172442152978,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.16535216553511883,
+          "logistics_and_upgrade_busd": 0.032348396859690154,
+          "imputed_variable_cost_busd": 0.046396663491428604,
+          "contribution_busd": 0.08660710518400008
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.6744829476865202,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.11023477702341256,
+          "logistics_and_upgrade_busd": 0.02568974577236487,
+          "imputed_variable_cost_busd": 0.03093110899428574,
+          "contribution_busd": 0.05361392225676195
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.2755869425585314,
+      "total_contribution_busd": 0.14022102744076204,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.01172442152978,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.16535216553511883,
+          "logistics_and_upgrade_busd": 0.032348396859690154,
+          "imputed_variable_cost_busd": 0.10825888148000007,
+          "contribution_busd": 0.02474488719542861
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.6744829476865202,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.11023477702341256,
+          "logistics_and_upgrade_busd": 0.02568974577236487,
+          "imputed_variable_cost_busd": 0.0721725876533334,
+          "contribution_busd": 0.012372443597714292
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.2755869425585314,
+      "total_contribution_busd": 0.0371173307931429,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 2.577592416190478
+    },
+    {
+      "year": 2045,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.01172442152978,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.21442298416746997,
+          "logistics_and_upgrade_busd": 0.032348396859690154,
+          "imputed_variable_cost_busd": 0.046396663491428604,
+          "contribution_busd": 0.13567792381635121
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.6744829476865202,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.14294865611164667,
+          "logistics_and_upgrade_busd": 0.02568974577236487,
+          "imputed_variable_cost_busd": 0.03093110899428574,
+          "contribution_busd": 0.08632780134499607
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.3573716402791166,
+      "total_contribution_busd": 0.22200572516134728,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.01172442152978,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.21442298416746997,
+          "logistics_and_upgrade_busd": 0.032348396859690154,
+          "imputed_variable_cost_busd": 0.10825888148000007,
+          "contribution_busd": 0.07381570582777974
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0.6744829476865202,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.0310369664761914,
+          "revenue_busd": 0.14294865611164667,
+          "logistics_and_upgrade_busd": 0.02568974577236487,
+          "imputed_variable_cost_busd": 0.0721725876533334,
+          "contribution_busd": 0.04508632268594841
+        }
+      ],
+      "total_export_twh": 2.577592416190478,
+      "total_revenue_busd": 0.3573716402791166,
+      "total_contribution_busd": 0.11890202851372815,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2045,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.01172442152978,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 1.5465554497142868,
+          "revenue_busd": 0.21442298416746997,
+          "logistics_and_upgrade_busd": 0.032348396859690154,
+          "imputed_variable_cost_busd": 0.17785387671714298,
+          "contribution_busd": 0.004220710590636834
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.3565540187896713,
+          "export_twh": 0.3565540187896713,
+          "revenue_busd": 0.05526587291239905,
+          "logistics_and_upgrade_busd": 0.013549052714007508,
+          "imputed_variable_cost_busd": 0.0410037121608122,
+          "contribution_busd": 0.0007131080375793394
+        }
+      ],
+      "total_export_twh": 1.903109468503958,
+      "total_revenue_busd": 0.269688857079869,
+      "total_contribution_busd": 0.004933818628216173,
+      "unexported_twh": 0.6744829476865202
+    },
+    {
+      "year": 2050,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.15465554497142864,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.06186221798857146,
+          "contribution_busd": 0.06392429192152384
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.3747159553015882,
+          "jet_twh": 0,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.10310369664761912,
+          "logistics_and_upgrade_busd": 0.02474488719542859,
+          "imputed_variable_cost_busd": 0.04124147865904764,
+          "contribution_busd": 0.037117330793142896
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.25775924161904773,
+      "total_contribution_busd": 0.10104162271466674,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 3.43678988825397
+    },
+    {
+      "year": 2050,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 3.43678988825397
+    },
+    {
+      "year": 2050,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0.0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.20620739329523818,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.06186221798857146,
+          "contribution_busd": 0.11547614024533338
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.3747159553015882,
+          "jet_twh": 0.0,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.13747159553015884,
+          "logistics_and_upgrade_busd": 0.02474488719542859,
+          "imputed_variable_cost_busd": 0.04124147865904764,
+          "contribution_busd": 0.0714852296756826
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.34367898882539705,
+      "total_contribution_busd": 0.18696136992101597,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0.0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.20620739329523818,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.14434517530666674,
+          "contribution_busd": 0.0329931829272381
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.3747159553015882,
+          "jet_twh": 0.0,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.13747159553015884,
+          "logistics_and_upgrade_busd": 0.02474488719542859,
+          "imputed_variable_cost_busd": 0.09623011687111117,
+          "contribution_busd": 0.01649659146361908
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.34367898882539705,
+      "total_contribution_busd": 0.04948977439085718,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 3.43678988825397
+    },
+    {
+      "year": 2050,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0.0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.26806961128380963,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.06186221798857146,
+          "contribution_busd": 0.1773383582339048
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.3747159553015882,
+          "jet_twh": 0.0,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.17871307418920646,
+          "logistics_and_upgrade_busd": 0.02474488719542859,
+          "imputed_variable_cost_busd": 0.04124147865904764,
+          "contribution_busd": 0.11272670833473022
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.4467826854730161,
+      "total_contribution_busd": 0.29006506656863507,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0.0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.26806961128380963,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.14434517530666674,
+          "contribution_busd": 0.09485540091580955
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.3747159553015882,
+          "jet_twh": 0.0,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.17871307418920646,
+          "logistics_and_upgrade_busd": 0.02474488719542859,
+          "imputed_variable_cost_busd": 0.09623011687111117,
+          "contribution_busd": 0.0577380701226667
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.4467826854730161,
+      "total_contribution_busd": 0.15259347103847626,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "not_certified",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0.0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.26806961128380963,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.2371385022895239,
+          "contribution_busd": 0.0020620739329523796
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.0,
+          "export_twh": 0.0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 2.062073932952382,
+      "total_revenue_busd": 0.26806961128380963,
+      "total_contribution_busd": 0.0020620739329523796,
+      "unexported_twh": 1.3747159553015882
+    },
+    {
+      "year": 2050,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 2.062073932952382,
+          "jet_twh": 0,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.15465554497142864,
+          "logistics_and_upgrade_busd": 0.028869035061333346,
+          "imputed_variable_cost_busd": 0.06186221798857146,
+          "contribution_busd": 0.06392429192152384
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.3747159553015882,
+          "jet_twh": 0,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.10310369664761912,
+          "logistics_and_upgrade_busd": 0.02474488719542859,
+          "imputed_variable_cost_busd": 0.04124147865904764,
+          "contribution_busd": 0.037117330793142896
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.25775924161904773,
+      "total_contribution_busd": 0.10104162271466674,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 3.43678988825397
+    },
+    {
+      "year": 2050,
+      "price_case": "low",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 3.43678988825397
+    },
+    {
+      "year": 2050,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.527242904767875,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.21690401385892832,
+          "logistics_and_upgrade_busd": 0.03956565562502348,
+          "imputed_variable_cost_busd": 0.06186221798857146,
+          "contribution_busd": 0.11547614024533338
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.018161936511917,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.14460267590595224,
+          "logistics_and_upgrade_busd": 0.03187596757122201,
+          "imputed_variable_cost_busd": 0.04124147865904764,
+          "contribution_busd": 0.07148522967568258
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.36150668976488054,
+      "total_contribution_busd": 0.18696136992101597,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.527242904767875,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.21690401385892832,
+          "logistics_and_upgrade_busd": 0.03956565562502348,
+          "imputed_variable_cost_busd": 0.14434517530666674,
+          "contribution_busd": 0.0329931829272381
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.018161936511917,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.14460267590595224,
+          "logistics_and_upgrade_busd": 0.03187596757122201,
+          "imputed_variable_cost_busd": 0.09623011687111117,
+          "contribution_busd": 0.01649659146361905
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.36150668976488054,
+      "total_contribution_busd": 0.04948977439085715,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "central",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0,
+          "export_twh": 0,
+          "revenue_busd": 0.0,
+          "logistics_and_upgrade_busd": 0.0,
+          "imputed_variable_cost_busd": 0.0,
+          "contribution_busd": 0.0
+        }
+      ],
+      "total_export_twh": 0,
+      "total_revenue_busd": 0.0,
+      "total_contribution_busd": 0.0,
+      "unexported_twh": 3.43678988825397
+    },
+    {
+      "year": 2050,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 30,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.527242904767875,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.2814403869884223,
+          "logistics_and_upgrade_busd": 0.03956565562502348,
+          "imputed_variable_cost_busd": 0.06186221798857146,
+          "contribution_busd": 0.18001251337482732
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.018161936511917,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.18762692465894823,
+          "logistics_and_upgrade_busd": 0.03187596757122201,
+          "imputed_variable_cost_busd": 0.04124147865904764,
+          "contribution_busd": 0.11450947842867856
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.4690673116473705,
+      "total_contribution_busd": 0.2945219918035059,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 70,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.527242904767875,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.2814403869884223,
+          "logistics_and_upgrade_busd": 0.03956565562502348,
+          "imputed_variable_cost_busd": 0.14434517530666674,
+          "contribution_busd": 0.09752955605673205
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 1.018161936511917,
+          "jet_twh": 0.35655401878967125,
+          "export_twh": 1.3747159553015882,
+          "revenue_busd": 0.18762692465894823,
+          "logistics_and_upgrade_busd": 0.03187596757122201,
+          "imputed_variable_cost_busd": 0.09623011687111117,
+          "contribution_busd": 0.05952084021661504
+        }
+      ],
+      "total_export_twh": 3.43678988825397,
+      "total_revenue_busd": 0.4690673116473705,
+      "total_contribution_busd": 0.1570503962733471,
+      "unexported_twh": 0.0
+    },
+    {
+      "year": 2050,
+      "price_case": "high",
+      "variable_cost_usd_mwh": 115,
+      "certification_scenario": "hypothetically_certified_100pct",
+      "exporters": [
+        {
+          "country": "Panama",
+          "diesel_twh": 1.527242904767875,
+          "jet_twh": 0.5348310281845068,
+          "export_twh": 2.062073932952382,
+          "revenue_busd": 0.2814403869884223,
+          "logistics_and_upgrade_busd": 0.03956565562502348,
+          "imputed_variable_cost_busd": 0.2371385022895239,
+          "contribution_busd": 0.004736229073874887
+        },
+        {
+          "country": "Nicaragua",
+          "diesel_twh": 0,
+          "jet_twh": 0.3565540187896713,
+          "export_twh": 0.3565540187896713,
+          "revenue_busd": 0.05526587291239905,
+          "logistics_and_upgrade_busd": 0.013549052714007508,
+          "imputed_variable_cost_busd": 0.0410037121608122,
+          "contribution_busd": 0.0007131080375793394
+        }
+      ],
+      "total_export_twh": 2.418627951742053,
+      "total_revenue_busd": 0.3367062599008213,
+      "total_contribution_busd": 0.005449337111454226,
+      "unexported_twh": 1.018161936511917
+    }
+  ],
+  "limitations": [
+    "Costa Rica jet figure is a December-2025 planning estimate, not final audited sale",
+    "Marine and off-road shares not independently verified",
+    "No independent national industrial land GIS or parcel investigation: 10 km2 site-screen is illustrative only",
+    "Annual CST thermal energy is NOT hourly supply reliability; no wet-season firm heat model",
+    "Seaweed-derived 100% jet is NOT certified: conditional jet-only exports require certification",
+    "No verified Panama or Nicaragua fuel import orders or product markets; caps and prices assumptions",
+    "A fixed output envelope presumes sunk assets and constant operating cost; cost figures exclude new site-specific infrastructure",
+    "No supply chain, tax restoration or battery embodied emissions calculation",
+    "Transport demand held constant at 2025 equivalent; does not model future growth or induced demand"
+  ]
+}

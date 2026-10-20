@@ -1,0 +1,57 @@
+{
+ "conversion_allowance": [
+  {
+   "e85_car_usd": 0,
+   "cost_busd": 4.9812425001771174,
+   "vehicle_premium_busd": 0.1749666915284837,
+   "e85_twh": 3.7931599999999994
+  },
+  {
+   "e85_car_usd": 200,
+   "cost_busd": 4.988101698222229,
+   "vehicle_premium_busd": 0.18182588957359538,
+   "e85_twh": 3.7931599999999994
+  },
+  {
+   "e85_car_usd": 500,
+   "cost_busd": 4.998390495289897,
+   "vehicle_premium_busd": 0.19211468664126294,
+   "e85_twh": 3.7931599999999994
+  },
+  {
+   "e85_car_usd": 1000,
+   "cost_busd": 5.015538490402676,
+   "vehicle_premium_busd": 0.20926268175404214,
+   "e85_twh": 3.7931599999999994
+  },
+  {
+   "e85_car_usd": 1500,
+   "cost_busd": 5.0326864855154545,
+   "vehicle_premium_busd": 0.22641067686682137,
+   "e85_twh": 3.7931599999999994
+  }
+ ],
+ "e85_share": [
+  {
+   "e85_min_share": 0.3,
+   "cost_busd": 4.988101698222229,
+   "seaweed_km2": 3874.636162890509,
+   "vehicle_electricity_twh": 5.0097831932000005,
+   "charging_grid_capex_busd": 2.00391327728
+  },
+  {
+   "e85_min_share": 0.5,
+   "cost_busd": 5.809897250532233,
+   "seaweed_km2": 5139.220824881724,
+   "vehicle_electricity_twh": 3.8866323032,
+   "charging_grid_capex_busd": 1.55465292128
+  },
+  {
+   "e85_min_share": 0.7,
+   "cost_busd": 6.658361675532728,
+   "seaweed_km2": 6828.313462237046,
+   "vehicle_electricity_twh": 2.7634814132,
+   "charging_grid_capex_busd": 1.10539256528
+  }
+ ]
+}

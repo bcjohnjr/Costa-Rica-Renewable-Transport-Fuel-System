@@ -1,0 +1,57 @@
+{
+  "2050_trade_contribution": {
+    "columns": [
+      "Price scenario",
+      "Variable cost USD/MWh",
+      "Profit contribution US$ million/year"
+    ],
+    "rows": [
+      [
+        "low",
+        30,
+        101.04162271466674
+      ],
+      [
+        "low",
+        70,
+        0.0
+      ],
+      [
+        "low",
+        115,
+        0.0
+      ],
+      [
+        "central",
+        30,
+        186.96136992101597
+      ],
+      [
+        "central",
+        70,
+        49.48977439085718
+      ],
+      [
+        "central",
+        115,
+        0.0
+      ],
+      [
+        "high",
+        30,
+        290.0650665686351
+      ],
+      [
+        "high",
+        70,
+        152.59347103847625
+      ],
+      [
+        "high",
+        115,
+        2.0620739329523796
+      ]
+    ],
+    "note": "Contributions before fixed CAPEX, permits, taxes; assumed market caps."
+  }
+}

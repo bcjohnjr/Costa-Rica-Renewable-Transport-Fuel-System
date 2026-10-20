@@ -1,0 +1,37 @@
+{
+  "CST_land_screen": {
+    "columns": [
+      "Assumed DNI kWh/m2/year",
+      "Solar field land km2",
+      "Illustrative offshore km2"
+    ],
+    "rows": [
+      [
+        1000,
+        7.226852099135607,
+        10.840278148703412
+      ],
+      [
+        1200,
+        6.022376749279673,
+        9.03356512391951
+      ],
+      [
+        1400,
+        5.162037213668292,
+        7.743055820502438
+      ],
+      [
+        1700,
+        4.251089470079769,
+        6.376634205119654
+      ],
+      [
+        2000,
+        3.6134260495678037,
+        5.420139074351706
+      ]
+    ],
+    "note": "Solar-only physical screen without confirmed DNI or available site."
+  }
+}

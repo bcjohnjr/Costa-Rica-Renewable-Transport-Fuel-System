@@ -1,0 +1,37 @@
+{
+  "Export_time_series": {
+    "columns": [
+      "Year",
+      "Unused hydrocarbons TWh/year",
+      "Central-case eligible exports TWh/year",
+      "Extra vehicle electricity TWh/year"
+    ],
+    "rows": [
+      [
+        2035,
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      [
+        2040,
+        1.3886875969841288,
+        1.3886875969841288,
+        0.7191820391000002
+      ],
+      [
+        2045,
+        2.577592416190478,
+        2.577592416190478,
+        1.3484618282000005
+      ],
+      [
+        2050,
+        3.43678988825397,
+        3.43678988825397,
+        1.7979491042666669
+      ]
+    ],
+    "note": "Frozen 2035 production envelope; nominal sales prices and costs; no aviation export certification or verified offtake."
+  }
+}

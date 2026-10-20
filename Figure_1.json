@@ -1,0 +1,157 @@
+{
+ "b_free_area": {
+  "columns": [
+   "zone",
+   "distance band",
+   "free area km2"
+  ],
+  "rows": [
+   [
+    "Pacific shelf",
+    "0-50",
+    7184.0
+   ],
+   [
+    "Pacific slope",
+    "0-50",
+    6632.0
+   ],
+   [
+    "Pacific deep",
+    "0-50",
+    10032.0
+   ],
+   [
+    "Caribbean shelf",
+    "0-50",
+    848.0
+   ],
+   [
+    "Caribbean slope",
+    "0-50",
+    4138.0
+   ],
+   [
+    "Caribbean deep",
+    "0-50",
+    3465.0
+   ],
+   [
+    "Pacific shelf",
+    "50-100",
+    718.0
+   ],
+   [
+    "Pacific slope",
+    "50-100",
+    1765.0
+   ],
+   [
+    "Pacific deep",
+    "50-100",
+    23718.0
+   ],
+   [
+    "Caribbean shelf",
+    "50-100",
+    0.0
+   ],
+   [
+    "Caribbean slope",
+    "50-100",
+    8.0
+   ],
+   [
+    "Caribbean deep",
+    "50-100",
+    8475.0
+   ],
+   [
+    "Pacific shelf",
+    "100-200",
+    0.0
+   ],
+   [
+    "Pacific slope",
+    "100-200",
+    1030.0
+   ],
+   [
+    "Pacific deep",
+    "100-200",
+    50821.0
+   ],
+   [
+    "Caribbean shelf",
+    "100-200",
+    0.0
+   ],
+   [
+    "Caribbean slope",
+    "100-200",
+    0.0
+   ],
+   [
+    "Caribbean deep",
+    "100-200",
+    5712.0
+   ],
+   [
+    "Pacific shelf",
+    "200-370",
+    0.0
+   ],
+   [
+    "Pacific slope",
+    "200-370",
+    259.0
+   ],
+   [
+    "Pacific deep",
+    "200-370",
+    83598.0
+   ],
+   [
+    "Caribbean shelf",
+    "200-370",
+    0.0
+   ],
+   [
+    "Caribbean slope",
+    "200-370",
+    0.0
+   ],
+   [
+    "Caribbean deep",
+    "200-370",
+    0.0
+   ]
+  ],
+  "note": "Outside shipping lanes and ports, beyond 6 nm, outside the Isla del Coco protected areas."
+ },
+ "c_farms": {
+  "columns": [
+   "zone",
+   "farm area km2"
+  ],
+  "rows": [
+   [
+    "Pacific shelf",
+    790.2
+   ],
+   [
+    "Pacific slope",
+    839.7
+   ],
+   [
+    "Pacific deep",
+    759.2059896569864
+   ],
+   [
+    "Caribbean shelf",
+    84.80000000000001
+   ]
+  ],
+  "note": ""
+ }
+}

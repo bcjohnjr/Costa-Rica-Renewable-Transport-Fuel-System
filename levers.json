@@ -1,0 +1,84 @@
+{
+ "cumulative": [
+  {
+   "key": "today",
+   "label": "Today's costs (7%)",
+   "cost": 4.757933814845049,
+   "seaweed_km2": 0,
+   "seaweed_share": 0.0,
+   "electricity_twh": 25.956728980571434
+  },
+  {
+   "key": "farm",
+   "label": "Cheaper farming: biomass $340 \u2192 $225 per dry t at reference yield",
+   "cost": 4.647342302752941,
+   "step_saving": 0.11059151209210771,
+   "seaweed_km2": 875.0,
+   "seaweed_share": 4.378734152201377,
+   "electricity_twh": 22.894563319163808
+  },
+  {
+   "key": "yield",
+   "label": "Higher yield: 9 \u2192 12 t dry ha\u207b\u00b9 yr\u207b\u00b9 (selected strains, multiple harvests)",
+   "cost": 4.502676986992409,
+   "step_saving": 0.1446653157605322,
+   "seaweed_km2": 1817.7,
+   "seaweed_share": 10.675965724513704,
+   "electricity_twh": 18.76212399075797
+  },
+  {
+   "key": "deep",
+   "label": "Cheaper deep-water structures: factor 1.3 \u2192 1.1; depth cycling $1.13M \u2192 $0.57M km\u207b\u00b2",
+   "cost": 4.413700305887351,
+   "step_saving": 0.08897668110505741,
+   "seaweed_km2": 1717.7873744935664,
+   "seaweed_share": 10.804225306629837,
+   "electricity_twh": 18.693953415528604
+  },
+  {
+   "key": "conversion",
+   "label": "Better conversion: whole-seaweed HTL 0.15 \u2192 0.18, residue 0.22 \u2192 0.27, all alginate fermented",
+   "cost": 4.196994582720684,
+   "step_saving": 0.21670572316666714,
+   "seaweed_km2": 2606.8042406145873,
+   "seaweed_share": 19.178700203786256,
+   "electricity_twh": 14.415537514436236
+  },
+  {
+   "key": "refcapex",
+   "label": "Biorefinery cost \u221230% (nth-of-a-kind plants)",
+   "cost": 3.939610447983917,
+   "step_saving": 0.25738413473676713,
+   "seaweed_km2": 3527.0547491372854,
+   "seaweed_share": 26.354513865685252,
+   "electricity_twh": 10.583537780442228
+  },
+  {
+   "key": "efuels",
+   "label": "Electrofuel synthesis and electrolyzers \u221225%; direct air capture \u221225%",
+   "cost": 3.9387969391973066,
+   "step_saving": 0.0008135087866105728,
+   "seaweed_km2": 3461.1249685740895,
+   "seaweed_share": 25.837338513376668,
+   "electricity_twh": 10.773762729225325
+  },
+  {
+   "key": "capital",
+   "label": "Cheaper capital: 4% instead of 7%",
+   "cost": 3.3823264783959073,
+   "step_saving": 0.5564704608013993,
+   "seaweed_km2": 3279.4606391947545,
+   "seaweed_share": 24.423855658732993,
+   "electricity_twh": 11.614540267972895
+  },
+  {
+   "key": "grid",
+   "label": "Grid Harvester harvesting energy (conventional/grid ratio 2.68)",
+   "cost": 3.3741335840057847,
+   "step_saving": 0.008192894390122607,
+   "seaweed_km2": 2588.6428427483097,
+   "seaweed_share": 19.63102874235562,
+   "electricity_twh": 14.419501744800684
+  }
+ ]
+}

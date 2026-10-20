@@ -1,0 +1,293 @@
+{
+ "a_biomass_cost": {
+  "columns": [
+   "zone",
+   "nutrient method",
+   "USD per dry t",
+   "effective yield t/ha/yr"
+  ],
+  "rows": [
+   [
+    "Pacific shelf",
+    "Natural supply",
+    536.0000000000001,
+    7.6499999999999995
+   ],
+   [
+    "Pacific slope",
+    "Natural supply",
+    843.2,
+    5.3999999999999995
+   ],
+   [
+    "Pacific deep",
+    "Natural supply",
+    1650.1333333333334,
+    2.6999999999999997
+   ],
+   [
+    "Caribbean shelf",
+    "Natural supply",
+    621.7142857142858,
+    6.3
+   ],
+   [
+    "Caribbean deep",
+    "Natural supply",
+    5149.3,
+    0.8
+   ],
+   [
+    "Pacific shelf",
+    "Depth cycling",
+    676.6310287912637,
+    9.0
+   ],
+   [
+    "Pacific slope",
+    "Depth cycling",
+    771.8310287912636,
+    9.0
+   ],
+   [
+    "Pacific deep",
+    "Depth cycling",
+    819.4310287912637,
+    9.0
+   ],
+   [
+    "Caribbean shelf",
+    "Depth cycling",
+    772.0365044603104,
+    7.6499999999999995
+   ],
+   [
+    "Caribbean deep",
+    "Depth cycling",
+    1491.272558891221,
+    4.4
+   ],
+   [
+    "Pacific shelf",
+    "Solar-pumped pipe",
+    534.9786431232386,
+    9.0
+   ],
+   [
+    "Pacific slope",
+    "Solar-pumped pipe",
+    728.4763816619696,
+    9.0
+   ],
+   [
+    "Pacific deep",
+    "Solar-pumped pipe",
+    894.0336679084469,
+    9.0
+   ],
+   [
+    "Caribbean shelf",
+    "Solar-pumped pipe",
+    700.1188438683067,
+    9.0
+   ],
+   [
+    "Caribbean deep",
+    "Solar-pumped pipe",
+    1346.4065316049205,
+    8.0
+   ],
+   [
+    "Pacific shelf",
+    "Wave pump",
+    1694.861358874723,
+    9.0
+   ],
+   [
+    "Pacific slope",
+    "Wave pump",
+    3821.496956999261,
+    9.0
+   ],
+   [
+    "Pacific deep",
+    "Wave pump",
+    6306.819674748706,
+    9.0
+   ],
+   [
+    "Caribbean shelf",
+    "Wave pump",
+    6164.019674748708,
+    9.0
+   ],
+   [
+    "Caribbean deep",
+    "Wave pump",
+    17738.10902424612,
+    8.0
+   ],
+   [
+    "Pacific shelf",
+    "Salt fountain",
+    NaN,
+    9.0
+   ],
+   [
+    "Pacific slope",
+    "Salt fountain",
+    NaN,
+    9.0
+   ],
+   [
+    "Pacific deep",
+    "Salt fountain",
+    NaN,
+    9.0
+   ],
+   [
+    "Caribbean shelf",
+    "Salt fountain",
+    25470.965035713183,
+    9.0
+   ],
+   [
+    "Caribbean deep",
+    "Salt fountain",
+    75658.94510713956,
+    8.0
+   ]
+  ],
+  "note": "Nearest distance band; natural supply yields only the naturally supplied share; NaN = not applicable."
+ },
+ "b_refinery": {
+  "columns": [
+   "route",
+   "flow",
+   "GJ per dry t (inputs negative)"
+  ],
+  "rows": [
+   [
+    "Ethanol + HTL",
+    "Diesel/jet",
+    3.6379031039999994
+   ],
+   [
+    "Ethanol + HTL",
+    "Ethanol",
+    2.2327616
+   ],
+   [
+    "Ethanol + HTL",
+    "Biomethane",
+    0.7311254999999999
+   ],
+   [
+    "Ethanol + HTL",
+    "Fertilizer energy avoided",
+    0.6567999999999999
+   ],
+   [
+    "Ethanol + HTL",
+    "Electricity",
+    -1.301060448
+   ],
+   [
+    "Ethanol + HTL",
+    "Process heat",
+    -1.7245015679999998
+   ],
+   [
+    "Whole HTL",
+    "Diesel/jet",
+    5.3136
+   ],
+   [
+    "Whole HTL",
+    "Ethanol",
+    0.0
+   ],
+   [
+    "Whole HTL",
+    "Biomethane",
+    1.0493874999999997
+   ],
+   [
+    "Whole HTL",
+    "Fertilizer energy avoided",
+    0.6567999999999999
+   ],
+   [
+    "Whole HTL",
+    "Electricity",
+    -1.5822
+   ],
+   [
+    "Whole HTL",
+    "Process heat",
+    -1.6112
+   ],
+   [
+    "Digestion",
+    "Diesel/jet",
+    0.0
+   ],
+   [
+    "Digestion",
+    "Ethanol",
+    0.0
+   ],
+   [
+    "Digestion",
+    "Biomethane",
+    4.797199999999998
+   ],
+   [
+    "Digestion",
+    "Fertilizer energy avoided",
+    0.6567999999999999
+   ],
+   [
+    "Digestion",
+    "Electricity",
+    -0.399492
+   ],
+   [
+    "Digestion",
+    "Process heat",
+    -0.4
+   ]
+  ],
+  "note": ""
+ },
+ "c_heat": {
+  "columns": [
+   "source",
+   "USD/MWh_th at 7%",
+   "USD/MWh_th at 4%"
+  ],
+  "rows": [
+   [
+    "PV-charged thermal storage",
+    61.36842105263158,
+    48.11734794809931
+   ],
+   [
+    "CSP steam with storage",
+    95.0,
+    75.6936236878775
+   ],
+   [
+    "Heat pump (low-temperature)",
+    30.8,
+    25.277360249663907
+   ],
+   [
+    "Electric boiler (grid)",
+    77.77777777777777,
+    63.831717802181586
+   ]
+  ],
+  "note": "Heat pumps limited to 60% of refinery heat (low-temperature duties)."
+ }
+}

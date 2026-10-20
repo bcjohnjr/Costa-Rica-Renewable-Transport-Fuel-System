@@ -1,0 +1,68 @@
+{
+ "c_d_turn_losses": {
+  "columns": [
+   "configuration",
+   "missed % of cycle",
+   "harvested twice % (with LMM)"
+  ],
+  "rows": [
+   [
+    "Conventional vessel, ten 90\u00b0 turns",
+    1.4902905319621647,
+    0.0
+   ],
+   [
+    "Grid Harvester, stationary 180\u00b0 turns",
+    0.6169802802323362,
+    2.875
+   ],
+   [
+    "Grid Harvester, turning while moving forward",
+    2.467921120929345,
+    9.032078879070655
+   ]
+  ],
+  "note": ""
+ },
+ "e_energy": {
+  "columns": [
+   "configuration",
+   "MJ per 1.44-ha cycle",
+   "change vs conventional %",
+   "saving kWh per dry t"
+  ],
+  "rows": [
+   [
+    "Conventional vessel",
+    90.9,
+    0.0,
+    0.0
+   ],
+   [
+    "Grid Harvester, bare hose",
+    28.85892662622586,
+    -68.25200591174273,
+    3.9892665492395922
+   ],
+   [
+    "Grid Harvester, faired hose (85%)",
+    18.22152291863313,
+    -79.9543202215257,
+    4.673255985170195
+   ],
+   [
+    "Faired hose + coarse chopping",
+    49.32552291863313,
+    -45.73649843934749,
+    2.673255985170195
+   ],
+   [
+    "Faired hose + fine maceration",
+    173.74152291863314,
+    91.13478868936538,
+    -5.326744014829805
+   ]
+  ],
+  "note": "1.44-ha cycle, 3 kg m-2 standing wet Sargassum (4.32 t dry); hose resized to 1.0 m/s at 10% slurry; coarse chopping 0.2 kWh and fine maceration 1.0 kWh per wet tonne."
+ }
+}

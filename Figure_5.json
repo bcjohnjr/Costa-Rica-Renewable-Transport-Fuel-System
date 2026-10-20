@@ -1,0 +1,101 @@
+{
+ "a_cost": {
+  "columns": [
+   "case",
+   "energy cost US$bn",
+   "vehicle premia US$bn",
+   "total US$bn",
+   "MC p5",
+   "MC median",
+   "MC p95",
+   "fossil Oct 2026 US$bn",
+   "fossil 2025 US$bn"
+  ],
+  "rows": [
+   [
+    "Drop-in rule",
+    3.169961283107602,
+    0.2533701102823749,
+    3.423331393389977,
+    3.632522006179167,
+    4.013718190493133,
+    4.482309685434734,
+    3.7518863558333337,
+    2.4083341621
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    4.806275808648634,
+    0.18182588957359538,
+    4.988101698222229,
+    5.893462231368072,
+    7.1528456712455535,
+    9.143938600784494,
+    3.7518863558333337,
+    2.4083341621
+   ],
+   [
+    "Maximum electri- fication",
+    2.3683138575044094,
+    0.3373813470271798,
+    2.7056952045315894,
+    2.703860521646697,
+    2.9798376754141733,
+    3.332766863523852,
+    3.7518863558333337,
+    2.4083341621
+   ]
+  ],
+  "note": "Monte Carlo: 1,000 common draws; solar-bridge statistics exclude the draws in which seaweed fails (infeasible)."
+ },
+ "b_electricity": {
+  "columns": [
+   "case",
+   "vehicle electricity TWh/yr",
+   "new electricity TWh/yr"
+  ],
+  "rows": [
+   [
+    "Drop-in rule",
+    7.4136795803333335,
+    14.126215954902738
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    5.0097831932000005,
+    19.104265190158085
+   ],
+   [
+    "Maximum electri- fication",
+    9.2116286846,
+    11.888628394115528
+   ]
+  ],
+  "note": ""
+ },
+ "c_infrastructure": {
+  "columns": [
+   "case",
+   "charging and grid capital US$bn",
+   "seaweed farms km2"
+  ],
+  "rows": [
+   [
+    "Drop-in rule",
+    2.9654718321333338,
+    2473.9059896569865
+   ],
+   [
+    "Fleet- compatible solar bridge",
+    2.00391327728,
+    3874.636162890509
+   ],
+   [
+    "Maximum electri- fication",
+    3.6846514738400007,
+    1502.665652173913
+   ]
+  ],
+  "note": ""
+ }
+}
