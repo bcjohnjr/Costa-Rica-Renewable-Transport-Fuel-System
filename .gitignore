@@ -1,0 +1,6 @@
+# Local only: submitted manuscript files used by verify_manuscript.py.
+# The journal allows electronic distribution of the article only after publication.
+manuscript/
+__pycache__/
+*.pyc
+manuscript_figures/out/

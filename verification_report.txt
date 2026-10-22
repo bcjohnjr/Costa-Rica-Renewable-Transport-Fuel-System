@@ -1,0 +1,1000 @@
+Verification report — 2026-10-22 09:37 UTC
+Python 3.13.16 on Linux-6.18.44-fc-v140-x86_64-with-glibc2.39; numpy 2.5.3; scipy 1.18.1
+Outputs: outputs
+Manuscript file: Manuscrito_ES_V23.docx sha256 55c1f54cfb4e52a3
+Manuscript file: Manuscript_EN_V23.docx sha256 afae106736de0108
+Manuscript file: Manuscrito_Anonimo_ES_V23.docx sha256 c13356fd1a8c5776
+Manuscript file: Manuscript_Anonymous_EN_V23.docx sha256 610c4ea9440fac3b
+273 registered manuscript values checked against outputs
+712 printed table values read from 4 manuscript file(s) and checked against outputs
+All values match.
+
+ok   Table 2 H hc_gj: manuscript 5.31, model 5.3136
+ok   Table 2 H jet_gj: manuscript 2.13, model 2.1254
+ok   Table 2 H ethanol_gj: manuscript 0.0, model 0.0000
+ok   Table 2 H ch4_gj: manuscript 1.05, model 1.0494
+ok   Table 2 H el_mwh: manuscript 0.44, model 0.43950
+ok   Table 2 H heat_mwh_th: manuscript 0.448, model 0.44756
+ok   Table 2 H cost_eur: manuscript 214, model 214.00
+ok   Table 2 H fert_n_kg: manuscript 8.4, model 8.4000
+ok   Table 2 H fert_p_kg: manuscript 1.76, model 1.7600
+ok   Table 2 H fert_k_kg: manuscript 36.8, model 36.8000
+ok   Table 2 EH hc_gj: manuscript 3.64, model 3.6379
+ok   Table 2 EH jet_gj: manuscript 1.46, model 1.4552
+ok   Table 2 EH ethanol_gj: manuscript 2.23, model 2.2328
+ok   Table 2 EH ch4_gj: manuscript 0.73, model 0.7311
+ok   Table 2 EH el_mwh: manuscript 0.361, model 0.36141
+ok   Table 2 EH heat_mwh_th: manuscript 0.479, model 0.47903
+ok   Table 2 EH cost_eur: manuscript 254, model 254.00
+ok   Table 2 EH fert_n_kg: manuscript 8.4, model 8.4000
+ok   Table 2 EH fert_p_kg: manuscript 1.76, model 1.7600
+ok   Table 2 EH fert_k_kg: manuscript 36.8, model 36.8000
+ok   Table 2 A hc_gj: manuscript 0.0, model 0.0000
+ok   Table 2 A jet_gj: manuscript 0.0, model 0.0000
+ok   Table 2 A ethanol_gj: manuscript 0.0, model 0.0000
+ok   Table 2 A ch4_gj: manuscript 4.8, model 4.7972
+ok   Table 2 A el_mwh: manuscript 0.111, model 0.11097
+ok   Table 2 A heat_mwh_th: manuscript 0.111, model 0.11111
+ok   Table 2 A cost_eur: manuscript 124, model 124.00
+ok   Table 2 A fert_n_kg: manuscript 8.4, model 8.4000
+ok   Table 2 A fert_p_kg: manuscript 1.76, model 1.7600
+ok   Table 2 A fert_k_kg: manuscript 36.8, model 36.8000
+ok   Table 3 today cost: manuscript 4.76, model 4.7579
+ok   Table 3 today electricity: manuscript 25.96, model 25.9567
+ok   Table 3 today farm km2: manuscript 0, model 0.00
+ok   Table 3 today seaweed share: manuscript 0.0, model 0.000
+ok   Table 3 today GHG reduction: manuscript 91.8, model 91.835
+ok   Table 3 dropin cost: manuscript 3.42, model 3.4233
+ok   Table 3 dropin electricity: manuscript 14.13, model 14.1262
+ok   Table 3 dropin farm km2: manuscript 2474, model 2473.91
+ok   Table 3 dropin seaweed share: manuscript 18.7, model 18.711
+ok   Table 3 dropin GHG reduction: manuscript 91.7, model 91.653
+ok   Table 3 bridge cost: manuscript 4.99, model 4.9881
+ok   Table 3 bridge electricity: manuscript 19.1, model 19.1043
+ok   Table 3 bridge farm km2: manuscript 3875, model 3874.64
+ok   Table 3 bridge seaweed share: manuscript 29.9, model 29.928
+ok   Table 3 bridge GHG reduction: manuscript 87.7, model 87.662
+ok   Table 3 maxel cost: manuscript 2.71, model 2.7057
+ok   Table 3 maxel electricity: manuscript 11.89, model 11.8886
+ok   Table 3 maxel farm km2: manuscript 1503, model 1502.67
+ok   Table 3 maxel seaweed share: manuscript 10.9, model 10.920
+ok   Table 3 maxel GHG reduction: manuscript 93.3, model 93.332
+ok   Table 4 dropin PV: manuscript 1.6, model 1.6045
+ok   Table 4 dropin Onshore wind: manuscript 4.5, model 4.5000
+ok   Table 4 dropin CSP: manuscript 0.0, model 0.0000
+ok   Table 4 dropin Electrolysers: manuscript 1.2, model 1.1970
+ok   Table 4 dropin E-fuel synthesis: manuscript 0.47, model 0.4739
+ok   Table 4 dropin DAC: manuscript 0.0, model 0.0000
+ok   Table 4 dropin Seaweed farms: manuscript 7.06, model 7.0566
+ok   Table 4 dropin Biorefineries: manuscript 5.2, model 5.2004
+ok   Table 4 dropin Vessels: manuscript 1.9, model 1.9012
+ok   Table 4 dropin Solar heat (thermal storage, CSP heat): manuscript 1.15, model 1.1473
+ok   Table 4 dropin Charging and grid: manuscript 2.97, model 2.9655
+ok   Table 4 dropin total: manuscript 26.05, model 26.0463
+ok   Table 4 dropin per year: manuscript 1.09, model 1.0853
+ok   Table 4 bridge PV: manuscript 3.14, model 3.1356
+ok   Table 4 bridge Onshore wind: manuscript 4.5, model 4.5000
+ok   Table 4 bridge CSP: manuscript 2.84, model 2.8363
+ok   Table 4 bridge Electrolysers: manuscript 2.8, model 2.7997
+ok   Table 4 bridge E-fuel synthesis: manuscript 1.11, model 1.1084
+ok   Table 4 bridge DAC: manuscript 0.0, model 0.0000
+ok   Table 4 bridge Seaweed farms: manuscript 12.8, model 12.7995
+ok   Table 4 bridge Biorefineries: manuscript 8.33, model 8.3268
+ok   Table 4 bridge Vessels: manuscript 3.04, model 3.0442
+ok   Table 4 bridge Solar heat (thermal storage, CSP heat): manuscript 2.15, model 2.1520
+ok   Table 4 bridge Charging and grid: manuscript 2.0, model 2.0039
+ok   Table 4 bridge total: manuscript 42.71, model 42.7066
+ok   Table 4 bridge per year: manuscript 1.78, model 1.7794
+ok   Table 4 maxel PV: manuscript 1.84, model 1.8402
+ok   Table 4 maxel Onshore wind: manuscript 3.31, model 3.3148
+ok   Table 4 maxel CSP: manuscript 0.0, model 0.0000
+ok   Table 4 maxel Electrolysers: manuscript 0.42, model 0.4223
+ok   Table 4 maxel E-fuel synthesis: manuscript 0.17, model 0.1672
+ok   Table 4 maxel DAC: manuscript 0.0, model 0.0000
+ok   Table 4 maxel Seaweed farms: manuscript 3.46, model 3.4561
+ok   Table 4 maxel Biorefineries: manuscript 3.03, model 3.0326
+ok   Table 4 maxel Vessels: manuscript 1.11, model 1.1087
+ok   Table 4 maxel Solar heat (thermal storage, CSP heat): manuscript 0.67, model 0.6691
+ok   Table 4 maxel Charging and grid: manuscript 3.68, model 3.6847
+ok   Table 4 maxel total: manuscript 17.7, model 17.6957
+ok   Table 4 maxel per year: manuscript 0.74, model 0.7373
+ok   Table 5 dropin cost: manuscript 3.63, model 3.6325
+ok   Table 5 dropin cost: manuscript 4.01, model 4.0137
+ok   Table 5 dropin cost: manuscript 4.48, model 4.4823
+ok   Table 5 dropin energy cost: manuscript 3.35, model 3.3544
+ok   Table 5 dropin energy cost: manuscript 3.69, model 3.6883
+ok   Table 5 dropin energy cost: manuscript 4.09, model 4.0916
+ok   Table 5 dropin break-even: manuscript 1.51, model 1.5083
+ok   Table 5 dropin break-even: manuscript 1.67, model 1.6666
+ok   Table 5 dropin break-even: manuscript 1.86, model 1.8612
+ok   Table 5 dropin abatement: manuscript 135, model 135.19
+ok   Table 5 dropin abatement: manuscript 177, model 177.10
+ok   Table 5 dropin abatement: manuscript 230, model 230.31
+ok   Table 5 dropin lifecycle: manuscript 89.5, model 89.454
+ok   Table 5 dropin lifecycle: manuscript 91.3, model 91.303
+ok   Table 5 dropin lifecycle: manuscript 92.8, model 92.834
+ok   Table 5 dropin below Oct 2026: manuscript 138, model 138.00
+ok   Table 5 dropin feasible: manuscript 1000, model 1000.00
+ok   Table 5 bridge cost: manuscript 5.89, model 5.8935
+ok   Table 5 bridge cost: manuscript 7.15, model 7.1528
+ok   Table 5 bridge cost: manuscript 9.14, model 9.1439
+ok   Table 5 bridge energy cost: manuscript 5.68, model 5.6750
+ok   Table 5 bridge energy cost: manuscript 6.91, model 6.9108
+ok   Table 5 bridge energy cost: manuscript 8.94, model 8.9413
+ok   Table 5 bridge break-even: manuscript 2.45, model 2.4471
+ok   Table 5 bridge break-even: manuscript 2.97, model 2.9700
+ok   Table 5 bridge break-even: manuscript 3.8, model 3.7968
+ok   Table 5 bridge abatement: manuscript 403, model 402.81
+ok   Table 5 bridge abatement: manuscript 553, model 553.07
+ok   Table 5 bridge abatement: manuscript 781, model 780.75
+ok   Table 5 bridge lifecycle: manuscript 84.6, model 84.595
+ok   Table 5 bridge lifecycle: manuscript 87.0, model 86.983
+ok   Table 5 bridge lifecycle: manuscript 89.1, model 89.056
+ok   Table 5 bridge below Oct 2026: manuscript 0, model 0.00
+ok   Table 5 bridge feasible: manuscript 911, model 911.00
+ok   Table 5 maxel cost: manuscript 2.7, model 2.7039
+ok   Table 5 maxel cost: manuscript 2.98, model 2.9798
+ok   Table 5 maxel cost: manuscript 3.33, model 3.3328
+ok   Table 5 maxel energy cost: manuscript 2.4, model 2.3986
+ok   Table 5 maxel energy cost: manuscript 2.57, model 2.5694
+ok   Table 5 maxel energy cost: manuscript 2.81, model 2.8080
+ok   Table 5 maxel break-even: manuscript 1.12, model 1.1227
+ok   Table 5 maxel break-even: manuscript 1.24, model 1.2373
+ok   Table 5 maxel break-even: manuscript 1.38, model 1.3838
+ok   Table 5 maxel abatement: manuscript 32, model 32.14
+ok   Table 5 maxel abatement: manuscript 62, model 61.71
+ok   Table 5 maxel abatement: manuscript 100, model 100.20
+ok   Table 5 maxel lifecycle: manuscript 92.0, model 91.986
+ok   Table 5 maxel lifecycle: manuscript 93.4, model 93.424
+ok   Table 5 maxel lifecycle: manuscript 94.5, model 94.522
+ok   Table 5 maxel below Oct 2026: manuscript 1000, model 1000.00
+ok   Table 5 maxel feasible: manuscript 1000, model 1000.00
+ok   Figure 3 bare hose MJ: manuscript 28.9, model 28.859
+ok   Figure 3 bare hose ratio: manuscript 3.15, model 3.1498
+ok   Figure 3 faired 80% MJ: manuscript 18.8, model 18.847
+ok   Figure 3 faired 80% ratio: manuscript 4.82, model 4.8230
+ok   Figure 3 faired 85% (reference) MJ: manuscript 18.2, model 18.222
+ok   Figure 3 faired 85% (reference) ratio: manuscript 4.99, model 4.9886
+ok   Figure 3 faired 90% MJ: manuscript 17.6, model 17.596
+ok   Figure 3 faired 90% ratio: manuscript 5.17, model 5.1660
+ok   Figure 3 faired 85%, 30% slurry MJ: manuscript 14.3, model 14.331
+ok   Figure 3 faired 85%, 30% slurry ratio: manuscript 6.34, model 6.3427
+ok   Figure 3 faired 85%, 1.20-m hose MJ: manuscript 19.2, model 19.165
+ok   Figure 3 faired 85%, 1.20-m hose ratio: manuscript 4.74, model 4.7431
+ok   Figure 3 faired 85% + coarse chopping 0.2 kWh/t MJ: manuscript 49.3, model 49.326
+ok   Figure 3 faired 85% + coarse chopping 0.2 kWh/t ratio: manuscript 1.84, model 1.8429
+ok   Figure 3 faired 85% + fine maceration 1.0 kWh/t MJ: manuscript 173.7, model 173.742
+ok   Figure 3 faired 85% + fine maceration 1.0 kWh/t ratio: manuscript 0.52, model 0.5232
+ok   Figure 3 conventional MJ: manuscript 90.9, model 90.900
+ok   Figure 6 today: manuscript 4.758, model 4.75793
+ok   Figure 6 farm: manuscript 4.647, model 4.64734
+ok   Figure 6 yield: manuscript 4.503, model 4.50268
+ok   Figure 6 deep: manuscript 4.414, model 4.41370
+ok   Figure 6 conversion: manuscript 4.197, model 4.19699
+ok   Figure 6 refcapex: manuscript 3.94, model 3.93961
+ok   Figure 6 efuels: manuscript 3.939, model 3.93880
+ok   Figure 6 capital: manuscript 3.382, model 3.38233
+ok   Figure 6 grid: manuscript 3.374, model 3.37413
+ok   Figure 7 Integration and network adders ×2: manuscript 0.333, model 0.33292
+ok   Figure 7 No seaweed and PV limited to 4 GW: manuscript 0.887, model 0.88687
+ok   Figure 7 No seaweed: manuscript 0.338, model 0.33825
+ok   Figure 7 Seaweed yield 4 t ha⁻¹ yr⁻¹: manuscript 0.338, model 0.33825
+ok   Figure 7 Seaweed yield 6 t ha⁻¹ yr⁻¹: manuscript 0.304, model 0.30395
+ok   Figure 7 Finance at 7%: manuscript 0.576, model 0.57607
+ok   Figure 7 Vehicle premia high: manuscript 0.425, model 0.42541
+ok   Figure 7 No fertilizer credit: manuscript 0.085, model 0.08479
+ok   Figure 7 Offshore pressing before shipping: manuscript 0.043, model 0.04289
+ok   Figure 7 No electrofuels: manuscript 0.031, model 0.03073
+ok   Figure 7 Onshore wind limited to 1.5 GW: manuscript 0.024, model 0.02436
+ok   Figure 7 No depth cycling (natural nutrients or pumps): manuscript 0.026, model 0.02608
+ok   Figure 7 Candidate marine area 5%: manuscript 0.049, model 0.04935
+ok   Figure 7 Whole-seaweed HTL yield 0.12: manuscript 0.013, model 0.01322
+ok   Figure 7 Conventional harvesting energy (ratio 1.0): manuscript 0.01, model 0.00991
+ok   Figure 7 LNG/CNG vehicles allowed (with liquefaction and conversion): manuscript -0.005, model -0.00528
+ok   Figure 7 Domestic aviation and shipping only: manuscript -0.957, model -0.95685
+ok   Figure 11 2035 surplus: manuscript 0.0, model 0.0000
+ok   Figure 11 2040 surplus: manuscript 1.39, model 1.3887
+ok   Figure 11 2045 surplus: manuscript 2.58, model 2.5776
+ok   Figure 11 2050 surplus: manuscript 3.44, model 3.4368
+ok   Table 1 ldv_gasoline|bev at 7%: manuscript 12.1, model 12.141
+ok   Table 1 ldv_gasoline|e85 at 7%: manuscript 2.2, model 2.207
+ok   Table 1 ldv_gasoline|e100 at 7%: manuscript 3.3, model 3.311
+ok   Table 1 ldv_diesel|bev at 7%: manuscript 12.4, model 12.385
+ok   Table 1 hdv|bet at 7%: manuscript 29.2, model 29.193
+ok   Table 1 hdv|ed95 at 7%: manuscript 7.7, model 7.728
+ok   Table 1 hdv|lng at 7%: manuscript 24.0, model 24.042
+ok   Table 1 offroad|el at 7%: manuscript 29.2, model 29.193
+ok   Table 1 offroad|cng at 7%: manuscript 24.0, model 24.042
+ok   Table 1 ldv_gasoline|bev at 4%: manuscript 9.9, model 9.946
+ok   Table 1 ldv_gasoline|e85 at 4%: manuscript 1.8, model 1.808
+ok   Table 1 ldv_gasoline|e100 at 4%: manuscript 2.7, model 2.712
+ok   Table 1 ldv_diesel|bev at 4%: manuscript 10.1, model 10.146
+ok   Table 1 hdv|bet at 4%: manuscript 23.9, model 23.915
+ok   Table 1 hdv|ed95 at 4%: manuscript 6.3, model 6.330
+ok   Table 1 hdv|lng at 4%: manuscript 19.7, model 19.694
+ok   Table 1 offroad|el at 4%: manuscript 23.9, model 23.915
+ok   Table 1 offroad|cng at 4%: manuscript 19.7, model 19.694
+ok   Table 6 base_fao cost: manuscript 3.43, model 3.43002
+ok   Table 6 base_fao offshore: manuscript 0.0, model 0.00000
+ok   Table 6 base_fao PVT heat: manuscript 0.0, model 0.00000
+ok   Table 6 base_fao CST heat: manuscript 1.275, model 1.27482
+ok   Table 6 base_fao farm km2: manuscript 2474, model 2473.91
+ok   Table 6 wind cost: manuscript 3.518, model 3.51820
+ok   Table 6 wind offshore: manuscript 2.687, model 2.68740
+ok   Table 6 wind PVT heat: manuscript 0.0, model 0.00000
+ok   Table 6 wind CST heat: manuscript 0.807, model 0.80653
+ok   Table 6 wind farm km2: manuscript 1987, model 1986.55
+ok   Table 6 pvt cost: manuscript 3.426, model 3.42574
+ok   Table 6 pvt offshore: manuscript 0.0, model 0.00000
+ok   Table 6 pvt PVT heat: manuscript 0.07, model 0.07030
+ok   Table 6 pvt CST heat: manuscript 1.205, model 1.20452
+ok   Table 6 pvt farm km2: manuscript 2474, model 2473.91
+ok   Table 6 hybrid cost: manuscript 3.514, model 3.51400
+ok   Table 6 hybrid offshore: manuscript 2.687, model 2.68740
+ok   Table 6 hybrid PVT heat: manuscript 0.07, model 0.07030
+ok   Table 6 hybrid CST heat: manuscript 0.731, model 0.73109
+ok   Table 6 hybrid farm km2: manuscript 1975, model 1974.82
+ok   Table 6 caption uncapped case: manuscript 3.42, model 3.4233
+ok   Section 3.9 PVT electricity TWh: manuscript 0.052, model 0.05180
+ok   Section 3.9 dry seaweed Mt: manuscript 2.2, model 2.1970
+ok   Section 3.9 optional offshore TWh: manuscript 0.0, model 0.00000
+ok   Section 3.9 premium at US$79/MWh, US$ m: manuscript 84, model 83.99
+ok   Section 3.9/Note 20 premium at US$58/MWh, US$ m: manuscript 28, model 27.55
+ok   Section 3.9/Note 20 premium at US$91/MWh, US$ m: manuscript 116, model 116.24
+ok   Section 3.9/Note 20 premium at US$105/MWh, US$ m: manuscript 154, model 153.86
+ok   Section 3.9/Note 20 premium at US$123/MWh, US$ m: manuscript 202, model 202.23
+ok   Section 3.9/Note 20 premium at US$135/MWh, US$ m: manuscript 234, model 234.48
+ok   Section 3.9 full offshore stage least-cost at low offshore cost
+ok   Figure 9a/Section 3.10 unserved % (1.0, 48, 1.0): manuscript 11.4, model 11.423
+ok   Section 3.10 unserved hours (1.0, 48, 1.0): manuscript 1152, model 1152.00
+ok   Figure 9a/Section 3.10 unserved % (1.0, 48, 0.75): manuscript 21.4, model 21.447
+ok   Figure 9a/Section 3.10 unserved % (1.7, 72, 0.75): manuscript 1.7, model 1.724
+ok   Figure 9a/Section 3.10 unserved % (1.7, 72, 1.0): manuscript 0.0, model 0.000
+ok   Figure 9a/Section 3.10 unserved % (2.0, 96, 1.0): manuscript 0.0, model 0.000
+ok   Figure 9a/Section 3.10 unserved % (2.0, 96, 0.75): manuscript 0.0, model 0.000
+ok   Figure 9a/Section 3.10 unserved % (2.25, 96, 1.0): manuscript 0.0, model 0.000
+ok   Figure 9a/Section 3.10 unserved % (2.25, 96, 0.75): manuscript 0.0, model 0.000
+ok   Section 4.1 share of hours with deficit %: manuscript 13.2, model 13.151
+ok   Section 3.10 10% wind diversion %: manuscript 8.7, model 8.675
+ok   Section 3.10 20% wind diversion %: manuscript 6.1, model 6.135
+ok   Section 3.10 sizing sweep (1, 12): manuscript 25.6, model 25.585
+ok   Section 3.10 sizing sweep (1, 168): manuscript 7.8, model 7.799
+ok   Section 3.10 sizing sweep (1.5, 24): manuscript 4.3, model 4.268
+ok   Section 3.10 sizing sweep (1.5, 48): manuscript 0.8, model 0.848
+ok   Section 3.10 sizing sweep (2, 24): manuscript 0.0, model 0.000
+ok   Section 3.10 annual-sized field km2: manuscript 3.77, model 3.7716
+ok   Section 3.10 2.25x field km2: manuscript 8.49, model 8.4862
+ok   Section 3.10 store GWh: manuscript 10.2, model 10.208
+ok   Figure 9b/Section 3.10 annual total, store US$15/kWh: manuscript 3.608, model 3.60779
+ok   Section 3.10 upgrade capex, store US$15/kWh: manuscript 1.203, model 1.20257
+ok   Figure 9b/Section 3.10 annual total, store US$30/kWh: manuscript 3.619, model 3.61920
+ok   Section 3.10 upgrade capex, store US$30/kWh: manuscript 1.356, model 1.35568
+ok   Figure 9b/Section 3.10 annual total, store US$60/kWh: manuscript 3.642, model 3.64201
+ok   Section 3.10 upgrade capex, store US$60/kWh: manuscript 1.662, model 1.66191
+ok   Abstract/Figure 10 recovered N t: manuscript 18455, model 18454.93
+ok   Abstract/Figure 10 recovered P t: manuscript 3867, model 3866.75
+ok   Abstract/Figure 10 recovered K t: manuscript 80850, model 80850.18
+ok   Section 3.11 recovered K2O t (about 97,400): manuscript 97400, model 97393
+ok   Section 3.11 deliverable K t: manuscript 37107, model 37107.32
+ok   Section 3.11/Figure 10b 50% acceptance N_t: manuscript 9227, model 9227.47
+ok   Section 3.11/Figure 10b 50% acceptance P_t: manuscript 1933, model 1933.37
+ok   Section 3.11/Figure 10b 50% acceptance K_t: manuscript 18554, model 18553.66
+ok   Section 3.11 avoided manufacturing energy PJ: manuscript 1.093, model 1.09306
+ok   Supplementary Note 22 assimilated N t: manuscript 30758, model 30758.22
+ok   Supplementary Note 22 assimilated P t: manuscript 4833, model 4833.43
+--- Manuscrito_ES_V23.docx (Spanish edition), 6 tables
+ok   Manuscrito_ES_V23.docx Table 1 value 1: printed 12.1, model 12.1411
+ok   Manuscrito_ES_V23.docx Table 1 value 2: printed 9.9, model 9.9457
+ok   Manuscrito_ES_V23.docx Table 1 value 3: printed 2.2, model 2.2075
+ok   Manuscrito_ES_V23.docx Table 1 value 4: printed 1.8, model 1.8083
+ok   Manuscrito_ES_V23.docx Table 1 value 5: printed 3.3, model 3.3112
+ok   Manuscrito_ES_V23.docx Table 1 value 6: printed 2.7, model 2.7125
+ok   Manuscrito_ES_V23.docx Table 1 value 7: printed 12.4, model 12.3852
+ok   Manuscrito_ES_V23.docx Table 1 value 8: printed 10.1, model 10.1457
+ok   Manuscrito_ES_V23.docx Table 1 value 9: printed 29.2, model 29.1934
+ok   Manuscrito_ES_V23.docx Table 1 value 10: printed 23.9, model 23.9145
+ok   Manuscrito_ES_V23.docx Table 1 value 11: printed 7.7, model 7.7277
+ok   Manuscrito_ES_V23.docx Table 1 value 12: printed 6.3, model 6.3303
+ok   Manuscrito_ES_V23.docx Table 1 value 13: printed 24.0, model 24.0416
+ok   Manuscrito_ES_V23.docx Table 1 value 14: printed 19.7, model 19.6943
+ok   Manuscrito_ES_V23.docx Table 1 value 15: printed 29.2, model 29.1934
+ok   Manuscrito_ES_V23.docx Table 1 value 16: printed 23.9, model 23.9145
+ok   Manuscrito_ES_V23.docx Table 1 value 17: printed 24.0, model 24.0416
+ok   Manuscrito_ES_V23.docx Table 1 value 18: printed 19.7, model 19.6943
+ok   Manuscrito_ES_V23.docx Table 2 value 1: printed 5.31, model 5.31360
+ok   Manuscrito_ES_V23.docx Table 2 value 2: printed 3.64, model 3.63790
+ok   Manuscrito_ES_V23.docx Table 2 value 3: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 2 value 4: printed 2.13, model 2.12544
+ok   Manuscrito_ES_V23.docx Table 2 value 5: printed 1.46, model 1.45516
+ok   Manuscrito_ES_V23.docx Table 2 value 6: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 2 value 7: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 2 value 8: printed 2.23, model 2.23276
+ok   Manuscrito_ES_V23.docx Table 2 value 9: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 2 value 10: printed 1.05, model 1.04939
+ok   Manuscrito_ES_V23.docx Table 2 value 11: printed 0.73, model 0.73113
+ok   Manuscrito_ES_V23.docx Table 2 value 12: printed 4.80, model 4.79720
+ok   Manuscrito_ES_V23.docx Table 2 value 13: printed 0.440, model 0.439500
+ok   Manuscrito_ES_V23.docx Table 2 value 14: printed 0.361, model 0.361406
+ok   Manuscrito_ES_V23.docx Table 2 value 15: printed 0.111, model 0.110970
+ok   Manuscrito_ES_V23.docx Table 2 value 16: printed 0.448, model 0.447556
+ok   Manuscrito_ES_V23.docx Table 2 value 17: printed 0.479, model 0.479028
+ok   Manuscrito_ES_V23.docx Table 2 value 18: printed 0.111, model 0.111111
+ok   Manuscrito_ES_V23.docx Table 2 value 19: printed 8.4, model 8.4000
+ok   Manuscrito_ES_V23.docx Table 2 value 20: printed 1.76, model 1.76000
+ok   Manuscrito_ES_V23.docx Table 2 value 21: printed 36.8, model 36.8000
+ok   Manuscrito_ES_V23.docx Table 2 value 22: printed 8.4, model 8.4000
+ok   Manuscrito_ES_V23.docx Table 2 value 23: printed 1.76, model 1.76000
+ok   Manuscrito_ES_V23.docx Table 2 value 24: printed 36.8, model 36.8000
+ok   Manuscrito_ES_V23.docx Table 2 value 25: printed 8.4, model 8.4000
+ok   Manuscrito_ES_V23.docx Table 2 value 26: printed 1.76, model 1.76000
+ok   Manuscrito_ES_V23.docx Table 2 value 27: printed 36.8, model 36.8000
+ok   Manuscrito_ES_V23.docx Table 2 value 28: printed 214, model 214.000
+ok   Manuscrito_ES_V23.docx Table 2 value 29: printed 254, model 254.000
+ok   Manuscrito_ES_V23.docx Table 2 value 30: printed 124, model 124.000
+ok   Manuscrito_ES_V23.docx Table 3 value 1: printed 4.76, model 4.75793
+ok   Manuscrito_ES_V23.docx Table 3 value 2: printed 25.96, model 25.95673
+ok   Manuscrito_ES_V23.docx Table 3 value 3: printed 0, model 0.000
+ok   Manuscrito_ES_V23.docx Table 3 value 4: printed 0.0, model 0.0000
+ok   Manuscrito_ES_V23.docx Table 3 value 5: printed 91.8, model 91.8352
+ok   Manuscrito_ES_V23.docx Table 3 value 6: printed 3.42, model 3.42333
+ok   Manuscrito_ES_V23.docx Table 3 value 7: printed 14.13, model 14.12622
+ok   Manuscrito_ES_V23.docx Table 3 value 8: printed 2474, model 2473.906
+ok   Manuscrito_ES_V23.docx Table 3 value 9: printed 18.7, model 18.7110
+ok   Manuscrito_ES_V23.docx Table 3 value 10: printed 91.7, model 91.6531
+ok   Manuscrito_ES_V23.docx Table 3 value 11: printed 4.99, model 4.98810
+ok   Manuscrito_ES_V23.docx Table 3 value 12: printed 19.10, model 19.10427
+ok   Manuscrito_ES_V23.docx Table 3 value 13: printed 3875, model 3874.636
+ok   Manuscrito_ES_V23.docx Table 3 value 14: printed 29.9, model 29.9279
+ok   Manuscrito_ES_V23.docx Table 3 value 15: printed 87.7, model 87.6616
+ok   Manuscrito_ES_V23.docx Table 3 value 16: printed 2.71, model 2.70570
+ok   Manuscrito_ES_V23.docx Table 3 value 17: printed 11.89, model 11.88863
+ok   Manuscrito_ES_V23.docx Table 3 value 18: printed 1503, model 1502.666
+ok   Manuscrito_ES_V23.docx Table 3 value 19: printed 10.9, model 10.9196
+ok   Manuscrito_ES_V23.docx Table 3 value 20: printed 93.3, model 93.3322
+ok   Manuscrito_ES_V23.docx Table 4 value 1: printed 1.60, model 1.60448
+ok   Manuscrito_ES_V23.docx Table 4 value 2: printed 3.14, model 3.13565
+ok   Manuscrito_ES_V23.docx Table 4 value 3: printed 1.84, model 1.84022
+ok   Manuscrito_ES_V23.docx Table 4 value 4: printed 4.50, model 4.50000
+ok   Manuscrito_ES_V23.docx Table 4 value 5: printed 4.50, model 4.50000
+ok   Manuscrito_ES_V23.docx Table 4 value 6: printed 3.31, model 3.31481
+ok   Manuscrito_ES_V23.docx Table 4 value 7: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 4 value 8: printed 2.84, model 2.83632
+ok   Manuscrito_ES_V23.docx Table 4 value 9: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 4 value 10: printed 1.20, model 1.19697
+ok   Manuscrito_ES_V23.docx Table 4 value 11: printed 2.80, model 2.79972
+ok   Manuscrito_ES_V23.docx Table 4 value 12: printed 0.42, model 0.42231
+ok   Manuscrito_ES_V23.docx Table 4 value 13: printed 0.47, model 0.47388
+ok   Manuscrito_ES_V23.docx Table 4 value 14: printed 1.11, model 1.10841
+ok   Manuscrito_ES_V23.docx Table 4 value 15: printed 0.17, model 0.16719
+ok   Manuscrito_ES_V23.docx Table 4 value 16: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 4 value 17: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 4 value 18: printed 0.00, model 0.00000
+ok   Manuscrito_ES_V23.docx Table 4 value 19: printed 7.06, model 7.05655
+ok   Manuscrito_ES_V23.docx Table 4 value 20: printed 12.80, model 12.79955
+ok   Manuscrito_ES_V23.docx Table 4 value 21: printed 3.46, model 3.45613
+ok   Manuscrito_ES_V23.docx Table 4 value 22: printed 5.20, model 5.20042
+ok   Manuscrito_ES_V23.docx Table 4 value 23: printed 8.33, model 8.32685
+ok   Manuscrito_ES_V23.docx Table 4 value 24: printed 3.03, model 3.03261
+ok   Manuscrito_ES_V23.docx Table 4 value 25: printed 1.90, model 1.90123
+ok   Manuscrito_ES_V23.docx Table 4 value 26: printed 3.04, model 3.04422
+ok   Manuscrito_ES_V23.docx Table 4 value 27: printed 1.11, model 1.10870
+ok   Manuscrito_ES_V23.docx Table 4 value 28: printed 1.15, model 1.14734
+ok   Manuscrito_ES_V23.docx Table 4 value 29: printed 2.15, model 2.15201
+ok   Manuscrito_ES_V23.docx Table 4 value 30: printed 0.67, model 0.66907
+ok   Manuscrito_ES_V23.docx Table 4 value 31: printed 2.97, model 2.96547
+ok   Manuscrito_ES_V23.docx Table 4 value 32: printed 2.00, model 2.00391
+ok   Manuscrito_ES_V23.docx Table 4 value 33: printed 3.68, model 3.68465
+ok   Manuscrito_ES_V23.docx Table 4 value 34: printed 26.05, model 26.04635
+ok   Manuscrito_ES_V23.docx Table 4 value 35: printed 42.71, model 42.70665
+ok   Manuscrito_ES_V23.docx Table 4 value 36: printed 17.70, model 17.69568
+ok   Manuscrito_ES_V23.docx Table 4 value 37: printed 1.09, model 1.08526
+ok   Manuscrito_ES_V23.docx Table 4 value 38: printed 1.78, model 1.77944
+ok   Manuscrito_ES_V23.docx Table 4 value 39: printed 0.74, model 0.73732
+ok   Manuscrito_ES_V23.docx Table 5 value 1: printed 4.01, model 4.01372
+ok   Manuscrito_ES_V23.docx Table 5 value 2: printed 3.63, model 3.63252
+ok   Manuscrito_ES_V23.docx Table 5 value 3: printed 4.48, model 4.48231
+ok   Manuscrito_ES_V23.docx Table 5 value 4: printed 7.15, model 7.15285
+ok   Manuscrito_ES_V23.docx Table 5 value 5: printed 5.89, model 5.89346
+ok   Manuscrito_ES_V23.docx Table 5 value 6: printed 9.14, model 9.14394
+ok   Manuscrito_ES_V23.docx Table 5 value 7: printed 2.98, model 2.97984
+ok   Manuscrito_ES_V23.docx Table 5 value 8: printed 2.70, model 2.70386
+ok   Manuscrito_ES_V23.docx Table 5 value 9: printed 3.33, model 3.33277
+ok   Manuscrito_ES_V23.docx Table 5 value 10: printed 3.69, model 3.68831
+ok   Manuscrito_ES_V23.docx Table 5 value 11: printed 3.35, model 3.35441
+ok   Manuscrito_ES_V23.docx Table 5 value 12: printed 4.09, model 4.09157
+ok   Manuscrito_ES_V23.docx Table 5 value 13: printed 6.91, model 6.91080
+ok   Manuscrito_ES_V23.docx Table 5 value 14: printed 5.68, model 5.67504
+ok   Manuscrito_ES_V23.docx Table 5 value 15: printed 8.94, model 8.94125
+ok   Manuscrito_ES_V23.docx Table 5 value 16: printed 2.57, model 2.56942
+ok   Manuscrito_ES_V23.docx Table 5 value 17: printed 2.40, model 2.39864
+ok   Manuscrito_ES_V23.docx Table 5 value 18: printed 2.81, model 2.80798
+ok   Manuscrito_ES_V23.docx Table 5 value 19: printed 1.67, model 1.66660
+ok   Manuscrito_ES_V23.docx Table 5 value 20: printed 1.51, model 1.50831
+ok   Manuscrito_ES_V23.docx Table 5 value 21: printed 1.86, model 1.86117
+ok   Manuscrito_ES_V23.docx Table 5 value 22: printed 2.97, model 2.97004
+ok   Manuscrito_ES_V23.docx Table 5 value 23: printed 2.45, model 2.44711
+ok   Manuscrito_ES_V23.docx Table 5 value 24: printed 3.80, model 3.79679
+ok   Manuscrito_ES_V23.docx Table 5 value 25: printed 1.24, model 1.23730
+ok   Manuscrito_ES_V23.docx Table 5 value 26: printed 1.12, model 1.12271
+ok   Manuscrito_ES_V23.docx Table 5 value 27: printed 1.38, model 1.38385
+ok   Manuscrito_ES_V23.docx Table 5 value 28: printed 177, model 177.104
+ok   Manuscrito_ES_V23.docx Table 5 value 29: printed 135, model 135.190
+ok   Manuscrito_ES_V23.docx Table 5 value 30: printed 230, model 230.312
+ok   Manuscrito_ES_V23.docx Table 5 value 31: printed 553, model 553.074
+ok   Manuscrito_ES_V23.docx Table 5 value 32: printed 403, model 402.811
+ok   Manuscrito_ES_V23.docx Table 5 value 33: printed 781, model 780.752
+ok   Manuscrito_ES_V23.docx Table 5 value 34: printed 62, model 61.706
+ok   Manuscrito_ES_V23.docx Table 5 value 35: printed 32, model 32.136
+ok   Manuscrito_ES_V23.docx Table 5 value 36: printed 100, model 100.204
+ok   Manuscrito_ES_V23.docx Table 5 value 37: printed 91.3, model 91.3027
+ok   Manuscrito_ES_V23.docx Table 5 value 38: printed 89.5, model 89.4541
+ok   Manuscrito_ES_V23.docx Table 5 value 39: printed 92.8, model 92.8341
+ok   Manuscrito_ES_V23.docx Table 5 value 40: printed 87.0, model 86.9830
+ok   Manuscrito_ES_V23.docx Table 5 value 41: printed 84.6, model 84.5950
+ok   Manuscrito_ES_V23.docx Table 5 value 42: printed 89.1, model 89.0561
+ok   Manuscrito_ES_V23.docx Table 5 value 43: printed 93.4, model 93.4243
+ok   Manuscrito_ES_V23.docx Table 5 value 44: printed 92.0, model 91.9855
+ok   Manuscrito_ES_V23.docx Table 5 value 45: printed 94.5, model 94.5220
+ok   Manuscrito_ES_V23.docx Table 5 value 46: printed 138, model 138.000
+ok   Manuscrito_ES_V23.docx Table 5 value 47: printed 0, model 0.000
+ok   Manuscrito_ES_V23.docx Table 5 value 48: printed 1000, model 1000.000
+ok   Manuscrito_ES_V23.docx Table 5 value 49: printed 1000, model 1000.000
+ok   Manuscrito_ES_V23.docx Table 5 value 50: printed 911, model 911.000
+ok   Manuscrito_ES_V23.docx Table 5 value 51: printed 1000, model 1000.000
+ok   Manuscrito_ES_V23.docx Table 6 value 1: printed 3.430, model 3.430016
+ok   Manuscrito_ES_V23.docx Table 6 value 2: printed 0.000, model 0.000000
+ok   Manuscrito_ES_V23.docx Table 6 value 3: printed 0.000, model 0.000000
+ok   Manuscrito_ES_V23.docx Table 6 value 4: printed 1.275, model 1.274817
+ok   Manuscrito_ES_V23.docx Table 6 value 5: printed 2474, model 2473.906
+ok   Manuscrito_ES_V23.docx Table 6 value 6: printed 3.518, model 3.518200
+ok   Manuscrito_ES_V23.docx Table 6 value 7: printed 2.687, model 2.687400
+ok   Manuscrito_ES_V23.docx Table 6 value 8: printed 0.000, model 0.000000
+ok   Manuscrito_ES_V23.docx Table 6 value 9: printed 0.807, model 0.806529
+ok   Manuscrito_ES_V23.docx Table 6 value 10: printed 1987, model 1986.548
+ok   Manuscrito_ES_V23.docx Table 6 value 11: printed 3.426, model 3.425744
+ok   Manuscrito_ES_V23.docx Table 6 value 12: printed 0.000, model 0.000000
+ok   Manuscrito_ES_V23.docx Table 6 value 13: printed 0.070, model 0.070300
+ok   Manuscrito_ES_V23.docx Table 6 value 14: printed 1.205, model 1.204517
+ok   Manuscrito_ES_V23.docx Table 6 value 15: printed 2474, model 2473.906
+ok   Manuscrito_ES_V23.docx Table 6 value 16: printed 3.514, model 3.514004
+ok   Manuscrito_ES_V23.docx Table 6 value 17: printed 2.687, model 2.687400
+ok   Manuscrito_ES_V23.docx Table 6 value 18: printed 0.070, model 0.070300
+ok   Manuscrito_ES_V23.docx Table 6 value 19: printed 0.731, model 0.731093
+ok   Manuscrito_ES_V23.docx Table 6 value 20: printed 1975, model 1974.816
+--- Manuscript_EN_V23.docx (English edition), 6 tables
+ok   Manuscript_EN_V23.docx Table 1 value 1: printed 12.1, model 12.1411
+ok   Manuscript_EN_V23.docx Table 1 value 2: printed 9.9, model 9.9457
+ok   Manuscript_EN_V23.docx Table 1 value 3: printed 2.2, model 2.2075
+ok   Manuscript_EN_V23.docx Table 1 value 4: printed 1.8, model 1.8083
+ok   Manuscript_EN_V23.docx Table 1 value 5: printed 3.3, model 3.3112
+ok   Manuscript_EN_V23.docx Table 1 value 6: printed 2.7, model 2.7125
+ok   Manuscript_EN_V23.docx Table 1 value 7: printed 12.4, model 12.3852
+ok   Manuscript_EN_V23.docx Table 1 value 8: printed 10.1, model 10.1457
+ok   Manuscript_EN_V23.docx Table 1 value 9: printed 29.2, model 29.1934
+ok   Manuscript_EN_V23.docx Table 1 value 10: printed 23.9, model 23.9145
+ok   Manuscript_EN_V23.docx Table 1 value 11: printed 7.7, model 7.7277
+ok   Manuscript_EN_V23.docx Table 1 value 12: printed 6.3, model 6.3303
+ok   Manuscript_EN_V23.docx Table 1 value 13: printed 24.0, model 24.0416
+ok   Manuscript_EN_V23.docx Table 1 value 14: printed 19.7, model 19.6943
+ok   Manuscript_EN_V23.docx Table 1 value 15: printed 29.2, model 29.1934
+ok   Manuscript_EN_V23.docx Table 1 value 16: printed 23.9, model 23.9145
+ok   Manuscript_EN_V23.docx Table 1 value 17: printed 24.0, model 24.0416
+ok   Manuscript_EN_V23.docx Table 1 value 18: printed 19.7, model 19.6943
+ok   Manuscript_EN_V23.docx Table 2 value 1: printed 5.31, model 5.31360
+ok   Manuscript_EN_V23.docx Table 2 value 2: printed 3.64, model 3.63790
+ok   Manuscript_EN_V23.docx Table 2 value 3: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 2 value 4: printed 2.13, model 2.12544
+ok   Manuscript_EN_V23.docx Table 2 value 5: printed 1.46, model 1.45516
+ok   Manuscript_EN_V23.docx Table 2 value 6: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 2 value 7: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 2 value 8: printed 2.23, model 2.23276
+ok   Manuscript_EN_V23.docx Table 2 value 9: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 2 value 10: printed 1.05, model 1.04939
+ok   Manuscript_EN_V23.docx Table 2 value 11: printed 0.73, model 0.73113
+ok   Manuscript_EN_V23.docx Table 2 value 12: printed 4.80, model 4.79720
+ok   Manuscript_EN_V23.docx Table 2 value 13: printed 0.440, model 0.439500
+ok   Manuscript_EN_V23.docx Table 2 value 14: printed 0.361, model 0.361406
+ok   Manuscript_EN_V23.docx Table 2 value 15: printed 0.111, model 0.110970
+ok   Manuscript_EN_V23.docx Table 2 value 16: printed 0.448, model 0.447556
+ok   Manuscript_EN_V23.docx Table 2 value 17: printed 0.479, model 0.479028
+ok   Manuscript_EN_V23.docx Table 2 value 18: printed 0.111, model 0.111111
+ok   Manuscript_EN_V23.docx Table 2 value 19: printed 8.4, model 8.4000
+ok   Manuscript_EN_V23.docx Table 2 value 20: printed 1.76, model 1.76000
+ok   Manuscript_EN_V23.docx Table 2 value 21: printed 36.8, model 36.8000
+ok   Manuscript_EN_V23.docx Table 2 value 22: printed 8.4, model 8.4000
+ok   Manuscript_EN_V23.docx Table 2 value 23: printed 1.76, model 1.76000
+ok   Manuscript_EN_V23.docx Table 2 value 24: printed 36.8, model 36.8000
+ok   Manuscript_EN_V23.docx Table 2 value 25: printed 8.4, model 8.4000
+ok   Manuscript_EN_V23.docx Table 2 value 26: printed 1.76, model 1.76000
+ok   Manuscript_EN_V23.docx Table 2 value 27: printed 36.8, model 36.8000
+ok   Manuscript_EN_V23.docx Table 2 value 28: printed 214, model 214.000
+ok   Manuscript_EN_V23.docx Table 2 value 29: printed 254, model 254.000
+ok   Manuscript_EN_V23.docx Table 2 value 30: printed 124, model 124.000
+ok   Manuscript_EN_V23.docx Table 3 value 1: printed 4.76, model 4.75793
+ok   Manuscript_EN_V23.docx Table 3 value 2: printed 25.96, model 25.95673
+ok   Manuscript_EN_V23.docx Table 3 value 3: printed 0, model 0.000
+ok   Manuscript_EN_V23.docx Table 3 value 4: printed 0.0, model 0.0000
+ok   Manuscript_EN_V23.docx Table 3 value 5: printed 91.8, model 91.8352
+ok   Manuscript_EN_V23.docx Table 3 value 6: printed 3.42, model 3.42333
+ok   Manuscript_EN_V23.docx Table 3 value 7: printed 14.13, model 14.12622
+ok   Manuscript_EN_V23.docx Table 3 value 8: printed 2474, model 2473.906
+ok   Manuscript_EN_V23.docx Table 3 value 9: printed 18.7, model 18.7110
+ok   Manuscript_EN_V23.docx Table 3 value 10: printed 91.7, model 91.6531
+ok   Manuscript_EN_V23.docx Table 3 value 11: printed 4.99, model 4.98810
+ok   Manuscript_EN_V23.docx Table 3 value 12: printed 19.10, model 19.10427
+ok   Manuscript_EN_V23.docx Table 3 value 13: printed 3875, model 3874.636
+ok   Manuscript_EN_V23.docx Table 3 value 14: printed 29.9, model 29.9279
+ok   Manuscript_EN_V23.docx Table 3 value 15: printed 87.7, model 87.6616
+ok   Manuscript_EN_V23.docx Table 3 value 16: printed 2.71, model 2.70570
+ok   Manuscript_EN_V23.docx Table 3 value 17: printed 11.89, model 11.88863
+ok   Manuscript_EN_V23.docx Table 3 value 18: printed 1503, model 1502.666
+ok   Manuscript_EN_V23.docx Table 3 value 19: printed 10.9, model 10.9196
+ok   Manuscript_EN_V23.docx Table 3 value 20: printed 93.3, model 93.3322
+ok   Manuscript_EN_V23.docx Table 4 value 1: printed 1.60, model 1.60448
+ok   Manuscript_EN_V23.docx Table 4 value 2: printed 3.14, model 3.13565
+ok   Manuscript_EN_V23.docx Table 4 value 3: printed 1.84, model 1.84022
+ok   Manuscript_EN_V23.docx Table 4 value 4: printed 4.50, model 4.50000
+ok   Manuscript_EN_V23.docx Table 4 value 5: printed 4.50, model 4.50000
+ok   Manuscript_EN_V23.docx Table 4 value 6: printed 3.31, model 3.31481
+ok   Manuscript_EN_V23.docx Table 4 value 7: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 4 value 8: printed 2.84, model 2.83632
+ok   Manuscript_EN_V23.docx Table 4 value 9: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 4 value 10: printed 1.20, model 1.19697
+ok   Manuscript_EN_V23.docx Table 4 value 11: printed 2.80, model 2.79972
+ok   Manuscript_EN_V23.docx Table 4 value 12: printed 0.42, model 0.42231
+ok   Manuscript_EN_V23.docx Table 4 value 13: printed 0.47, model 0.47388
+ok   Manuscript_EN_V23.docx Table 4 value 14: printed 1.11, model 1.10841
+ok   Manuscript_EN_V23.docx Table 4 value 15: printed 0.17, model 0.16719
+ok   Manuscript_EN_V23.docx Table 4 value 16: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 4 value 17: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 4 value 18: printed 0.00, model 0.00000
+ok   Manuscript_EN_V23.docx Table 4 value 19: printed 7.06, model 7.05655
+ok   Manuscript_EN_V23.docx Table 4 value 20: printed 12.80, model 12.79955
+ok   Manuscript_EN_V23.docx Table 4 value 21: printed 3.46, model 3.45613
+ok   Manuscript_EN_V23.docx Table 4 value 22: printed 5.20, model 5.20042
+ok   Manuscript_EN_V23.docx Table 4 value 23: printed 8.33, model 8.32685
+ok   Manuscript_EN_V23.docx Table 4 value 24: printed 3.03, model 3.03261
+ok   Manuscript_EN_V23.docx Table 4 value 25: printed 1.90, model 1.90123
+ok   Manuscript_EN_V23.docx Table 4 value 26: printed 3.04, model 3.04422
+ok   Manuscript_EN_V23.docx Table 4 value 27: printed 1.11, model 1.10870
+ok   Manuscript_EN_V23.docx Table 4 value 28: printed 1.15, model 1.14734
+ok   Manuscript_EN_V23.docx Table 4 value 29: printed 2.15, model 2.15201
+ok   Manuscript_EN_V23.docx Table 4 value 30: printed 0.67, model 0.66907
+ok   Manuscript_EN_V23.docx Table 4 value 31: printed 2.97, model 2.96547
+ok   Manuscript_EN_V23.docx Table 4 value 32: printed 2.00, model 2.00391
+ok   Manuscript_EN_V23.docx Table 4 value 33: printed 3.68, model 3.68465
+ok   Manuscript_EN_V23.docx Table 4 value 34: printed 26.05, model 26.04635
+ok   Manuscript_EN_V23.docx Table 4 value 35: printed 42.71, model 42.70665
+ok   Manuscript_EN_V23.docx Table 4 value 36: printed 17.70, model 17.69568
+ok   Manuscript_EN_V23.docx Table 4 value 37: printed 1.09, model 1.08526
+ok   Manuscript_EN_V23.docx Table 4 value 38: printed 1.78, model 1.77944
+ok   Manuscript_EN_V23.docx Table 4 value 39: printed 0.74, model 0.73732
+ok   Manuscript_EN_V23.docx Table 5 value 1: printed 4.01, model 4.01372
+ok   Manuscript_EN_V23.docx Table 5 value 2: printed 3.63, model 3.63252
+ok   Manuscript_EN_V23.docx Table 5 value 3: printed 4.48, model 4.48231
+ok   Manuscript_EN_V23.docx Table 5 value 4: printed 7.15, model 7.15285
+ok   Manuscript_EN_V23.docx Table 5 value 5: printed 5.89, model 5.89346
+ok   Manuscript_EN_V23.docx Table 5 value 6: printed 9.14, model 9.14394
+ok   Manuscript_EN_V23.docx Table 5 value 7: printed 2.98, model 2.97984
+ok   Manuscript_EN_V23.docx Table 5 value 8: printed 2.70, model 2.70386
+ok   Manuscript_EN_V23.docx Table 5 value 9: printed 3.33, model 3.33277
+ok   Manuscript_EN_V23.docx Table 5 value 10: printed 3.69, model 3.68831
+ok   Manuscript_EN_V23.docx Table 5 value 11: printed 3.35, model 3.35441
+ok   Manuscript_EN_V23.docx Table 5 value 12: printed 4.09, model 4.09157
+ok   Manuscript_EN_V23.docx Table 5 value 13: printed 6.91, model 6.91080
+ok   Manuscript_EN_V23.docx Table 5 value 14: printed 5.68, model 5.67504
+ok   Manuscript_EN_V23.docx Table 5 value 15: printed 8.94, model 8.94125
+ok   Manuscript_EN_V23.docx Table 5 value 16: printed 2.57, model 2.56942
+ok   Manuscript_EN_V23.docx Table 5 value 17: printed 2.40, model 2.39864
+ok   Manuscript_EN_V23.docx Table 5 value 18: printed 2.81, model 2.80798
+ok   Manuscript_EN_V23.docx Table 5 value 19: printed 1.67, model 1.66660
+ok   Manuscript_EN_V23.docx Table 5 value 20: printed 1.51, model 1.50831
+ok   Manuscript_EN_V23.docx Table 5 value 21: printed 1.86, model 1.86117
+ok   Manuscript_EN_V23.docx Table 5 value 22: printed 2.97, model 2.97004
+ok   Manuscript_EN_V23.docx Table 5 value 23: printed 2.45, model 2.44711
+ok   Manuscript_EN_V23.docx Table 5 value 24: printed 3.80, model 3.79679
+ok   Manuscript_EN_V23.docx Table 5 value 25: printed 1.24, model 1.23730
+ok   Manuscript_EN_V23.docx Table 5 value 26: printed 1.12, model 1.12271
+ok   Manuscript_EN_V23.docx Table 5 value 27: printed 1.38, model 1.38385
+ok   Manuscript_EN_V23.docx Table 5 value 28: printed 177, model 177.104
+ok   Manuscript_EN_V23.docx Table 5 value 29: printed 135, model 135.190
+ok   Manuscript_EN_V23.docx Table 5 value 30: printed 230, model 230.312
+ok   Manuscript_EN_V23.docx Table 5 value 31: printed 553, model 553.074
+ok   Manuscript_EN_V23.docx Table 5 value 32: printed 403, model 402.811
+ok   Manuscript_EN_V23.docx Table 5 value 33: printed 781, model 780.752
+ok   Manuscript_EN_V23.docx Table 5 value 34: printed 62, model 61.706
+ok   Manuscript_EN_V23.docx Table 5 value 35: printed 32, model 32.136
+ok   Manuscript_EN_V23.docx Table 5 value 36: printed 100, model 100.204
+ok   Manuscript_EN_V23.docx Table 5 value 37: printed 91.3, model 91.3027
+ok   Manuscript_EN_V23.docx Table 5 value 38: printed 89.5, model 89.4541
+ok   Manuscript_EN_V23.docx Table 5 value 39: printed 92.8, model 92.8341
+ok   Manuscript_EN_V23.docx Table 5 value 40: printed 87.0, model 86.9830
+ok   Manuscript_EN_V23.docx Table 5 value 41: printed 84.6, model 84.5950
+ok   Manuscript_EN_V23.docx Table 5 value 42: printed 89.1, model 89.0561
+ok   Manuscript_EN_V23.docx Table 5 value 43: printed 93.4, model 93.4243
+ok   Manuscript_EN_V23.docx Table 5 value 44: printed 92.0, model 91.9855
+ok   Manuscript_EN_V23.docx Table 5 value 45: printed 94.5, model 94.5220
+ok   Manuscript_EN_V23.docx Table 5 value 46: printed 138, model 138.000
+ok   Manuscript_EN_V23.docx Table 5 value 47: printed 0, model 0.000
+ok   Manuscript_EN_V23.docx Table 5 value 48: printed 1000, model 1000.000
+ok   Manuscript_EN_V23.docx Table 5 value 49: printed 1000, model 1000.000
+ok   Manuscript_EN_V23.docx Table 5 value 50: printed 911, model 911.000
+ok   Manuscript_EN_V23.docx Table 5 value 51: printed 1000, model 1000.000
+ok   Manuscript_EN_V23.docx Table 6 value 1: printed 3.430, model 3.430016
+ok   Manuscript_EN_V23.docx Table 6 value 2: printed 0.000, model 0.000000
+ok   Manuscript_EN_V23.docx Table 6 value 3: printed 0.000, model 0.000000
+ok   Manuscript_EN_V23.docx Table 6 value 4: printed 1.275, model 1.274817
+ok   Manuscript_EN_V23.docx Table 6 value 5: printed 2474, model 2473.906
+ok   Manuscript_EN_V23.docx Table 6 value 6: printed 3.518, model 3.518200
+ok   Manuscript_EN_V23.docx Table 6 value 7: printed 2.687, model 2.687400
+ok   Manuscript_EN_V23.docx Table 6 value 8: printed 0.000, model 0.000000
+ok   Manuscript_EN_V23.docx Table 6 value 9: printed 0.807, model 0.806529
+ok   Manuscript_EN_V23.docx Table 6 value 10: printed 1987, model 1986.548
+ok   Manuscript_EN_V23.docx Table 6 value 11: printed 3.426, model 3.425744
+ok   Manuscript_EN_V23.docx Table 6 value 12: printed 0.000, model 0.000000
+ok   Manuscript_EN_V23.docx Table 6 value 13: printed 0.070, model 0.070300
+ok   Manuscript_EN_V23.docx Table 6 value 14: printed 1.205, model 1.204517
+ok   Manuscript_EN_V23.docx Table 6 value 15: printed 2474, model 2473.906
+ok   Manuscript_EN_V23.docx Table 6 value 16: printed 3.514, model 3.514004
+ok   Manuscript_EN_V23.docx Table 6 value 17: printed 2.687, model 2.687400
+ok   Manuscript_EN_V23.docx Table 6 value 18: printed 0.070, model 0.070300
+ok   Manuscript_EN_V23.docx Table 6 value 19: printed 0.731, model 0.731093
+ok   Manuscript_EN_V23.docx Table 6 value 20: printed 1975, model 1974.816
+--- Manuscrito_Anonimo_ES_V23.docx (Spanish edition), 6 tables
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 1: printed 12.1, model 12.1411
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 2: printed 9.9, model 9.9457
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 3: printed 2.2, model 2.2075
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 4: printed 1.8, model 1.8083
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 5: printed 3.3, model 3.3112
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 6: printed 2.7, model 2.7125
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 7: printed 12.4, model 12.3852
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 8: printed 10.1, model 10.1457
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 9: printed 29.2, model 29.1934
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 10: printed 23.9, model 23.9145
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 11: printed 7.7, model 7.7277
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 12: printed 6.3, model 6.3303
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 13: printed 24.0, model 24.0416
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 14: printed 19.7, model 19.6943
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 15: printed 29.2, model 29.1934
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 16: printed 23.9, model 23.9145
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 17: printed 24.0, model 24.0416
+ok   Manuscrito_Anonimo_ES_V23.docx Table 1 value 18: printed 19.7, model 19.6943
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 1: printed 5.31, model 5.31360
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 2: printed 3.64, model 3.63790
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 3: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 4: printed 2.13, model 2.12544
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 5: printed 1.46, model 1.45516
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 6: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 7: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 8: printed 2.23, model 2.23276
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 9: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 10: printed 1.05, model 1.04939
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 11: printed 0.73, model 0.73113
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 12: printed 4.80, model 4.79720
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 13: printed 0.440, model 0.439500
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 14: printed 0.361, model 0.361406
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 15: printed 0.111, model 0.110970
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 16: printed 0.448, model 0.447556
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 17: printed 0.479, model 0.479028
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 18: printed 0.111, model 0.111111
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 19: printed 8.4, model 8.4000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 20: printed 1.76, model 1.76000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 21: printed 36.8, model 36.8000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 22: printed 8.4, model 8.4000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 23: printed 1.76, model 1.76000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 24: printed 36.8, model 36.8000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 25: printed 8.4, model 8.4000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 26: printed 1.76, model 1.76000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 27: printed 36.8, model 36.8000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 28: printed 214, model 214.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 29: printed 254, model 254.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 2 value 30: printed 124, model 124.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 1: printed 4.76, model 4.75793
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 2: printed 25.96, model 25.95673
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 3: printed 0, model 0.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 4: printed 0.0, model 0.0000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 5: printed 91.8, model 91.8352
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 6: printed 3.42, model 3.42333
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 7: printed 14.13, model 14.12622
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 8: printed 2474, model 2473.906
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 9: printed 18.7, model 18.7110
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 10: printed 91.7, model 91.6531
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 11: printed 4.99, model 4.98810
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 12: printed 19.10, model 19.10427
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 13: printed 3875, model 3874.636
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 14: printed 29.9, model 29.9279
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 15: printed 87.7, model 87.6616
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 16: printed 2.71, model 2.70570
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 17: printed 11.89, model 11.88863
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 18: printed 1503, model 1502.666
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 19: printed 10.9, model 10.9196
+ok   Manuscrito_Anonimo_ES_V23.docx Table 3 value 20: printed 93.3, model 93.3322
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 1: printed 1.60, model 1.60448
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 2: printed 3.14, model 3.13565
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 3: printed 1.84, model 1.84022
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 4: printed 4.50, model 4.50000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 5: printed 4.50, model 4.50000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 6: printed 3.31, model 3.31481
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 7: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 8: printed 2.84, model 2.83632
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 9: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 10: printed 1.20, model 1.19697
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 11: printed 2.80, model 2.79972
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 12: printed 0.42, model 0.42231
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 13: printed 0.47, model 0.47388
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 14: printed 1.11, model 1.10841
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 15: printed 0.17, model 0.16719
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 16: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 17: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 18: printed 0.00, model 0.00000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 19: printed 7.06, model 7.05655
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 20: printed 12.80, model 12.79955
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 21: printed 3.46, model 3.45613
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 22: printed 5.20, model 5.20042
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 23: printed 8.33, model 8.32685
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 24: printed 3.03, model 3.03261
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 25: printed 1.90, model 1.90123
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 26: printed 3.04, model 3.04422
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 27: printed 1.11, model 1.10870
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 28: printed 1.15, model 1.14734
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 29: printed 2.15, model 2.15201
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 30: printed 0.67, model 0.66907
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 31: printed 2.97, model 2.96547
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 32: printed 2.00, model 2.00391
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 33: printed 3.68, model 3.68465
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 34: printed 26.05, model 26.04635
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 35: printed 42.71, model 42.70665
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 36: printed 17.70, model 17.69568
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 37: printed 1.09, model 1.08526
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 38: printed 1.78, model 1.77944
+ok   Manuscrito_Anonimo_ES_V23.docx Table 4 value 39: printed 0.74, model 0.73732
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 1: printed 4.01, model 4.01372
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 2: printed 3.63, model 3.63252
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 3: printed 4.48, model 4.48231
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 4: printed 7.15, model 7.15285
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 5: printed 5.89, model 5.89346
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 6: printed 9.14, model 9.14394
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 7: printed 2.98, model 2.97984
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 8: printed 2.70, model 2.70386
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 9: printed 3.33, model 3.33277
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 10: printed 3.69, model 3.68831
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 11: printed 3.35, model 3.35441
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 12: printed 4.09, model 4.09157
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 13: printed 6.91, model 6.91080
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 14: printed 5.68, model 5.67504
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 15: printed 8.94, model 8.94125
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 16: printed 2.57, model 2.56942
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 17: printed 2.40, model 2.39864
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 18: printed 2.81, model 2.80798
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 19: printed 1.67, model 1.66660
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 20: printed 1.51, model 1.50831
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 21: printed 1.86, model 1.86117
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 22: printed 2.97, model 2.97004
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 23: printed 2.45, model 2.44711
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 24: printed 3.80, model 3.79679
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 25: printed 1.24, model 1.23730
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 26: printed 1.12, model 1.12271
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 27: printed 1.38, model 1.38385
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 28: printed 177, model 177.104
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 29: printed 135, model 135.190
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 30: printed 230, model 230.312
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 31: printed 553, model 553.074
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 32: printed 403, model 402.811
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 33: printed 781, model 780.752
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 34: printed 62, model 61.706
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 35: printed 32, model 32.136
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 36: printed 100, model 100.204
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 37: printed 91.3, model 91.3027
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 38: printed 89.5, model 89.4541
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 39: printed 92.8, model 92.8341
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 40: printed 87.0, model 86.9830
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 41: printed 84.6, model 84.5950
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 42: printed 89.1, model 89.0561
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 43: printed 93.4, model 93.4243
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 44: printed 92.0, model 91.9855
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 45: printed 94.5, model 94.5220
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 46: printed 138, model 138.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 47: printed 0, model 0.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 48: printed 1000, model 1000.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 49: printed 1000, model 1000.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 50: printed 911, model 911.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 5 value 51: printed 1000, model 1000.000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 1: printed 3.430, model 3.430016
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 2: printed 0.000, model 0.000000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 3: printed 0.000, model 0.000000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 4: printed 1.275, model 1.274817
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 5: printed 2474, model 2473.906
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 6: printed 3.518, model 3.518200
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 7: printed 2.687, model 2.687400
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 8: printed 0.000, model 0.000000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 9: printed 0.807, model 0.806529
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 10: printed 1987, model 1986.548
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 11: printed 3.426, model 3.425744
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 12: printed 0.000, model 0.000000
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 13: printed 0.070, model 0.070300
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 14: printed 1.205, model 1.204517
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 15: printed 2474, model 2473.906
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 16: printed 3.514, model 3.514004
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 17: printed 2.687, model 2.687400
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 18: printed 0.070, model 0.070300
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 19: printed 0.731, model 0.731093
+ok   Manuscrito_Anonimo_ES_V23.docx Table 6 value 20: printed 1975, model 1974.816
+--- Manuscript_Anonymous_EN_V23.docx (English edition), 6 tables
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 1: printed 12.1, model 12.1411
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 2: printed 9.9, model 9.9457
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 3: printed 2.2, model 2.2075
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 4: printed 1.8, model 1.8083
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 5: printed 3.3, model 3.3112
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 6: printed 2.7, model 2.7125
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 7: printed 12.4, model 12.3852
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 8: printed 10.1, model 10.1457
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 9: printed 29.2, model 29.1934
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 10: printed 23.9, model 23.9145
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 11: printed 7.7, model 7.7277
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 12: printed 6.3, model 6.3303
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 13: printed 24.0, model 24.0416
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 14: printed 19.7, model 19.6943
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 15: printed 29.2, model 29.1934
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 16: printed 23.9, model 23.9145
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 17: printed 24.0, model 24.0416
+ok   Manuscript_Anonymous_EN_V23.docx Table 1 value 18: printed 19.7, model 19.6943
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 1: printed 5.31, model 5.31360
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 2: printed 3.64, model 3.63790
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 3: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 4: printed 2.13, model 2.12544
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 5: printed 1.46, model 1.45516
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 6: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 7: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 8: printed 2.23, model 2.23276
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 9: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 10: printed 1.05, model 1.04939
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 11: printed 0.73, model 0.73113
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 12: printed 4.80, model 4.79720
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 13: printed 0.440, model 0.439500
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 14: printed 0.361, model 0.361406
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 15: printed 0.111, model 0.110970
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 16: printed 0.448, model 0.447556
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 17: printed 0.479, model 0.479028
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 18: printed 0.111, model 0.111111
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 19: printed 8.4, model 8.4000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 20: printed 1.76, model 1.76000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 21: printed 36.8, model 36.8000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 22: printed 8.4, model 8.4000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 23: printed 1.76, model 1.76000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 24: printed 36.8, model 36.8000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 25: printed 8.4, model 8.4000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 26: printed 1.76, model 1.76000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 27: printed 36.8, model 36.8000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 28: printed 214, model 214.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 29: printed 254, model 254.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 2 value 30: printed 124, model 124.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 1: printed 4.76, model 4.75793
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 2: printed 25.96, model 25.95673
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 3: printed 0, model 0.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 4: printed 0.0, model 0.0000
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 5: printed 91.8, model 91.8352
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 6: printed 3.42, model 3.42333
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 7: printed 14.13, model 14.12622
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 8: printed 2474, model 2473.906
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 9: printed 18.7, model 18.7110
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 10: printed 91.7, model 91.6531
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 11: printed 4.99, model 4.98810
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 12: printed 19.10, model 19.10427
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 13: printed 3875, model 3874.636
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 14: printed 29.9, model 29.9279
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 15: printed 87.7, model 87.6616
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 16: printed 2.71, model 2.70570
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 17: printed 11.89, model 11.88863
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 18: printed 1503, model 1502.666
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 19: printed 10.9, model 10.9196
+ok   Manuscript_Anonymous_EN_V23.docx Table 3 value 20: printed 93.3, model 93.3322
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 1: printed 1.60, model 1.60448
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 2: printed 3.14, model 3.13565
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 3: printed 1.84, model 1.84022
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 4: printed 4.50, model 4.50000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 5: printed 4.50, model 4.50000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 6: printed 3.31, model 3.31481
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 7: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 8: printed 2.84, model 2.83632
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 9: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 10: printed 1.20, model 1.19697
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 11: printed 2.80, model 2.79972
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 12: printed 0.42, model 0.42231
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 13: printed 0.47, model 0.47388
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 14: printed 1.11, model 1.10841
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 15: printed 0.17, model 0.16719
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 16: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 17: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 18: printed 0.00, model 0.00000
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 19: printed 7.06, model 7.05655
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 20: printed 12.80, model 12.79955
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 21: printed 3.46, model 3.45613
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 22: printed 5.20, model 5.20042
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 23: printed 8.33, model 8.32685
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 24: printed 3.03, model 3.03261
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 25: printed 1.90, model 1.90123
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 26: printed 3.04, model 3.04422
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 27: printed 1.11, model 1.10870
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 28: printed 1.15, model 1.14734
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 29: printed 2.15, model 2.15201
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 30: printed 0.67, model 0.66907
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 31: printed 2.97, model 2.96547
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 32: printed 2.00, model 2.00391
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 33: printed 3.68, model 3.68465
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 34: printed 26.05, model 26.04635
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 35: printed 42.71, model 42.70665
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 36: printed 17.70, model 17.69568
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 37: printed 1.09, model 1.08526
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 38: printed 1.78, model 1.77944
+ok   Manuscript_Anonymous_EN_V23.docx Table 4 value 39: printed 0.74, model 0.73732
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 1: printed 4.01, model 4.01372
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 2: printed 3.63, model 3.63252
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 3: printed 4.48, model 4.48231
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 4: printed 7.15, model 7.15285
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 5: printed 5.89, model 5.89346
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 6: printed 9.14, model 9.14394
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 7: printed 2.98, model 2.97984
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 8: printed 2.70, model 2.70386
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 9: printed 3.33, model 3.33277
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 10: printed 3.69, model 3.68831
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 11: printed 3.35, model 3.35441
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 12: printed 4.09, model 4.09157
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 13: printed 6.91, model 6.91080
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 14: printed 5.68, model 5.67504
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 15: printed 8.94, model 8.94125
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 16: printed 2.57, model 2.56942
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 17: printed 2.40, model 2.39864
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 18: printed 2.81, model 2.80798
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 19: printed 1.67, model 1.66660
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 20: printed 1.51, model 1.50831
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 21: printed 1.86, model 1.86117
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 22: printed 2.97, model 2.97004
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 23: printed 2.45, model 2.44711
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 24: printed 3.80, model 3.79679
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 25: printed 1.24, model 1.23730
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 26: printed 1.12, model 1.12271
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 27: printed 1.38, model 1.38385
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 28: printed 177, model 177.104
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 29: printed 135, model 135.190
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 30: printed 230, model 230.312
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 31: printed 553, model 553.074
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 32: printed 403, model 402.811
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 33: printed 781, model 780.752
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 34: printed 62, model 61.706
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 35: printed 32, model 32.136
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 36: printed 100, model 100.204
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 37: printed 91.3, model 91.3027
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 38: printed 89.5, model 89.4541
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 39: printed 92.8, model 92.8341
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 40: printed 87.0, model 86.9830
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 41: printed 84.6, model 84.5950
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 42: printed 89.1, model 89.0561
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 43: printed 93.4, model 93.4243
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 44: printed 92.0, model 91.9855
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 45: printed 94.5, model 94.5220
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 46: printed 138, model 138.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 47: printed 0, model 0.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 48: printed 1000, model 1000.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 49: printed 1000, model 1000.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 50: printed 911, model 911.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 5 value 51: printed 1000, model 1000.000
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 1: printed 3.430, model 3.430016
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 2: printed 0.000, model 0.000000
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 3: printed 0.000, model 0.000000
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 4: printed 1.275, model 1.274817
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 5: printed 2474, model 2473.906
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 6: printed 3.518, model 3.518200
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 7: printed 2.687, model 2.687400
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 8: printed 0.000, model 0.000000
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 9: printed 0.807, model 0.806529
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 10: printed 1987, model 1986.548
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 11: printed 3.426, model 3.425744
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 12: printed 0.000, model 0.000000
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 13: printed 0.070, model 0.070300
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 14: printed 1.205, model 1.204517
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 15: printed 2474, model 2473.906
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 16: printed 3.514, model 3.514004
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 17: printed 2.687, model 2.687400
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 18: printed 0.070, model 0.070300
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 19: printed 0.731, model 0.731093
+ok   Manuscript_Anonymous_EN_V23.docx Table 6 value 20: printed 1975, model 1974.816

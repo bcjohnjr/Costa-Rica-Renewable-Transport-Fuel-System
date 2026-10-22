@@ -280,6 +280,10 @@ def solve(prm):
         G[t + "_dir"] = lp.var(f"{t}_direct", prm[t]["lcoe"] + a[key] + a["network_direct"])
         G[t + "_flex"] = lp.var(f"{t}_flex", prm[t]["lcoe"] + a["flex_" + key] + a["network_flex"])
     h = prm["heat"]
+    off = prm.get("offshore")      # optional offshore wind (Supplementary Note 20); absent in the national cases
+    if off:
+        G["off_dir"] = lp.var("offshore_direct", off["lcoe"] + off["adder_direct"] + a["network_direct"])
+        G["off_flex"] = lp.var("offshore_flex", off["lcoe"] + off["adder_flex"] + a["network_flex"])
     HS = {}
     HS["pvtes"] = lp.var("heat_pv_thermal_storage", h["pvtes_cost"])
     HS["csp"] = lp.var("heat_csp_steam", h["csp_heat_cost"])
@@ -288,6 +292,14 @@ def solve(prm):
     for k, i in HS.items():
         if k not in prm["heat_sources"]:
             lp.bounds[i] = (0, 0)
+    if off:
+        # offshore electricity to the refinery's electric backup heater (heat, MWh_th)
+        HS["off_heat"] = lp.var("heat_offshore_electric", (off["lcoe"] + a["network_direct"]) / h["eboiler_eff"])
+    pvt = prm.get("pvt")           # optional PVT slurry preheating (Supplementary Note 20)
+    if pvt:
+        HS["pvt"] = lp.var("heat_pvt_preheat")
+        A_PVT = lp.var("pvt_area_km2", pvt["annual_cost_musd_km2"], pvt.get("min_km2", 0.0), pvt["max_km2"])
+        lp.le({HS["pvt"]: 1.0, A_PVT: -pvt["heat_twh_km2"]}, 0.0)
     lp.eqc({G["pv_heat"]: 1.0, HS["pvtes"]: -1 / h["pvtes_eff"]}, 0.0)
 
     systems = seaweed_systems(prm)
@@ -396,6 +408,19 @@ def solve(prm):
     co = {HS[k]: -1.0 for k in HS}
     for s in systems: add(co, K[s["key"]], s["t_km2"] * s["heat_mwh"] / 1e6)
     lp.le(co, 0.0, "heat")
+    if pvt:
+        co = {HS["pvt"]: 1.0}
+        for s_ in systems: add(co, K[s_["key"]], -pvt["preheat_share"] * s_["t_km2"] * s_["heat_mwh"] / 1e6)
+        lp.le(co, 0.0, "pvt_preheat_share")
+    if off:
+        co = {G["off_dir"]: 1.0, G["off_flex"]: 1.0, HS["off_heat"]: 1 / h["eboiler_eff"]}
+        if off.get("imposed", False):
+            lp.eqc(co, off["twh"], "offshore_imposed")
+        else:
+            lp.le(co, off["twh"], "offshore_cap")
+        co = {HS["off_heat"]: 1.0}
+        for s_ in systems: add(co, K[s_["key"]], -off["heater_max_share"] * s_["t_km2"] * s_["heat_mwh"] / 1e6)
+        lp.le(co, 0.0, "offshore_heater_share")
     co = {HS["hp"]: 1.0}
     for s in systems: add(co, K[s["key"]], -h["hp_max_share"] * s["t_km2"] * s["heat_mwh"] / 1e6)
     lp.le(co, 0.0)
@@ -408,11 +433,14 @@ def solve(prm):
     add(co, HS["hp"], 1 / h["hp_cop"]); add(co, HS["eb"], 1 / h["eboiler_eff"])
     for k in ("pv_day", "pv_shift", "onshore_dir", "geo_dir", "csp_dir"):
         add(co, G[k], -1.0)
+    if off: add(co, G["off_dir"], -1.0)
+    if pvt: add(co, A_PVT, -pvt["el_twh_km2"])
     lp.eqc(co, 0.0, "el_direct")
     co = {F["eft"]: prm["eft"]["el"], F["emeoh"]: prm["emeoh"]["el"], F["enh3"]: prm["enh3"]["el"],
           F["ech4"]: prm["ech4"]["el"], F["dac"]: prm["dac"]["el"]}
     for k in ("pv_flex", "onshore_flex", "geo_flex", "csp_flex"):
         add(co, G[k], -1.0)
+    if off: add(co, G["off_flex"], -1.0)
     lp.le(co, 0.0, "el_flex")
     co = {G["pv_day"]: 1.0}
     for k, v in use("el_direct").items(): add(co, k, -a["pv_day_share"] * v)
@@ -469,6 +497,12 @@ def summarise(x, total, duals, prm, d, systems, vp):
     s["pv_for_heat_twh"] = x["pv_for_thermal_storage"]
     s["capacity_gw"] = {k: v / (cf[k] * 8.76) for k, v in gen.items()}
     s["electricity_delivered_twh"] = sum(gen.values())
+    if "offshore_direct" in x or "pvt_area_km2" in x:
+        s["hybrid"] = {"offshore_twh": x.get("offshore_direct", 0.0) + x.get("offshore_flex", 0.0) + x.get("heat_offshore_electric", 0.0) / prm["heat"]["eboiler_eff"],
+                       "offshore_direct_twh": x.get("offshore_direct", 0.0), "offshore_flex_twh": x.get("offshore_flex", 0.0),
+                       "offshore_heat_twh": x.get("heat_offshore_electric", 0.0),
+                       "pvt_area_km2": x.get("pvt_area_km2", 0.0), "pvt_heat_twh": x.get("heat_pvt_preheat", 0.0),
+                       "pvt_el_twh": x.get("pvt_area_km2", 0.0) * (prm.get("pvt") or {}).get("el_twh_km2", 0.0)}
     s["heat_twh_th"] = {"PV-charged thermal storage": x["heat_pv_thermal_storage"], "CSP steam": x["heat_csp_steam"],
                         "heat pumps": x["heat_heat_pump"], "electric boilers": x["heat_electric_boiler"]}
     sysd = {sy["key"]: sy for sy in systems}
