@@ -1,0 +1,7 @@
+scenario,fish_species,price_usd_kg,harvest_t_per_cage_ha_year,fcr,feed_t_per_cage_ha_year,variable_feed_usd_kg,annualized_total_cost_usd_per_cage_ha,breakeven_usd_kg,revenue_usd_per_cage_ha_year,annualized_profit_usd_per_cage_ha_year
+Low price,Lutjanus guttatus (Pacific),5.0,15.0,1.6,24.0,1.4,96048.65617525163,6.403243745016775,75000.0,-21048.656175251628
+Mid price,Lutjanus guttatus (Pacific),7.0,15.0,1.6,24.0,1.4,96048.65617525163,6.403243745016775,105000.0,8951.343824748372
+Premium price,Lutjanus guttatus (Pacific),7.5,15.0,1.6,24.0,1.4,96048.65617525163,6.403243745016775,112500.0,16451.343824748372
+Very high price,Lutjanus guttatus (Pacific),9.0,15.0,1.6,24.0,1.4,96048.65617525163,6.403243745016775,135000.0,38951.34382474837
+Premium + feed FCR 1.44,Lutjanus guttatus (Pacific),7.5,15.0,1.44,21.599999999999998,1.4,92688.65617525163,6.179243745016775,112500.0,19811.343824748372
+Premium + feed 20pct cheaper (unverified),Lutjanus guttatus (Pacific),7.5,15.0,1.6,24.0,1.12,89328.65617525163,5.955243745016776,112500.0,23171.343824748372

@@ -1,0 +1,27 @@
+MODELO EXPLORATORIO V32 — PARGO MANCHA / SPOTTED ROSE SNAPPER
+================================================================
+ESPAÑOL
+Especie: Lutjanus guttatus. Jaulas marinas en costa del Pacífico, separadas de las líneas de macroalgas Sargassum. Los resultados no se aplican automáticamente a granjas del Caribe.
+
+Se modela un rendimiento supuesto, no observado, de 15 t comerciales por hectárea de jaulas/año, conversión alimenticia 1,6, alimento a US$1,40/kg, costos operativos no alimentarios a US$2/kg, US$250 000/ha de inversión inicial anualizada a 15 años y 7%, y US$5000/ha/año de costos fijos. Punto de equilibrio: US$6,403/kg. Precios hipotéticos, NO cotizaciones: US$5, US$7, US$7,50 y US$9/kg. A US$7,50/kg se obtienen US$16 451/ha/año de beneficio anualizado, no beneficio contable garantizado.
+
+Producir 3711, 18 555 o 37 110 t de pargo/año requiere una hipótesis de jaulas que abarquen respectivamente 0,1, 0,5 o 1% del área de 2474 km² de cultivo de algas y una demanda de pienso de 5938, 29 688 o 59 376 t/año. Son magnitudes puramente geométricas. Se requiere estudio de capacidad de carga, corrientes, patologías, oxígeno, concesiones, disponibilidad de juveniles, producción y suministro de pienso, sustitución de ingredientes, mercados y costes de operación adicionales antes de extrapolar.
+
+Los desechos vegetales y proteicos agroindustriales no constituyen un pienso completo por sí mismos. Sólo usar insumos adecuados, después de recuperar alimentos humanos aprovechables, separación de sustancias contaminadas, procesado higiénico y formulación aprobada. Ningún descuento de pienso ni beneficio de jaulas se suma al modelo nacional de transporte.
+
+ENGLISH
+Species: Lutjanus guttatus, spotted rose snapper (pargo mancha). Pacific marine cages next to but distinct from Sargassum long-lines. The results do not transfer automatically to Caribbean farms.
+
+Illustrative cage yield: 15 saleable tonnes per cage hectare/year; feed conversion 1.6, feed US$1.40/kg, non-feed OPEX US$2/kg, US$250,000/ha initial cage CAPEX annualized over 15 years at 7%, and US$5,000/ha/year fixed cost. Break-even: US$6.403/kg. Hypothetical NOT QUOTED sales prices: US$5, 7, 7.50 and 9/kg. At US$7.50/kg, the model yields US$16,451/cage-ha/year in annualized profit, not a guaranteed account-level return.
+
+Outputs of 3,711/18,555/37,110 t/year require hypothetical cage occupation of 0.1/0.5/1% of 2,474 km², consuming 5,938/29,688/59,376 t/year of feed. These are purely geometric sensitivities, not ecological capacity estimates. Real site selection must assess currents, oxygen, disease, permitting, juvenile supply, feed sourcing, fish markets, and full operating costs.
+
+Vegetable/protein processing by-products are not automatically complete feed. Human food recovery precedes use of eligible and hygienically treated by-products with compliant balanced nutrition. No feed discount or fish-farm profit is credited toward national transport energy costs.
+
+Scientific precedents:
+Hernández et al. (2016) DOI 10.1111/jwas.12253 — cage densities 15–22 kg/m3, 95% survival, production cost US$6.5–7.5/kg in one study.
+Hernández et al. (2015) DOI 10.1080/15222055.2015.1032458 — floating-cage survival above 90%, feed conversion ~1.44.
+Costa Rican Universidad Nacional, MARTEC and Parque Marino del Pacífico have practical culture experience, but no verified 2026 ex-farm premium price is claimed.
+
+Reproduce: python3 snapper_cocolture_v32.py
+Historical fleet_fish_v26 model and its outputs remain unchanged.

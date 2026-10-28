@@ -1,0 +1,4 @@
+case,N_USD_kg,P_USD_kg,K_USD_kg,N_value_USD_y,P_value_USD_y,K_value_USD_y,gross_nutrient_replacement_value_USD_y
+low,0.5,1,0.4,4613500,1933000,7421600,13968100
+base,1,2,0.8,9227000,3866000,14843200,27936200
+high,1.5,3,1.2,13840500,5799000,22264800,41904300

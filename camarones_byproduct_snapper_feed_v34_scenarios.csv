@@ -1,0 +1,5 @@
+fishmeal_protein_substitution_pct,fishmeal_fraction_complete_feed,fishmeal_protein_fraction,processed_camarones_meal_protein_fraction,fishmeal_replaced_kg_feed,processed_camarones_meal_added_kg_feed,fishmeal_price_USD_kg,processed_camarones_meal_landed_USD_kg,feed_cost_reduction_USD_per_kg_complete_feed,feed_savings_USD_cage_ha_year,breakeven_fish_cost_USD_kg,limitations
+0,0.3,0.65,0.5,0.0,0.0,1.9,0.9,0.0,0.0,6.403,"No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+10,0.3,0.65,0.5,0.03,0.039,1.9,0.9,0.0219,525.6,6.368,"No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+20,0.3,0.65,0.5,0.06,0.078,1.9,0.9,0.0438,1051.2,6.333,"No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+30,0.3,0.65,0.5,0.09,0.117,1.9,0.9,0.0657,1576.8,6.298,"No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"

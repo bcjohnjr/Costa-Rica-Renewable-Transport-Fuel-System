@@ -1,0 +1,61 @@
+{
+  "inputs": {
+    "accepted_nitrogen_t_yr": 9227,
+    "accepted_phosphorus_t_yr": 1933,
+    "accepted_potassium_t_yr": 18554,
+    "nutrient_price_cases_USD_kg": {
+      "low": [
+        0.5,
+        1,
+        0.4
+      ],
+      "base": [
+        1,
+        2,
+        0.8
+      ],
+      "high": [
+        1.5,
+        3,
+        1.2
+      ]
+    },
+    "notes": [
+      "Elemental nutrient mass, after illustrative demand cap and 50 percent acceptance.",
+      "No costs for separation, pollution controls, fertilizer formulation, distribution or certification.",
+      "Not additive to national optimized renewable transport savings."
+    ]
+  },
+  "scenarios": [
+    {
+      "case": "low",
+      "N_USD_kg": 0.5,
+      "P_USD_kg": 1,
+      "K_USD_kg": 0.4,
+      "N_value_USD_y": 4613500,
+      "P_value_USD_y": 1933000,
+      "K_value_USD_y": 7421600,
+      "gross_nutrient_replacement_value_USD_y": 13968100
+    },
+    {
+      "case": "base",
+      "N_USD_kg": 1,
+      "P_USD_kg": 2,
+      "K_USD_kg": 0.8,
+      "N_value_USD_y": 9227000,
+      "P_value_USD_y": 3866000,
+      "K_value_USD_y": 14843200,
+      "gross_nutrient_replacement_value_USD_y": 27936200
+    },
+    {
+      "case": "high",
+      "N_USD_kg": 1.5,
+      "P_USD_kg": 3,
+      "K_USD_kg": 1.2,
+      "N_value_USD_y": 13840500,
+      "P_value_USD_y": 5799000,
+      "K_value_USD_y": 22264800,
+      "gross_nutrient_replacement_value_USD_y": 41904300
+    }
+  ]
+}

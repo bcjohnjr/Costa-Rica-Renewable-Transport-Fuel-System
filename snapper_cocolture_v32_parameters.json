@@ -1,0 +1,137 @@
+{
+  "model_scope": "Exploratory market-price and sea-cage footprint sensitivity only; USD-2026 assumed, not farm gate quotes",
+  "species": "Lutjanus guttatus / pargo mancha / spotted rose snapper",
+  "coast": "Pacific, Costa Rica",
+  "price_assumptions_not_observed": [
+    "Low price",
+    "Mid price",
+    "Premium price",
+    "Very high price",
+    "Premium + feed FCR 1.44",
+    "Premium + feed 20pct cheaper (unverified)"
+  ],
+  "price_scenarios": [
+    {
+      "scenario": "Low price",
+      "fish_species": "Lutjanus guttatus (Pacific)",
+      "price_usd_kg": 5.0,
+      "harvest_t_per_cage_ha_year": 15.0,
+      "fcr": 1.6,
+      "feed_t_per_cage_ha_year": 24.0,
+      "variable_feed_usd_kg": 1.4,
+      "annualized_total_cost_usd_per_cage_ha": 96048.65617525163,
+      "breakeven_usd_kg": 6.403243745016775,
+      "revenue_usd_per_cage_ha_year": 75000.0,
+      "annualized_profit_usd_per_cage_ha_year": -21048.656175251628
+    },
+    {
+      "scenario": "Mid price",
+      "fish_species": "Lutjanus guttatus (Pacific)",
+      "price_usd_kg": 7.0,
+      "harvest_t_per_cage_ha_year": 15.0,
+      "fcr": 1.6,
+      "feed_t_per_cage_ha_year": 24.0,
+      "variable_feed_usd_kg": 1.4,
+      "annualized_total_cost_usd_per_cage_ha": 96048.65617525163,
+      "breakeven_usd_kg": 6.403243745016775,
+      "revenue_usd_per_cage_ha_year": 105000.0,
+      "annualized_profit_usd_per_cage_ha_year": 8951.343824748372
+    },
+    {
+      "scenario": "Premium price",
+      "fish_species": "Lutjanus guttatus (Pacific)",
+      "price_usd_kg": 7.5,
+      "harvest_t_per_cage_ha_year": 15.0,
+      "fcr": 1.6,
+      "feed_t_per_cage_ha_year": 24.0,
+      "variable_feed_usd_kg": 1.4,
+      "annualized_total_cost_usd_per_cage_ha": 96048.65617525163,
+      "breakeven_usd_kg": 6.403243745016775,
+      "revenue_usd_per_cage_ha_year": 112500.0,
+      "annualized_profit_usd_per_cage_ha_year": 16451.343824748372
+    },
+    {
+      "scenario": "Very high price",
+      "fish_species": "Lutjanus guttatus (Pacific)",
+      "price_usd_kg": 9.0,
+      "harvest_t_per_cage_ha_year": 15.0,
+      "fcr": 1.6,
+      "feed_t_per_cage_ha_year": 24.0,
+      "variable_feed_usd_kg": 1.4,
+      "annualized_total_cost_usd_per_cage_ha": 96048.65617525163,
+      "breakeven_usd_kg": 6.403243745016775,
+      "revenue_usd_per_cage_ha_year": 135000.0,
+      "annualized_profit_usd_per_cage_ha_year": 38951.34382474837
+    },
+    {
+      "scenario": "Premium + feed FCR 1.44",
+      "fish_species": "Lutjanus guttatus (Pacific)",
+      "price_usd_kg": 7.5,
+      "harvest_t_per_cage_ha_year": 15.0,
+      "fcr": 1.44,
+      "feed_t_per_cage_ha_year": 21.599999999999998,
+      "variable_feed_usd_kg": 1.4,
+      "annualized_total_cost_usd_per_cage_ha": 92688.65617525163,
+      "breakeven_usd_kg": 6.179243745016775,
+      "revenue_usd_per_cage_ha_year": 112500.0,
+      "annualized_profit_usd_per_cage_ha_year": 19811.343824748372
+    },
+    {
+      "scenario": "Premium + feed 20pct cheaper (unverified)",
+      "fish_species": "Lutjanus guttatus (Pacific)",
+      "price_usd_kg": 7.5,
+      "harvest_t_per_cage_ha_year": 15.0,
+      "fcr": 1.6,
+      "feed_t_per_cage_ha_year": 24.0,
+      "variable_feed_usd_kg": 1.12,
+      "annualized_total_cost_usd_per_cage_ha": 89328.65617525163,
+      "breakeven_usd_kg": 5.955243745016776,
+      "revenue_usd_per_cage_ha_year": 112500.0,
+      "annualized_profit_usd_per_cage_ha_year": 23171.343824748372
+    }
+  ],
+  "footprint_scenarios": [
+    {
+      "seaweed_area_km2": 2474,
+      "hypothetical_cage_area_pct": 0.1,
+      "cage_ha": 247.4,
+      "annual_saleable_fish_t": 3711.0,
+      "annual_feed_t": 5937.6,
+      "note": "Geometric sensitivity only; not a permitted or ecologically validated cage deployment"
+    },
+    {
+      "seaweed_area_km2": 2474,
+      "hypothetical_cage_area_pct": 0.5,
+      "cage_ha": 1237.0,
+      "annual_saleable_fish_t": 18555.0,
+      "annual_feed_t": 29688.0,
+      "note": "Geometric sensitivity only; not a permitted or ecologically validated cage deployment"
+    },
+    {
+      "seaweed_area_km2": 2474,
+      "hypothetical_cage_area_pct": 1.0,
+      "cage_ha": 2474.0,
+      "annual_saleable_fish_t": 37110.0,
+      "annual_feed_t": 59376.0,
+      "note": "Geometric sensitivity only; not a permitted or ecologically validated cage deployment"
+    }
+  ],
+  "source_studies": [
+    "doi:10.1111/jwas.12253",
+    "doi:10.1080/15222055.2015.1032458"
+  ],
+  "exclusions": [
+    "regional demand cap",
+    "salinity",
+    "oxygen transfer",
+    "site carrying capacity",
+    "disease",
+    "juvenile supply",
+    "market verification",
+    "environmental licensing",
+    "price elasticity",
+    "waste suitability",
+    "whole marine infrastructure scaling"
+  ],
+  "national_optimum_modified": false
+}

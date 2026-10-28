@@ -1,0 +1,30 @@
+test_bad_fraction (__main__.Physics.test_bad_fraction) ... ok
+test_dryer_no_heat (__main__.Physics.test_dryer_no_heat) ... ok
+test_dryer_surplus_cap (__main__.Physics.test_dryer_surplus_cap) ... ok
+test_feed_cost_rises (__main__.Physics.test_feed_cost_rises) ... ok
+test_fewer_trips_bigger_boat (__main__.Physics.test_fewer_trips_bigger_boat) ... ok
+test_fish_revenue_cost (__main__.Physics.test_fish_revenue_cost) ... ok
+test_grid_conserve (__main__.Physics.test_grid_conserve) ... ok
+test_grid_no_power_overcredit (__main__.Physics.test_grid_no_power_overcredit) ... ok
+test_high_price_improves_fish (__main__.Physics.test_high_price_improves_fish) ... ok
+test_mass (__main__.Physics.test_mass) ... ok
+test_more_grid_renewables_reduces_shore (__main__.Physics.test_more_grid_renewables_reduces_shore) ... ok
+test_negative (__main__.Physics.test_negative) ... ok
+test_no_firmness (__main__.Physics.test_no_firmness) ... ok
+test_no_national (__main__.Physics.test_no_national) ... ok
+test_no_wind (__main__.Physics.test_no_wind) ... ok
+test_ship_battery_covers_trip (__main__.Physics.test_ship_battery_covers_trip) ... ok
+test_ship_bulk (__main__.Physics.test_ship_bulk) ... ok
+test_ship_no_power_overcredit (__main__.Physics.test_ship_no_power_overcredit) ... ok
+test_ship_trip (__main__.Physics.test_ship_trip) ... ok
+test_storage_cost_included (__main__.Physics.test_storage_cost_included) ... ok
+test_two_thousand_t_requires_redesign (__main__.Physics.test_two_thousand_t_requires_redesign) ... ok
+test_vawt_drag_nonnegative (__main__.Physics.test_vawt_drag_nonnegative) ... ok
+test_vessel_conserve (__main__.Physics.test_vessel_conserve) ... ok
+test_with_more_ship_ops_reduces_energy_surplus (__main__.Physics.test_with_more_ship_ops_reduces_energy_surplus) ... ok
+test_zero_fish (__main__.Physics.test_zero_fish) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.002s
+
+OK

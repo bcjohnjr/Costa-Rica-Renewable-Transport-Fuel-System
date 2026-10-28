@@ -1,0 +1,70 @@
+{
+  "inputs": {
+    "annual_market_fish_kg_per_cage_ha": 15000,
+    "FCR": 1.6,
+    "fishmeal_fraction_of_complete_diet": 0.3,
+    "fishmeal_protein_fraction": 0.65,
+    "camarones_meal_protein_fraction": 0.5,
+    "fishmeal_price_USD_kg": 1.9,
+    "processed_camarones_meal_price_USD_kg": 0.9,
+    "fish_cost_baseline_USD_kg": 6.403243745
+  },
+  "scenarios": [
+    {
+      "fishmeal_protein_substitution_pct": 0,
+      "fishmeal_fraction_complete_feed": 0.3,
+      "fishmeal_protein_fraction": 0.65,
+      "processed_camarones_meal_protein_fraction": 0.5,
+      "fishmeal_replaced_kg_feed": 0.0,
+      "processed_camarones_meal_added_kg_feed": 0.0,
+      "fishmeal_price_USD_kg": 1.9,
+      "processed_camarones_meal_landed_USD_kg": 0.9,
+      "feed_cost_reduction_USD_per_kg_complete_feed": 0.0,
+      "feed_savings_USD_cage_ha_year": 0.0,
+      "breakeven_fish_cost_USD_kg": 6.403,
+      "limitations": "No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+    },
+    {
+      "fishmeal_protein_substitution_pct": 10,
+      "fishmeal_fraction_complete_feed": 0.3,
+      "fishmeal_protein_fraction": 0.65,
+      "processed_camarones_meal_protein_fraction": 0.5,
+      "fishmeal_replaced_kg_feed": 0.03,
+      "processed_camarones_meal_added_kg_feed": 0.039,
+      "fishmeal_price_USD_kg": 1.9,
+      "processed_camarones_meal_landed_USD_kg": 0.9,
+      "feed_cost_reduction_USD_per_kg_complete_feed": 0.0219,
+      "feed_savings_USD_cage_ha_year": 525.6,
+      "breakeven_fish_cost_USD_kg": 6.368,
+      "limitations": "No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+    },
+    {
+      "fishmeal_protein_substitution_pct": 20,
+      "fishmeal_fraction_complete_feed": 0.3,
+      "fishmeal_protein_fraction": 0.65,
+      "processed_camarones_meal_protein_fraction": 0.5,
+      "fishmeal_replaced_kg_feed": 0.06,
+      "processed_camarones_meal_added_kg_feed": 0.078,
+      "fishmeal_price_USD_kg": 1.9,
+      "processed_camarones_meal_landed_USD_kg": 0.9,
+      "feed_cost_reduction_USD_per_kg_complete_feed": 0.0438,
+      "feed_savings_USD_cage_ha_year": 1051.2,
+      "breakeven_fish_cost_USD_kg": 6.333,
+      "limitations": "No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+    },
+    {
+      "fishmeal_protein_substitution_pct": 30,
+      "fishmeal_fraction_complete_feed": 0.3,
+      "fishmeal_protein_fraction": 0.65,
+      "processed_camarones_meal_protein_fraction": 0.5,
+      "fishmeal_replaced_kg_feed": 0.09,
+      "processed_camarones_meal_added_kg_feed": 0.117,
+      "fishmeal_price_USD_kg": 1.9,
+      "processed_camarones_meal_landed_USD_kg": 0.9,
+      "feed_cost_reduction_USD_per_kg_complete_feed": 0.0657,
+      "feed_savings_USD_cage_ha_year": 1576.8,
+      "breakeven_fish_cost_USD_kg": 6.298,
+      "limitations": "No growth/FCR benefit; local supply, safety, nutrition and processing costs unverified"
+    }
+  ]
+}
